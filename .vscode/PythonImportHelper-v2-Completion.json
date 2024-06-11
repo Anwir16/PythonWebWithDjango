@@ -41,6 +41,22 @@
         "documentation": {}
     },
     {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -81,11 +97,59 @@
         "documentation": {}
     },
     {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -105,11 +169,43 @@
         "documentation": {}
     },
     {
-        "label": "HttpResponse",
-        "importPath": "django.http",
-        "description": "django.http",
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
         "isExtraImport": true,
-        "detail": "django.http",
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
         "documentation": {}
     },
     {
@@ -243,7 +339,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -252,7 +348,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'login/'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -261,7 +357,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'login/'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -270,7 +366,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'login/'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -279,7 +375,16 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'login/'",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_URL",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "LOGIN_URL = 'login/'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -311,20 +416,47 @@
         "documentation": {}
     },
     {
-        "label": "urlpatterns",
+        "label": "UserRegisterForm",
+        "kind": 6,
+        "importPath": "MyApp.shop.forms",
+        "description": "MyApp.shop.forms",
+        "peekOfCode": "class UserRegisterForm(UserCreationForm):\n    email = forms.EmailField(required=True)\n    class Meta:\n        model = User\n        fields = ['username', 'email', 'password1', 'password2']",
+        "detail": "MyApp.shop.forms",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
         "kind": 5,
         "importPath": "MyApp.shop.urls",
         "description": "MyApp.shop.urls",
-        "peekOfCode": "urlpatterns = [\n    path('',views.index),\n    path('home/',views.dashboard)\n]",
+        "peekOfCode": "app_name = 'shop'\nurlpatterns = [\n    path('login/',views.loginView, name= 'login'),\n    path('',views.dashboard, name='home'),\n    path('register/',views.register, name= 'register'),\n]",
         "detail": "MyApp.shop.urls",
         "documentation": {}
     },
     {
-        "label": "index",
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "MyApp.shop.urls",
+        "description": "MyApp.shop.urls",
+        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginView, name= 'login'),\n    path('',views.dashboard, name='home'),\n    path('register/',views.register, name= 'register'),\n]",
+        "detail": "MyApp.shop.urls",
+        "documentation": {}
+    },
+    {
+        "label": "register",
         "kind": 2,
         "importPath": "MyApp.shop.views",
         "description": "MyApp.shop.views",
-        "peekOfCode": "def index(request):\n    return render(request,'login.html')\ndef dashboard(request):\n    return render(request,'dashboard.html')",
+        "peekOfCode": "def register(request):\n    if request.method == 'POST':\n        form = UserRegisterForm(request.POST)\n        if form.is_valid():\n            form.save()\n            username = form.cleaned_data.get('username')\n            messages.success(request, f'Account {username} created. You can login now!')\n            return redirect('/')\n    else:\n        form = UserRegisterForm()",
+        "detail": "MyApp.shop.views",
+        "documentation": {}
+    },
+    {
+        "label": "loginView",
+        "kind": 2,
+        "importPath": "MyApp.shop.views",
+        "description": "MyApp.shop.views",
+        "peekOfCode": "def loginView(request):\n    if request.method == 'POST':\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(request, username=username, password=password)\n        if user is not None:\n            login(request, user)\n            return redirect('/')  # Redirect to home page\n        else:\n            messages.error(request, 'Username or password incorrect.')",
         "detail": "MyApp.shop.views",
         "documentation": {}
     },
@@ -335,6 +467,15 @@
         "description": "MyApp.shop.views",
         "peekOfCode": "def dashboard(request):\n    return render(request,'dashboard.html')",
         "detail": "MyApp.shop.views",
+        "documentation": {}
+    },
+    {
+        "label": "UserConfig",
+        "kind": 6,
+        "importPath": "MyApp.user.apps",
+        "description": "MyApp.user.apps",
+        "peekOfCode": "class UserConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'user'",
+        "detail": "MyApp.user.apps",
         "documentation": {}
     },
     {
