@@ -15,15 +15,6 @@
     <link href="{% static 'css/animate.css' %}" rel="stylesheet" />
     <link href="{% static 'css/main.css' %}" rel="stylesheet" />
     <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
-    <!--  [if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]  -->
-    <link rel="shortcut icon" href="images/ico/favicon.ico" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png" />
   </head>
   <!-- /head -->
 
@@ -53,16 +44,10 @@
                     <a href=""><i class="fa fa-facebook"></i></a>
                   </li>
                   <li>
-                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-google"></i></a>
                   </li>
                   <li>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-dribbble"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-brands fa-rocketchat"></i></a>
                   </li>
                 </ul>
               </div>
@@ -128,7 +113,7 @@
                     <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
                   </li>
                   <li>
-                    <a href="{% url 'shop:login' %}"><i class="fa fa-lock"></i> Login</a>
+                    <a href="{% url 'user:signout' %}"><i class="fa fa-lock"></i> Logout</a>
                   </li>
                 </ul>
               </div>

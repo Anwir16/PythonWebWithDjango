@@ -1,5 +1,157 @@
 [
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -22,38 +174,6 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "messages",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
         "documentation": {}
     },
     {
@@ -81,27 +201,19 @@
         "documentation": {}
     },
     {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
         "isExtraImport": true,
         "detail": "django.core.wsgi",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -129,59 +241,27 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "django.contrib.auth.forms",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "django.contrib.auth.forms",
         "documentation": {}
     },
     {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
         "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "redirect",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "django.contrib.auth.decorators",
         "documentation": {}
     },
     {
@@ -201,11 +281,11 @@
         "documentation": {}
     },
     {
-        "label": "login_required",
-        "importPath": "django.contrib.auth.decorators",
-        "description": "django.contrib.auth.decorators",
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
         "isExtraImport": true,
-        "detail": "django.contrib.auth.decorators",
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -215,6 +295,15 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "HomeConfig",
+        "kind": 6,
+        "importPath": "MyApp.home.apps",
+        "description": "MyApp.home.apps",
+        "peekOfCode": "class HomeConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'home'",
+        "detail": "MyApp.home.apps",
         "documentation": {}
     },
     {
@@ -231,7 +320,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nSITE_ID = 3",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -240,7 +329,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -249,7 +338,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -258,7 +347,16 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'shop',",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SITE_ID",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "SITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'django.contrib.sites',\n    'shop',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -267,7 +365,16 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'shop',\n]\nMIDDLEWARE = [",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'django.contrib.sites',\n    'shop',\n    'user',",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SOCIALACCOUNT_PROVIDERS",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "SOCIALACCOUNT_PROVIDERS = {\n    'google': {\n        'SCOPE': [\n            'profile',\n            'email',\n        ],\n        'AUTH_PARAMS': {\n            'access_type': 'online',\n        },\n    }",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -276,7 +383,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'MyApp.urls'",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n    'allauth.account.middleware.AccountMiddleware',\n]",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -303,7 +410,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'MyApp.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'MyApp.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'FinalGame',\n        'USER': 'root',\n        'PASSWORD': '',\n        'HOST':'localhost',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -312,7 +419,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'FinalGame',\n        'USER': 'root',\n        'PASSWORD': '',\n        'HOST':'localhost',\n        'PORT':'',\n    }\n}",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -348,7 +455,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'login/'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -357,7 +464,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'login/'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\nAUTHENTICATION_BACKENDS={",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -366,7 +473,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'login/'",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -375,7 +482,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'login/'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}\nLOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -384,7 +491,52 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LOGIN_URL = 'login/'",
+        "peekOfCode": "LOGIN_URL = 'user:login/'\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}\nLOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "LOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGOUT_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "LOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ACCOUNT_EMAIL_VERIFICATION",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "ACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ACCOUNT_EMAIL_REQUIRED",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "ACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ACCOUNT_AUTHENTICATION_METHOD",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "ACCOUNT_AUTHENTICATION_METHOD = 'email'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -393,7 +545,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.urls",
         "description": "MyApp.MyApp.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',include('shop.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('user/',include('user.urls')),\n    path('',include('shop.urls')),\n    path('accounts/',include('allauth.urls'))\n]",
         "detail": "MyApp.MyApp.urls",
         "documentation": {}
     },
@@ -429,7 +581,7 @@
         "kind": 5,
         "importPath": "MyApp.shop.urls",
         "description": "MyApp.shop.urls",
-        "peekOfCode": "app_name = 'shop'\nurlpatterns = [\n    path('login/',views.loginView, name= 'login'),\n    path('',views.dashboard, name='home'),\n    path('register/',views.register, name= 'register'),\n]",
+        "peekOfCode": "app_name = 'shop'\nurlpatterns = [\n    path('',views.dashboard, name='home'),\n]",
         "detail": "MyApp.shop.urls",
         "documentation": {}
     },
@@ -438,26 +590,8 @@
         "kind": 5,
         "importPath": "MyApp.shop.urls",
         "description": "MyApp.shop.urls",
-        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginView, name= 'login'),\n    path('',views.dashboard, name='home'),\n    path('register/',views.register, name= 'register'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('',views.dashboard, name='home'),\n]",
         "detail": "MyApp.shop.urls",
-        "documentation": {}
-    },
-    {
-        "label": "register",
-        "kind": 2,
-        "importPath": "MyApp.shop.views",
-        "description": "MyApp.shop.views",
-        "peekOfCode": "def register(request):\n    if request.method == 'POST':\n        form = UserRegisterForm(request.POST)\n        if form.is_valid():\n            form.save()\n            username = form.cleaned_data.get('username')\n            messages.success(request, f'Account {username} created. You can login now!')\n            return redirect('/')\n    else:\n        form = UserRegisterForm()",
-        "detail": "MyApp.shop.views",
-        "documentation": {}
-    },
-    {
-        "label": "loginView",
-        "kind": 2,
-        "importPath": "MyApp.shop.views",
-        "description": "MyApp.shop.views",
-        "peekOfCode": "def loginView(request):\n    if request.method == 'POST':\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(request, username=username, password=password)\n        if user is not None:\n            login(request, user)\n            return redirect('/')  # Redirect to home page\n        else:\n            messages.error(request, 'Username or password incorrect.')",
-        "detail": "MyApp.shop.views",
         "documentation": {}
     },
     {
@@ -470,12 +604,75 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.user.migrations.0001_initial",
+        "description": "MyApp.user.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='UserRegistration',\n            fields=[\n                ('user_name', models.CharField(max_length=50, primary_key=True, serialize=False)),\n                ('email', models.CharField(max_length=500)),",
+        "detail": "MyApp.user.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
         "label": "UserConfig",
         "kind": 6,
         "importPath": "MyApp.user.apps",
         "description": "MyApp.user.apps",
         "peekOfCode": "class UserConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'user'",
         "detail": "MyApp.user.apps",
+        "documentation": {}
+    },
+    {
+        "label": "UserRegistration",
+        "kind": 6,
+        "importPath": "MyApp.user.models",
+        "description": "MyApp.user.models",
+        "peekOfCode": "class UserRegistration(models.Model):\n    user_name = models.CharField(primary_key=True, max_length=50)\n    email = models.CharField(max_length=500)\n    password = models.CharField(max_length=255, null=False)\n    full_name = models.CharField(max_length=200)\n    class Meta:\n        db_table = 'FinalGame'",
+        "detail": "MyApp.user.models",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "MyApp.user.urls",
+        "description": "MyApp.user.urls",
+        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n]",
+        "detail": "MyApp.user.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "MyApp.user.urls",
+        "description": "MyApp.user.urls",
+        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n]",
+        "detail": "MyApp.user.urls",
+        "documentation": {}
+    },
+    {
+        "label": "signup",
+        "kind": 2,
+        "importPath": "MyApp.user.views",
+        "description": "MyApp.user.views",
+        "peekOfCode": "def signup(request):\n    if request.user.is_authenticated:\n        return redirect('/')\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            username = form.cleaned_data.get('username')\n            print(f'username: {username}')\n            password = form.cleaned_data.get('password1')",
+        "detail": "MyApp.user.views",
+        "documentation": {}
+    },
+    {
+        "label": "loginViews",
+        "kind": 2,
+        "importPath": "MyApp.user.views",
+        "description": "MyApp.user.views",
+        "peekOfCode": "def loginViews(request):\n    if request.user.is_authenticated:\n        return redirect('/')\n    if request.method == 'POST':\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(username=username, password=password)\n        if user is not None:\n            login(request, user)\n            return redirect('/')",
+        "detail": "MyApp.user.views",
+        "documentation": {}
+    },
+    {
+        "label": "logoutViews",
+        "kind": 2,
+        "importPath": "MyApp.user.views",
+        "description": "MyApp.user.views",
+        "peekOfCode": "def logoutViews(request):\n    logout(request)\n    return redirect('user:login')",
+        "detail": "MyApp.user.views",
         "documentation": {}
     },
     {
