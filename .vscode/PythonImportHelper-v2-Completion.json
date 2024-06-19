@@ -209,6 +209,14 @@
         "documentation": {}
     },
     {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -262,6 +270,14 @@
         "description": "django.contrib.auth.decorators",
         "isExtraImport": true,
         "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -500,7 +516,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'",
+        "peekOfCode": "LOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -509,7 +525,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'",
+        "peekOfCode": "LOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -518,7 +534,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'",
+        "peekOfCode": "ACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -527,7 +543,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'",
+        "peekOfCode": "ACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -536,7 +552,61 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ACCOUNT_AUTHENTICATION_METHOD = 'email'",
+        "peekOfCode": "ACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_BACKEND",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_PORT",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_USE_TLS",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_PASSWORD",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -635,7 +705,7 @@
         "kind": 5,
         "importPath": "MyApp.user.urls",
         "description": "MyApp.user.urls",
-        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n]",
+        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('reset_password/', auth_views.PasswordResetView.as_view(success_url=reverse_lazy('user:password_reset_done')), name=\"reset_password\"),\n    path('password_reset_done/', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),\n    path('reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(), name=\"password_reset_confirm\"),\n    path('reset_password_complete/', auth_views.PasswordResetCompleteView.as_view(), name=\"password_reset_complete\"),\n]",
         "detail": "MyApp.user.urls",
         "documentation": {}
     },
@@ -644,7 +714,7 @@
         "kind": 5,
         "importPath": "MyApp.user.urls",
         "description": "MyApp.user.urls",
-        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('reset_password/', auth_views.PasswordResetView.as_view(success_url=reverse_lazy('user:password_reset_done')), name=\"reset_password\"),\n    path('password_reset_done/', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),\n    path('reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(), name=\"password_reset_confirm\"),\n    path('reset_password_complete/', auth_views.PasswordResetCompleteView.as_view(), name=\"password_reset_complete\"),\n]",
         "detail": "MyApp.user.urls",
         "documentation": {}
     },
