@@ -18,3 +18,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home.get_home)
 ]'
+pip allauth, jwt, PYjwt, requests #login, signup with social
+pip install django-rest-passwordreset 

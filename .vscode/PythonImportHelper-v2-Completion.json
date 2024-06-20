@@ -201,6 +201,14 @@
         "documentation": {}
     },
     {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -209,7 +217,7 @@
         "documentation": {}
     },
     {
-        "label": "reverse_lazy",
+        "label": "include",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -273,11 +281,44 @@
         "documentation": {}
     },
     {
-        "label": "views",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
+        "label": "receiver",
+        "importPath": "django.dispatch",
+        "description": "django.dispatch",
         "isExtraImport": true,
-        "detail": "django.contrib.auth",
+        "detail": "django.dispatch",
+        "documentation": {}
+    },
+    {
+        "label": "reset_password_token_created",
+        "importPath": "django_rest_passwordreset.signals",
+        "description": "django_rest_passwordreset.signals",
+        "isExtraImport": true,
+        "detail": "django_rest_passwordreset.signals",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMessage",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
         "documentation": {}
     },
     {
@@ -453,7 +494,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -462,7 +503,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -471,7 +512,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -480,7 +521,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\nAUTHENTICATION_BACKENDS={",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\nAUTHENTICATION_BACKENDS={",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -489,7 +530,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}",
+        "peekOfCode": "STATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -516,7 +557,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')",
+        "peekOfCode": "LOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -525,7 +566,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "peekOfCode": "LOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -534,7 +575,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "peekOfCode": "ACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -543,7 +584,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "peekOfCode": "ACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -552,7 +593,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "peekOfCode": "ACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -561,7 +602,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -570,16 +611,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
-        "detail": "MyApp.MyApp.settings",
-        "documentation": {}
-    },
-    {
-        "label": "EMAIL_PORT",
-        "kind": 5,
-        "importPath": "MyApp.MyApp.settings",
-        "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -588,7 +620,16 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_PORT",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -597,7 +638,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "peekOfCode": "EMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -606,7 +647,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -696,7 +737,16 @@
         "kind": 6,
         "importPath": "MyApp.user.models",
         "description": "MyApp.user.models",
-        "peekOfCode": "class UserRegistration(models.Model):\n    user_name = models.CharField(primary_key=True, max_length=50)\n    email = models.CharField(max_length=500)\n    password = models.CharField(max_length=255, null=False)\n    full_name = models.CharField(max_length=200)\n    class Meta:\n        db_table = 'FinalGame'",
+        "peekOfCode": "class UserRegistration(models.Model):\n    user_name = models.CharField(primary_key=True, max_length=50)\n    email = models.CharField(max_length=500)\n    password = models.CharField(max_length=255, null=False)\n    full_name = models.CharField(max_length=200)\n    class Meta:\n        db_table = 'FinalGame'\nfrom django.dispatch import receiver\nfrom django.urls import reverse\nfrom django_rest_passwordreset.signals import reset_password_token_created",
+        "detail": "MyApp.user.models",
+        "documentation": {}
+    },
+    {
+        "label": "password_reset_token_created",
+        "kind": 2,
+        "importPath": "MyApp.user.models",
+        "description": "MyApp.user.models",
+        "peekOfCode": "def password_reset_token_created(sender, instance, reset_password_token, *args, **kwargs):\n    # the below like concatinates your websites reset password url and the reset email token which will be required at a later stage\n    email_plaintext_message = \"Open the link to reset your password\" + \" \" + \"{}{}\".format(instance.request.build_absolute_uri(\"http://127.0.0.1:8000/user/reset-password-form/\"), reset_password_token.key)\n    \"\"\"\n        this below line is the django default sending email function, \n        takes up some parameter (title(email title), message(email body), from(email sender), to(recipient(s))\n    \"\"\"\n    send_mail(\n        # title:\n        \"Password Reset for {title}\".format(title=\"Number Guessing App\"),",
         "detail": "MyApp.user.models",
         "documentation": {}
     },
@@ -705,7 +755,7 @@
         "kind": 5,
         "importPath": "MyApp.user.urls",
         "description": "MyApp.user.urls",
-        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('reset_password/', auth_views.PasswordResetView.as_view(success_url=reverse_lazy('user:password_reset_done')), name=\"reset_password\"),\n    path('password_reset_done/', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),\n    path('reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(), name=\"password_reset_confirm\"),\n    path('reset_password_complete/', auth_views.PasswordResetCompleteView.as_view(), name=\"password_reset_complete\"),\n]",
+        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('password_reset/', include('django_rest_passwordreset.urls', namespace='password_reset')),\n]",
         "detail": "MyApp.user.urls",
         "documentation": {}
     },
@@ -714,7 +764,7 @@
         "kind": 5,
         "importPath": "MyApp.user.urls",
         "description": "MyApp.user.urls",
-        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('reset_password/', auth_views.PasswordResetView.as_view(success_url=reverse_lazy('user:password_reset_done')), name=\"reset_password\"),\n    path('password_reset_done/', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),\n    path('reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(), name=\"password_reset_confirm\"),\n    path('reset_password_complete/', auth_views.PasswordResetCompleteView.as_view(), name=\"password_reset_complete\"),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('password_reset/', include('django_rest_passwordreset.urls', namespace='password_reset')),\n]",
         "detail": "MyApp.user.urls",
         "documentation": {}
     },
@@ -742,6 +792,15 @@
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
         "peekOfCode": "def logoutViews(request):\n    logout(request)\n    return redirect('user:login')",
+        "detail": "MyApp.user.views",
+        "documentation": {}
+    },
+    {
+        "label": "SCOPES",
+        "kind": 5,
+        "importPath": "MyApp.user.views",
+        "description": "MyApp.user.views",
+        "peekOfCode": "SCOPES = ['https://www.googleapis.com/auth/gmail.send']\n# Create your views here.\ndef signup(request):\n    if request.user.is_authenticated:\n        return redirect('/')\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            username = form.cleaned_data.get('username')",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
