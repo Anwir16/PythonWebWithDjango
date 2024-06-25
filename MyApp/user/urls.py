@@ -5,5 +5,7 @@ urlpatterns = [
     path('login/',views.loginViews, name='login'),
     path('register/',views.signup, name='register'),
     path('signout/',views.logoutViews, name='signout'),
+    path('profile/',views.viewsProfile, name='profile'),
+    
     path('password_reset/', include('django_rest_passwordreset.urls', namespace='password_reset')),
 ]

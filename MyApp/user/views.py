@@ -36,7 +36,6 @@ def loginViews(request):
             login(request, user)
             return redirect('/')
         else:
-            #thong bao loi
             error = 'Invalid username or password'
             form = AuthenticationForm()
             return render(request, 'login.html', {'form': form, 'error': error})
@@ -48,5 +47,6 @@ def loginViews(request):
 def logoutViews(request):
     logout(request)
     return redirect('user:login')
-def viewsAccount(request):
-    return render(request,'account.html')
+
+def viewsProfile(request):
+    return render(request,'profile.html')
