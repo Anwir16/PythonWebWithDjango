@@ -23,6 +23,9 @@
             <i class="login__icon fa fa-lock"></i>
             <input type="password" class="login__input" name="password" id="password" placeholder="Password" />
           </div>
+          <div>
+            <a name="remember" id="remember" href="{% url 'user:password_reset:reset-password-request' %}"> Forgot password</a>
+          </div>
           <button class="button login__submit">
             <span class="button__text">Login</span>
             <i class="button__icon fa fa-chevron-right"></i>
