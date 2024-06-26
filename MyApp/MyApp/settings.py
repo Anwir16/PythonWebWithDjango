@@ -153,6 +153,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # set login url
 
 LOGIN_URL = 'user:login/'
+# LOGIN GOOGLE CONFIG
 AUTHENTICATION_BACKENDS={
     "django.contrib.auth.backends.ModelBackend",
     'allauth.account.auth_backends.AuthenticationBackend',
@@ -163,10 +164,17 @@ LOGOUT_REDIRECT_URL = '/'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
-
+# SENT EMAIL CONFIG
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "PhucNDCE171160@fpt.edu.vn"
 EMAIL_HOST_PASSWORD = "xzkkqgqlimkrblkz"
+
+# VNPAY CONFIG
+VNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config
+VNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config
+VNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'
+VNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config
+VNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config

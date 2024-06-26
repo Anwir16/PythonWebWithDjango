@@ -4,8 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Login form</title>
-    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+    <title>Signup form</title>
+    <link rel="stylesheet" href="{% static 'css/register.css' %}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
     <link rel="icon" type="image/x-icon"  href="{% static 'favicon.ico'%}">
@@ -21,21 +21,22 @@
           </div>
           <div class="login__field">
             <i class="login__icon fa fa-lock"></i>
-            <input type="password" class="login__input" name="password" id="password" placeholder="Password" />
+            <input type="password" class="login__input" name="password1" id="password1" placeholder="Password" />
           </div>
-          <div>
-            <a name="remember" id="remember" href="{% url 'user:password_reset:reset-password-request' %}"> Forgot password</a>
+          <div class="login__field">
+            <i class="login__icon fa fa-lock"></i>
+            <input type="password" class="login__input" name="password2" id="password2" placeholder="Comfirm Password" />
           </div>
           <button class="button login__submit">
-            <span class="button__text">Login</span>
+            <span class="button__text">Signup</span>
             <i class="button__icon fa fa-chevron-right"></i>
           </button>
         </form>
         <div class="signup">
-          <h3>Not a user? <a href="{% url 'user:register' %}">Register now</a></h3>
+          <h4>Already have an account? <a href="{% url 'user:login' %}">Login</a></h4>
         </div>
         <div class="social-login">
-          <h3>log in via</h3>
+          <h3>or log in via</h3>
           <div class="social-icons">
             <form action="{% provider_login_url 'google' %}" method="post">
               {% csrf_token %}

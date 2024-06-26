@@ -47,5 +47,6 @@ def loginViews(request):
 def logoutViews(request):
     logout(request)
     return redirect('user:login')
+
 def viewsProfile(request):
     return render(request,'profile.html')
