@@ -1,7 +1,8 @@
 import pickle
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.contrib.auth import authenticate, login, logout 
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 
 SCOPES = ['https://www.googleapis.com/auth/gmail.send']
 
@@ -47,5 +48,9 @@ def loginViews(request):
 def logoutViews(request):
     logout(request)
     return redirect('user:login')
+
+@login_required
 def viewsProfile(request):
+    if request.user.is_superuser:
+        return redirect('/admin/')
     return render(request,'profile.html')

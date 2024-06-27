@@ -281,6 +281,14 @@
         "documentation": {}
     },
     {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
         "label": "receiver",
         "importPath": "django.dispatch",
         "description": "django.dispatch",
@@ -305,44 +313,11 @@
         "documentation": {}
     },
     {
-        "label": "PasswordResetView",
-        "importPath": "django.contrib.auth.views",
-        "description": "django.contrib.auth.views",
+        "label": "views",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
         "isExtraImport": true,
-        "detail": "django.contrib.auth.views",
-        "documentation": {}
-    },
-    {
-        "label": "PasswordResetDoneView",
-        "importPath": "django.contrib.auth.views",
-        "description": "django.contrib.auth.views",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.views",
-        "documentation": {}
-    },
-    {
-        "label": "PasswordResetConfirmView",
-        "importPath": "django.contrib.auth.views",
-        "description": "django.contrib.auth.views",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.views",
-        "documentation": {}
-    },
-    {
-        "label": "PasswordResetCompleteView",
-        "importPath": "django.contrib.auth.views",
-        "description": "django.contrib.auth.views",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.views",
-        "documentation": {}
-    },
-    {
-        "label": "pickle",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pickle",
-        "description": "pickle",
-        "detail": "pickle",
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -367,6 +342,15 @@
         "description": "django.contrib.auth",
         "isExtraImport": true,
         "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
         "documentation": {}
     },
     {
@@ -779,7 +763,7 @@
         "kind": 5,
         "importPath": "MyApp.user.urls",
         "description": "MyApp.user.urls",
-        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    #path('password_reset/', include('django_rest_passwordreset.urls', namespace='password_reset')),\n    path('password-reset/', PasswordResetView.as_view(success_url=reverse_lazy('user:password_reset_done')),name='password_reset'),\n    path('password-reset/done/', PasswordResetDoneView.as_view(),name='password_reset_done'),\n    path('password-reset-confirm/<uidb64>/<token>/', PasswordResetConfirmView.as_view(success_url=reverse_lazy('user:password_reset_complete')),name='password_reset_confirm'),",
+        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    #path('password_reset/', include('django_rest_passwordreset.urls', namespace='password_reset')),\n    path('password_reset/', auth_views.PasswordResetView.as_view(\n        template_name='registration/password_reset_form.html',\n        email_template_name='password_reset_email.html',",
         "detail": "MyApp.user.urls",
         "documentation": {}
     },
@@ -788,7 +772,7 @@
         "kind": 5,
         "importPath": "MyApp.user.urls",
         "description": "MyApp.user.urls",
-        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    #path('password_reset/', include('django_rest_passwordreset.urls', namespace='password_reset')),\n    path('password-reset/', PasswordResetView.as_view(success_url=reverse_lazy('user:password_reset_done')),name='password_reset'),\n    path('password-reset/done/', PasswordResetDoneView.as_view(),name='password_reset_done'),\n    path('password-reset-confirm/<uidb64>/<token>/', PasswordResetConfirmView.as_view(success_url=reverse_lazy('user:password_reset_complete')),name='password_reset_confirm'),\n    path('password-reset-complete/',PasswordResetCompleteView.as_view(),name='password_reset_complete'),",
+        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    #path('password_reset/', include('django_rest_passwordreset.urls', namespace='password_reset')),\n    path('password_reset/', auth_views.PasswordResetView.as_view(\n        template_name='registration/password_reset_form.html',\n        email_template_name='password_reset_email.html',\n        success_url=reverse_lazy('user:password_reset_done')",
         "detail": "MyApp.user.urls",
         "documentation": {}
     },
@@ -815,7 +799,7 @@
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def logoutViews(request):\n    logout(request)\n    return redirect('user:login')\ndef viewsProfile(request):\n    return render(request,'profile.html')",
+        "peekOfCode": "def logoutViews(request):\n    logout(request)\n    return redirect('user:login')\n@login_required\ndef viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'profile.html')",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
@@ -824,7 +808,7 @@
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def viewsProfile(request):\n    return render(request,'profile.html')",
+        "peekOfCode": "def viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'profile.html')",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
