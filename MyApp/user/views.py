@@ -1,8 +1,10 @@
-import pickle
-from django.shortcuts import render, redirect
+from .forms import UserUpdateForm
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
+from .models import Profile
 
 SCOPES = ['https://www.googleapis.com/auth/gmail.send']
 
@@ -21,10 +23,10 @@ def signup(request):
             login(request, user)
             return redirect('/')
         else:
-            return render(request, 'signup.html', {'form': form})
+            return render(request, 'user/signup.html', {'form': form})
     else:
         form = UserCreationForm()
-        return render(request, 'signup.html', {'form': form})
+        return render(request, 'user/signup.html', {'form': form})
     
 def loginViews(request):
     if request.user.is_authenticated:
@@ -39,11 +41,11 @@ def loginViews(request):
         else:
             error = 'Invalid username or password'
             form = AuthenticationForm()
-            return render(request, 'login.html', {'form': form, 'error': error})
+            return render(request, 'user/login.html', {'form': form, 'error': error})
     else:
         print("loi")
         form = AuthenticationForm()
-    return render(request, 'login.html', {'form': form})
+    return render(request, 'user/login.html', {'form': form})
 
 def logoutViews(request):
     logout(request)
@@ -51,18 +53,23 @@ def logoutViews(request):
 
 @login_required
 def viewsProfile(request):
+    profile = Profile.objects.get(user=request.user)
     if request.user.is_superuser:
         return redirect('/admin/')
-    return render(request,'profile.html')
+    return render(request,'user/profile.html',{'profile':profile})
 
 @login_required
-def update(request, user_id):
+def updateProfile(request, user_id):
     user = get_object_or_404(User, id=user_id)
     if request.method == 'POST':
         form = UserUpdateForm(request.POST, instance=user)
         if form.is_valid():
             form.save()
-            return redirect(reverse('user:profile'))
+            return redirect('user:profile')
     else:
         form = UserUpdateForm(instance=user)
-    return render(request, 'user/update.html', {'form': form})
+    return render(request, 'user/updateProfile.html', {'form': form})
+
+@login_required
+def updateImage(requests, user_id):
+    pass

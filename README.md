@@ -9,6 +9,8 @@ To run project must install:
 5. pip install requests
 6. pip install mysqlclient
 7. Install Xampp and then start apache and mysql on this
+8. pip install Pillow
+9. python.exe -m pip install --upgrade pip
 
 To run a web site:
 1. Open folder you want to save your project on VSCode
