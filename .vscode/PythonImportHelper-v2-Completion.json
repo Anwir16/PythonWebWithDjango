@@ -32,6 +32,22 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -120,6 +136,14 @@
         "documentation": {}
     },
     {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -129,6 +153,22 @@
     },
     {
         "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -225,6 +265,14 @@
         "documentation": {}
     },
     {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -238,6 +286,30 @@
         "description": "django",
         "isExtraImport": true,
         "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -354,6 +426,118 @@
         "documentation": {}
     },
     {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "hmac",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hmac",
+        "description": "hmac",
+        "detail": "hmac",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "urllib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib",
+        "description": "urllib",
+        "detail": "urllib",
+        "documentation": {}
+    },
+    {
+        "label": "urllib.parse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "urllib.request",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib.request",
+        "description": "urllib.request",
+        "detail": "urllib.request",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponseRedirect",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -457,7 +641,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ROOT_URLCONF = 'MyApp.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "peekOfCode": "ROOT_URLCONF = 'MyApp.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / 'MyApp'/'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -466,7 +650,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / 'MyApp'/'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -502,7 +686,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR /\"MyApp\"/ \"static\",\n]",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -511,7 +695,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR /\"MyApp\"/ \"static\",\n]\n# Default primary key field type",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -520,7 +704,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR /\"MyApp\"/ \"static\",\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -529,7 +713,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\nAUTHENTICATION_BACKENDS={",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR /\"MyApp\"/ \"static\",\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -538,7 +722,16 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "STATIC_URL = '/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}",
+        "peekOfCode": "STATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR /\"MyApp\"/ \"static\",\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\n# LOGIN GOOGLE CONFIG",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR /\"MyApp\"/ \"static\",\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\n# LOGIN GOOGLE CONFIG\nAUTHENTICATION_BACKENDS={",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -547,7 +740,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}\nLOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\n# LOGIN GOOGLE CONFIG\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}\nLOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -556,7 +749,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LOGIN_URL = 'user:login/'\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}\nLOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'",
+        "peekOfCode": "LOGIN_URL = 'user:login/'\n# LOGIN GOOGLE CONFIG\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}\nLOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -565,7 +758,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"",
+        "peekOfCode": "LOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -574,7 +767,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
+        "peekOfCode": "LOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -583,7 +776,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
+        "peekOfCode": "ACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -592,7 +785,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
+        "peekOfCode": "ACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -601,7 +794,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ACCOUNT_AUTHENTICATION_METHOD = 'email'\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
+        "peekOfCode": "ACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -610,7 +803,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -619,7 +812,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
+        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -628,7 +821,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -637,7 +830,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
+        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -646,7 +839,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
+        "peekOfCode": "EMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -655,7 +848,52 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "VNPAY_RETURN_URL",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "VNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "VNPAY_PAYMENT_URL",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "VNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "VNPAY_API_URL",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "VNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "VNPAY_TMN_CODE",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "VNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "VNPAY_HASH_SECRET_KEY",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "VNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -664,7 +902,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.urls",
         "description": "MyApp.MyApp.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('user/',include('user.urls')),\n    path('',include('shop.urls')),\n    path('accounts/',include('allauth.urls'))\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('user/',include('user.urls')),\n    path('',include('shop.urls')),\n    path('accounts/',include('allauth.urls')),\n    path('wallet/',include('wallet.urls')),\n]",
         "detail": "MyApp.MyApp.urls",
         "documentation": {}
     },
@@ -741,6 +979,15 @@
         "documentation": {}
     },
     {
+        "label": "UserUpdateForm",
+        "kind": 6,
+        "importPath": "MyApp.user.forms",
+        "description": "MyApp.user.forms",
+        "peekOfCode": "class UserUpdateForm(forms.ModelForm):\n    class Meta:\n        model = User\n        fields = ['username', 'email', 'first_name', 'last_name']",
+        "detail": "MyApp.user.forms",
+        "documentation": {}
+    },
+    {
         "label": "UserRegistration",
         "kind": 6,
         "importPath": "MyApp.user.models",
@@ -763,7 +1010,7 @@
         "kind": 5,
         "importPath": "MyApp.user.urls",
         "description": "MyApp.user.urls",
-        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    #path('password_reset/', include('django_rest_passwordreset.urls', namespace='password_reset')),\n    path('password_reset/', auth_views.PasswordResetView.as_view(\n        template_name='registration/password_reset_form.html',\n        email_template_name='password_reset_email.html',",
+        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('update/<int:user_id>/', views.update, name='update'),\n    path('password_reset/', auth_views.PasswordResetView.as_view(\n        template_name='registration/password_reset_form.html',\n        email_template_name='password_reset_email.html',",
         "detail": "MyApp.user.urls",
         "documentation": {}
     },
@@ -772,7 +1019,7 @@
         "kind": 5,
         "importPath": "MyApp.user.urls",
         "description": "MyApp.user.urls",
-        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    #path('password_reset/', include('django_rest_passwordreset.urls', namespace='password_reset')),\n    path('password_reset/', auth_views.PasswordResetView.as_view(\n        template_name='registration/password_reset_form.html',\n        email_template_name='password_reset_email.html',\n        success_url=reverse_lazy('user:password_reset_done')",
+        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('update/<int:user_id>/', views.update, name='update'),\n    path('password_reset/', auth_views.PasswordResetView.as_view(\n        template_name='registration/password_reset_form.html',\n        email_template_name='password_reset_email.html',\n        success_url=reverse_lazy('user:password_reset_done')",
         "detail": "MyApp.user.urls",
         "documentation": {}
     },
@@ -799,7 +1046,7 @@
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def logoutViews(request):\n    logout(request)\n    return redirect('user:login')\n@login_required\ndef viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'profile.html')",
+        "peekOfCode": "def logoutViews(request):\n    logout(request)\n    return redirect('user:login')\n@login_required\ndef viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'profile.html')\n@login_required\ndef update(request, user_id):",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
@@ -808,7 +1055,16 @@
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'profile.html')",
+        "peekOfCode": "def viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'profile.html')\n@login_required\ndef update(request, user_id):\n    user = get_object_or_404(User, id=user_id)\n    if request.method == 'POST':\n        form = UserUpdateForm(request.POST, instance=user)\n        if form.is_valid():",
+        "detail": "MyApp.user.views",
+        "documentation": {}
+    },
+    {
+        "label": "update",
+        "kind": 2,
+        "importPath": "MyApp.user.views",
+        "description": "MyApp.user.views",
+        "peekOfCode": "def update(request, user_id):\n    user = get_object_or_404(User, id=user_id)\n    if request.method == 'POST':\n        form = UserUpdateForm(request.POST, instance=user)\n        if form.is_valid():\n            form.save()\n            return redirect(reverse('user:profile'))\n    else:\n        form = UserUpdateForm(instance=user)\n    return render(request, 'user/update.html', {'form': form})",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
@@ -819,6 +1075,141 @@
         "description": "MyApp.user.views",
         "peekOfCode": "SCOPES = ['https://www.googleapis.com/auth/gmail.send']\n# Create your views here.\ndef signup(request):\n    if request.user.is_authenticated:\n        return redirect('/')\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            username = form.cleaned_data.get('username')",
         "detail": "MyApp.user.views",
+        "documentation": {}
+    },
+    {
+        "label": "WalletConfig",
+        "kind": 6,
+        "importPath": "MyApp.wallet.apps",
+        "description": "MyApp.wallet.apps",
+        "peekOfCode": "class WalletConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'wallet'",
+        "detail": "MyApp.wallet.apps",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentForm",
+        "kind": 6,
+        "importPath": "MyApp.wallet.models",
+        "description": "MyApp.wallet.models",
+        "peekOfCode": "class PaymentForm(forms.Form):\n    order_id = forms.CharField(max_length=250)\n    order_type = forms.CharField(max_length=20)\n    amount = forms.IntegerField()\n    order_desc = forms.CharField(max_length=100)\n    bank_code = forms.CharField(max_length=20, required=False)\n    language = forms.CharField(max_length=2)",
+        "detail": "MyApp.wallet.models",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "MyApp.wallet.urls",
+        "description": "MyApp.wallet.urls",
+        "peekOfCode": "app_name = 'wallet'\nurlpatterns = [\n    path('pay/', views.index, name='index'),\n    path('payment/', views.payment, name='payment'),\n    path('payment_ipn/', views.payment_ipn, name='payment_ipn'),\n    path('payment_return/', views.payment_return, name='payment_return'),\n    path('query/', views.query, name='query'),\n    path('refund/', views.refund, name='refund'),\n]",
+        "detail": "MyApp.wallet.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "MyApp.wallet.urls",
+        "description": "MyApp.wallet.urls",
+        "peekOfCode": "urlpatterns = [\n    path('pay/', views.index, name='index'),\n    path('payment/', views.payment, name='payment'),\n    path('payment_ipn/', views.payment_ipn, name='payment_ipn'),\n    path('payment_return/', views.payment_return, name='payment_return'),\n    path('query/', views.query, name='query'),\n    path('refund/', views.refund, name='refund'),\n]",
+        "detail": "MyApp.wallet.urls",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "MyApp.wallet.views",
+        "description": "MyApp.wallet.views",
+        "peekOfCode": "def index(request):\n    return render(request, \"payment/index.html\", {\"title\": \"Danh sách demo\"})\ndef hmacsha512(key, data):\n    byteKey = key.encode('utf-8')\n    byteData = data.encode('utf-8')\n    return hmac.new(byteKey, byteData, hashlib.sha512).hexdigest()\ndef payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)",
+        "detail": "MyApp.wallet.views",
+        "documentation": {}
+    },
+    {
+        "label": "hmacsha512",
+        "kind": 2,
+        "importPath": "MyApp.wallet.views",
+        "description": "MyApp.wallet.views",
+        "peekOfCode": "def hmacsha512(key, data):\n    byteKey = key.encode('utf-8')\n    byteData = data.encode('utf-8')\n    return hmac.new(byteKey, byteData, hashlib.sha512).hexdigest()\ndef payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            order_type = form.cleaned_data['order_type']",
+        "detail": "MyApp.wallet.views",
+        "documentation": {}
+    },
+    {
+        "label": "payment",
+        "kind": 2,
+        "importPath": "MyApp.wallet.views",
+        "description": "MyApp.wallet.views",
+        "peekOfCode": "def payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            order_type = form.cleaned_data['order_type']\n            order_id = form.cleaned_data['order_id']\n            amount = form.cleaned_data['amount']\n            order_desc = form.cleaned_data['order_desc']\n            bank_code = form.cleaned_data['bank_code']",
+        "detail": "MyApp.wallet.views",
+        "documentation": {}
+    },
+    {
+        "label": "payment_ipn",
+        "kind": 2,
+        "importPath": "MyApp.wallet.views",
+        "description": "MyApp.wallet.views",
+        "peekOfCode": "def payment_ipn(request):\n    inputData = request.GET\n    if inputData:\n        vnp = vnpay()\n        vnp.responseData = inputData.dict()\n        order_id = inputData['vnp_TxnRef']\n        amount = inputData['vnp_Amount']\n        order_desc = inputData['vnp_OrderInfo']\n        vnp_TransactionNo = inputData['vnp_TransactionNo']\n        vnp_ResponseCode = inputData['vnp_ResponseCode']",
+        "detail": "MyApp.wallet.views",
+        "documentation": {}
+    },
+    {
+        "label": "payment_return",
+        "kind": 2,
+        "importPath": "MyApp.wallet.views",
+        "description": "MyApp.wallet.views",
+        "peekOfCode": "def payment_return(request):\n    inputData = request.GET\n    if inputData:\n        vnp = vnpay()\n        vnp.responseData = inputData.dict()\n        order_id = inputData['vnp_TxnRef']\n        amount = int(inputData['vnp_Amount']) / 100\n        order_desc = inputData['vnp_OrderInfo']\n        vnp_TransactionNo = inputData['vnp_TransactionNo']\n        vnp_ResponseCode = inputData['vnp_ResponseCode']",
+        "detail": "MyApp.wallet.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_client_ip",
+        "kind": 2,
+        "importPath": "MyApp.wallet.views",
+        "description": "MyApp.wallet.views",
+        "peekOfCode": "def get_client_ip(request):\n    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')\n    if x_forwarded_for:\n        ip = x_forwarded_for.split(',')[0]\n    else:\n        ip = request.META.get('REMOTE_ADDR')\n    return ip\nn = random.randint(10**11, 10**12 - 1)\nn_str = str(n)\nwhile len(n_str) < 12:",
+        "detail": "MyApp.wallet.views",
+        "documentation": {}
+    },
+    {
+        "label": "query",
+        "kind": 2,
+        "importPath": "MyApp.wallet.views",
+        "description": "MyApp.wallet.views",
+        "peekOfCode": "def query(request):\n    if request.method == 'GET':\n        return render(request, \"payment/query.html\", {\"title\": \"Kiểm tra kết quả giao dịch\"})\n    url = settings.VNPAY_API_URL\n    secret_key = settings.VNPAY_HASH_SECRET_KEY\n    vnp_TmnCode = settings.VNPAY_TMN_CODE\n    vnp_Version = '2.1.0'\n    vnp_RequestId = n_str\n    vnp_Command = 'querydr'\n    vnp_TxnRef = request.POST['order_id']",
+        "detail": "MyApp.wallet.views",
+        "documentation": {}
+    },
+    {
+        "label": "refund",
+        "kind": 2,
+        "importPath": "MyApp.wallet.views",
+        "description": "MyApp.wallet.views",
+        "peekOfCode": "def refund(request):\n    if request.method == 'GET':\n        return render(request, \"payment/refund.html\", {\"title\": \"Hoàn tiền giao dịch\"})\n    url = settings.VNPAY_API_URL\n    secret_key = settings.VNPAY_HASH_SECRET_KEY\n    vnp_TmnCode = settings.VNPAY_TMN_CODE\n    vnp_RequestId = n_str\n    vnp_Version = '2.1.0'\n    vnp_Command = 'refund'\n    vnp_TransactionType = request.POST['TransactionType']",
+        "detail": "MyApp.wallet.views",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "MyApp.wallet.views",
+        "description": "MyApp.wallet.views",
+        "peekOfCode": "n = random.randint(10**11, 10**12 - 1)\nn_str = str(n)\nwhile len(n_str) < 12:\n    n_str = '0' + n_str\ndef query(request):\n    if request.method == 'GET':\n        return render(request, \"payment/query.html\", {\"title\": \"Kiểm tra kết quả giao dịch\"})\n    url = settings.VNPAY_API_URL\n    secret_key = settings.VNPAY_HASH_SECRET_KEY\n    vnp_TmnCode = settings.VNPAY_TMN_CODE",
+        "detail": "MyApp.wallet.views",
+        "documentation": {}
+    },
+    {
+        "label": "n_str",
+        "kind": 5,
+        "importPath": "MyApp.wallet.views",
+        "description": "MyApp.wallet.views",
+        "peekOfCode": "n_str = str(n)\nwhile len(n_str) < 12:\n    n_str = '0' + n_str\ndef query(request):\n    if request.method == 'GET':\n        return render(request, \"payment/query.html\", {\"title\": \"Kiểm tra kết quả giao dịch\"})\n    url = settings.VNPAY_API_URL\n    secret_key = settings.VNPAY_HASH_SECRET_KEY\n    vnp_TmnCode = settings.VNPAY_TMN_CODE\n    vnp_Version = '2.1.0'",
+        "detail": "MyApp.wallet.views",
+        "documentation": {}
+    },
+    {
+        "label": "vnpay",
+        "kind": 6,
+        "importPath": "MyApp.wallet.vnpay",
+        "description": "MyApp.wallet.vnpay",
+        "peekOfCode": "class vnpay:\n    requestData = {}\n    responseData = {}\n    def get_payment_url(self, vnpay_payment_url, secret_key):\n        inputData = sorted(self.requestData.items())\n        queryString = ''\n        hasData = ''\n        seq = 0\n        for key, val in inputData:\n            if seq == 1:",
+        "detail": "MyApp.wallet.vnpay",
         "documentation": {}
     },
     {

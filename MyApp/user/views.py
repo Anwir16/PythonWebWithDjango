@@ -54,3 +54,15 @@ def viewsProfile(request):
     if request.user.is_superuser:
         return redirect('/admin/')
     return render(request,'profile.html')
+
+@login_required
+def update(request, user_id):
+    user = get_object_or_404(User, id=user_id)
+    if request.method == 'POST':
+        form = UserUpdateForm(request.POST, instance=user)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('user:profile'))
+    else:
+        form = UserUpdateForm(instance=user)
+    return render(request, 'user/update.html', {'form': form})
