@@ -7,12 +7,7 @@
 {% block main-content %}
 <div class="row">
     <div class="col-md-4 avatar">
-        <div class="img-content">
-            <img src="{{profile.image}}.png" alt="Avatar" srcset="" />
-        </div>
-        <div>
-            <a href="{% url 'user:updateImage' user.id %}" class="btn btn-success btn-avatar">Edit</a>
-        </div>
+        <img src="{{profile.image.url}}" alt="Avatar" srcset="" />
     </div>
     <div class="col-md-8 content">
     <div class="title-content">
@@ -52,7 +47,7 @@
     <hr>
     <div class="btn-content">
         <a href="{% url 'user:updateProfile' user.id %}" class="btn btn-success">Edit</a>
-        <a href="#" class="btn btn-danger">Change password</a>
+        <a href="{% url 'user:password_change' %}" class="btn btn-danger">Change password</a>
     </div>
     </div>
 </div>

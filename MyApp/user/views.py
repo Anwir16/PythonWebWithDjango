@@ -1,4 +1,4 @@
-from .forms import UserUpdateForm
+from .forms import UserUpdateForm, UpdateProfileForm
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import authenticate, login, logout
@@ -13,20 +13,20 @@ def signup(request):
     if request.user.is_authenticated:
         return redirect('/')
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            username = form.cleaned_data.get('username')
+        u_form = UserCreationForm(request.POST)
+        if u_form.is_valid():
+            u_form.save()
+            username = u_form.cleaned_data.get('username')
             print(f'username: {username}')
-            password = form.cleaned_data.get('password1')
+            password = u_form.cleaned_data.get('password1')
             user = authenticate(username=username, password=password)
             login(request, user)
             return redirect('/')
         else:
-            return render(request, 'user/signup.html', {'form': form})
+            return render(request, 'user/signup.html', {'u_form': u_form})
     else:
-        form = UserCreationForm()
-        return render(request, 'user/signup.html', {'form': form})
+        u_form = UserCreationForm()
+        return render(request, 'user/signup.html', {'u_form': u_form})
     
 def loginViews(request):
     if request.user.is_authenticated:
@@ -40,12 +40,12 @@ def loginViews(request):
             return redirect('/')
         else:
             error = 'Invalid username or password'
-            form = AuthenticationForm()
-            return render(request, 'user/login.html', {'form': form, 'error': error})
+            u_form = AuthenticationForm()
+            return render(request, 'user/login.html', {'u_form': u_form, 'error': error})
     else:
         print("loi")
-        form = AuthenticationForm()
-    return render(request, 'user/login.html', {'form': form})
+        u_form = AuthenticationForm()
+    return render(request, 'user/login.html', {'u_form': u_form})
 
 def logoutViews(request):
     logout(request)
@@ -61,15 +61,15 @@ def viewsProfile(request):
 @login_required
 def updateProfile(request, user_id):
     user = get_object_or_404(User, id=user_id)
+    profile = Profile.objects.get(user=request.user)
     if request.method == 'POST':
-        form = UserUpdateForm(request.POST, instance=user)
-        if form.is_valid():
-            form.save()
+        u_form = UserUpdateForm(request.POST, instance=user)
+        p_form = UpdateProfileForm(request.POST, request.FILES, instance=user.profile)
+        if u_form.is_valid() and p_form.is_valid():
+            u_form.save()
+            p_form.save()
             return redirect('user:profile')
     else:
-        form = UserUpdateForm(instance=user)
-    return render(request, 'user/updateProfile.html', {'form': form})
-
-@login_required
-def updateImage(requests, user_id):
-    pass
+        u_form = UserUpdateForm(instance=user)
+        p_form = UpdateProfileForm(instance=user.profile)
+    return render(request, 'user/updateProfile.html', {'u_form': u_form, 'p_form': p_form, 'profile' : profile,'choices' : Profile.CHOICES })

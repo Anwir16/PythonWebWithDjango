@@ -2,26 +2,17 @@
 .avatar {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.img-content {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img-content img {
+.avatar img {
     margin-top: 20px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-}
-
-.btn-avatar {
-    display: block;
-    margin: 10px auto;
-    width: 50px;
 }
 
 .content {
