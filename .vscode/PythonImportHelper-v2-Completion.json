@@ -56,6 +56,95 @@
         "documentation": {}
     },
     {
+        "label": "django.db",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db",
+        "description": "django.db",
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -145,6 +234,30 @@
     },
     {
         "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -377,6 +490,14 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
         "label": "static",
         "importPath": "django.conf.urls.static",
         "description": "django.conf.urls.static",
@@ -399,6 +520,39 @@
         "importPath": "django.db.models.deletion",
         "description": "django.db.models.deletion",
         "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -575,14 +729,6 @@
         "importPath": "requests",
         "description": "requests",
         "detail": "requests",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -1096,6 +1242,51 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.user.migrations.0008_alter_profile_image",
+        "description": "MyApp.user.migrations.0008_alter_profile_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0007_alter_profile_image'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='profile',\n            name='image',\n            field=models.ImageField(default='default.png', upload_to='images/'),\n        ),",
+        "detail": "MyApp.user.migrations.0008_alter_profile_image",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.user.migrations.0009_profile_point",
+        "description": "MyApp.user.migrations.0009_profile_point",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0008_alter_profile_image'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='profile',\n            name='point',\n            field=models.IntegerField(default=60),\n        ),",
+        "detail": "MyApp.user.migrations.0009_profile_point",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.user.migrations.0010_alter_profile_birthday",
+        "description": "MyApp.user.migrations.0010_alter_profile_birthday",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0009_profile_point'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='profile',\n            name='birthday',\n            field=models.DateField(default=datetime.date(2000, 1, 1)),\n        ),",
+        "detail": "MyApp.user.migrations.0010_alter_profile_birthday",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.user.migrations.0011_alter_profile_image",
+        "description": "MyApp.user.migrations.0011_alter_profile_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0010_alter_profile_birthday'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='profile',\n            name='image',\n            field=models.ImageField(default='static/user/img/default.png', upload_to='images/'),\n        ),",
+        "detail": "MyApp.user.migrations.0011_alter_profile_image",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.user.migrations.0012_alter_profile_image",
+        "description": "MyApp.user.migrations.0012_alter_profile_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0011_alter_profile_image'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='profile',\n            name='image',\n            field=models.ImageField(default='images/default.png', upload_to='images/'),\n        ),",
+        "detail": "MyApp.user.migrations.0012_alter_profile_image",
+        "documentation": {}
+    },
+    {
         "label": "ProfileInline",
         "kind": 6,
         "importPath": "MyApp.user.admin",
@@ -1145,7 +1336,7 @@
         "kind": 6,
         "importPath": "MyApp.user.models",
         "description": "MyApp.user.models",
-        "peekOfCode": "class Profile(models.Model):\n    CHOICES = [\n        ('Male', 'Male'),\n        ('Female', 'Female'),\n        ('Other', 'Other'),\n    ]\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    image = models.ImageField(default='default.png', upload_to='images/')\n    gender = models.CharField(max_length=6, choices=CHOICES, default='Other')\n    birthday = models.DateField()",
+        "peekOfCode": "class Profile(models.Model):\n    CHOICES = [\n        ('Male', 'Male'),\n        ('Female', 'Female'),\n        ('Other', 'Other'),\n    ]\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    image = models.ImageField(default='images/default.png', upload_to='images/')\n    gender = models.CharField(max_length=6, choices=CHOICES, default='Other')\n    birthday = models.DateField(default=date(2000, 1, 1))",
         "detail": "MyApp.user.models",
         "documentation": {}
     },
@@ -1172,7 +1363,7 @@
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def signup(request):\n    if request.user.is_authenticated:\n        return redirect('/')\n    if request.method == 'POST':\n        u_form = UserCreationForm(request.POST)\n        if u_form.is_valid():\n            u_form.save()\n            username = u_form.cleaned_data.get('username')\n            print(f'username: {username}')\n            password = u_form.cleaned_data.get('password1')",
+        "peekOfCode": "def signup(request):\n    if request.user.is_authenticated:\n        return redirect('/')\n    if request.method == 'POST':\n        u_form = UserCreationForm(request.POST)\n        if u_form.is_valid():\n            user = u_form.save()\n            Profile.objects.create(user=user)\n            username = u_form.cleaned_data.get('username')\n            print(f'username: {username}')",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
@@ -1217,8 +1408,17 @@
         "kind": 5,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "SCOPES = ['https://www.googleapis.com/auth/gmail.send']\n# Create your views here.\ndef signup(request):\n    if request.user.is_authenticated:\n        return redirect('/')\n    if request.method == 'POST':\n        u_form = UserCreationForm(request.POST)\n        if u_form.is_valid():\n            u_form.save()\n            username = u_form.cleaned_data.get('username')",
+        "peekOfCode": "SCOPES = ['https://www.googleapis.com/auth/gmail.send']\n# Create your views here.\ndef signup(request):\n    if request.user.is_authenticated:\n        return redirect('/')\n    if request.method == 'POST':\n        u_form = UserCreationForm(request.POST)\n        if u_form.is_valid():\n            user = u_form.save()\n            Profile.objects.create(user=user)",
         "detail": "MyApp.user.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.wallet.migrations.0001_initial",
+        "description": "MyApp.wallet.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='PaymentHistory',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "MyApp.wallet.migrations.0001_initial",
         "documentation": {}
     },
     {
@@ -1235,7 +1435,16 @@
         "kind": 6,
         "importPath": "MyApp.wallet.models",
         "description": "MyApp.wallet.models",
-        "peekOfCode": "class PaymentForm(forms.Form):\n    order_id = forms.CharField(max_length=250)\n    order_type = forms.CharField(max_length=20)\n    amount = forms.IntegerField()\n    order_desc = forms.CharField(max_length=100)\n    bank_code = forms.CharField(max_length=20, required=False)\n    language = forms.CharField(max_length=2)",
+        "peekOfCode": "class PaymentForm(forms.Form):\n    order_id = forms.CharField(max_length=250)\n    order_type = forms.CharField(max_length=20)\n    amount = forms.IntegerField()\n    order_desc = forms.CharField(max_length=100)\n    bank_code = forms.CharField(max_length=20, required=False)\n    language = forms.CharField(max_length=2)\nclass PaymentHistory(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    order_id = models.CharField(max_length=8)",
+        "detail": "MyApp.wallet.models",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentHistory",
+        "kind": 6,
+        "importPath": "MyApp.wallet.models",
+        "description": "MyApp.wallet.models",
+        "peekOfCode": "class PaymentHistory(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    order_id = models.CharField(max_length=8)\n    order_type = models.CharField(max_length=20)\n    amount = models.IntegerField()\n    order_desc = models.CharField(max_length=100)\n    order_date = models.DateTimeField()\n    class Meta:\n        verbose_name_plural = \"Payment Histories\"",
         "detail": "MyApp.wallet.models",
         "documentation": {}
     },
