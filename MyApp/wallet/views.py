@@ -32,7 +32,7 @@ def payment(request):
         # Process input data and build url payment
         form = PaymentForm(request.POST)
         if form.is_valid():
-            order_type = form.cleaned_data['order_type']
+            order_date = form.cleaned_data['order_date']
             order_id = form.cleaned_data['order_id']
             amount = form.cleaned_data['amount']
             order_desc = form.cleaned_data['order_desc']

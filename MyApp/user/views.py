@@ -54,10 +54,9 @@ def logoutViews(request):
 
 @login_required
 def viewsProfile(request):
-    profile = Profile.objects.get(user=request.user)
     if request.user.is_superuser:
         return redirect('/admin/')
-    return render(request,'user/profile.html',{'profile':profile})
+    return render(request,'user/profile.html')
 
 @login_required
 def updateProfile(request, user_id):

@@ -458,6 +458,14 @@
         "documentation": {}
     },
     {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
         "label": "Path",
         "importPath": "pathlib",
         "description": "pathlib",
@@ -807,6 +815,15 @@
         "description": "MyApp.MyApp.asgi",
         "peekOfCode": "application = get_asgi_application()",
         "detail": "MyApp.MyApp.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "profile",
+        "kind": 2,
+        "importPath": "MyApp.MyApp.context_processors",
+        "description": "MyApp.MyApp.context_processors",
+        "peekOfCode": "def profile(request):\n    data = Profile.objects.get(user=request.user)\n    print(f'data: {data}')\n    return {'profile' : data}",
+        "detail": "MyApp.MyApp.context_processors",
         "documentation": {}
     },
     {
@@ -1381,7 +1398,7 @@
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def logoutViews(request):\n    logout(request)\n    return redirect('user:login')\n@login_required\ndef viewsProfile(request):\n    profile = Profile.objects.get(user=request.user)\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html',{'profile':profile})\n@login_required",
+        "peekOfCode": "def logoutViews(request):\n    logout(request)\n    return redirect('user:login')\n@login_required\ndef viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html')\n@login_required\ndef updateProfile(request, user_id):",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
@@ -1390,7 +1407,7 @@
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def viewsProfile(request):\n    profile = Profile.objects.get(user=request.user)\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html',{'profile':profile})\n@login_required\ndef updateProfile(request, user_id):\n    user = get_object_or_404(User, id=user_id)\n    profile = Profile.objects.get(user=request.user)\n    if request.method == 'POST':",
+        "peekOfCode": "def viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html')\n@login_required\ndef updateProfile(request, user_id):\n    user = get_object_or_404(User, id=user_id)\n    profile = Profile.objects.get(user=request.user)\n    if request.method == 'POST':\n        u_form = UserUpdateForm(request.POST, instance=user)",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
@@ -1435,7 +1452,7 @@
         "kind": 6,
         "importPath": "MyApp.wallet.models",
         "description": "MyApp.wallet.models",
-        "peekOfCode": "class PaymentForm(forms.Form):\n    order_id = forms.CharField(max_length=250)\n    order_type = forms.CharField(max_length=20)\n    amount = forms.IntegerField()\n    order_desc = forms.CharField(max_length=100)\n    bank_code = forms.CharField(max_length=20, required=False)\n    language = forms.CharField(max_length=2)\nclass PaymentHistory(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    order_id = models.CharField(max_length=8)",
+        "peekOfCode": "class PaymentForm(forms.Form):\n    order_id = forms.CharField(max_length=250)\n    order_date = models.DateTimeField()\n    amount = forms.IntegerField()\n    order_desc = forms.CharField(max_length=100)\n    bank_code = forms.CharField(max_length=20, required=False)\n    language = forms.CharField(max_length=2)\nclass PaymentHistory(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    order_id = models.CharField(max_length=8)",
         "detail": "MyApp.wallet.models",
         "documentation": {}
     },
@@ -1480,7 +1497,7 @@
         "kind": 2,
         "importPath": "MyApp.wallet.views",
         "description": "MyApp.wallet.views",
-        "peekOfCode": "def hmacsha512(key, data):\n    byteKey = key.encode('utf-8')\n    byteData = data.encode('utf-8')\n    return hmac.new(byteKey, byteData, hashlib.sha512).hexdigest()\ndef payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            order_type = form.cleaned_data['order_type']",
+        "peekOfCode": "def hmacsha512(key, data):\n    byteKey = key.encode('utf-8')\n    byteData = data.encode('utf-8')\n    return hmac.new(byteKey, byteData, hashlib.sha512).hexdigest()\ndef payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            order_date = form.cleaned_data['order_date']",
         "detail": "MyApp.wallet.views",
         "documentation": {}
     },
@@ -1489,7 +1506,7 @@
         "kind": 2,
         "importPath": "MyApp.wallet.views",
         "description": "MyApp.wallet.views",
-        "peekOfCode": "def payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            order_type = form.cleaned_data['order_type']\n            order_id = form.cleaned_data['order_id']\n            amount = form.cleaned_data['amount']\n            order_desc = form.cleaned_data['order_desc']\n            bank_code = form.cleaned_data['bank_code']",
+        "peekOfCode": "def payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            order_date = form.cleaned_data['order_date']\n            order_id = form.cleaned_data['order_id']\n            amount = form.cleaned_data['amount']\n            order_desc = form.cleaned_data['order_desc']\n            bank_code = form.cleaned_data['bank_code']",
         "detail": "MyApp.wallet.views",
         "documentation": {}
     },
