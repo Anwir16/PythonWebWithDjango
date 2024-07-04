@@ -289,6 +289,94 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -441,6 +529,14 @@
         "documentation": {}
     },
     {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -466,11 +562,27 @@
         "documentation": {}
     },
     {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
         "label": "Path",
         "importPath": "pathlib",
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
         "documentation": {}
     },
     {
@@ -668,6 +780,38 @@
         "documentation": {}
     },
     {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponseRedirect",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
         "label": "hashlib",
         "kind": 6,
         "isExtraImport": true,
@@ -737,30 +881,6 @@
         "importPath": "requests",
         "description": "requests",
         "detail": "requests",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponseRedirect",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "JsonResponse",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
         "documentation": {}
     },
     {
@@ -1074,7 +1194,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config",
+        "peekOfCode": "ACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1083,7 +1203,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1092,7 +1212,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config",
+        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1101,7 +1221,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1110,7 +1230,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
+        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1119,7 +1239,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
+        "peekOfCode": "EMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1128,7 +1248,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = \"xzkkqgqlimkrblkz\"\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1137,7 +1257,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "VNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
+        "peekOfCode": "VNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1362,7 +1482,7 @@
         "kind": 5,
         "importPath": "MyApp.user.urls",
         "description": "MyApp.user.urls",
-        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('updateProfile/<int:user_id>/', views.updateProfile, name='updateProfile'),\n    #change password\n    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='user/changePassword.html',success_url = reverse_lazy(\"user:password_change_done\")), name='password_change'),\n    path('password_change_done/', auth_views.PasswordChangeDoneView.as_view(template_name='user/passwordChangeDone.html'), name='password_change_done'),",
+        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('updateProfile/', views.updateProfile, name='updateProfile'),\n    #change password\n    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='user/changePassword.html',success_url = reverse_lazy(\"user:password_change_done\")), name='password_change'),\n    path('password_change_done/', auth_views.PasswordChangeDoneView.as_view(template_name='user/passwordChangeDone.html'), name='password_change_done'),",
         "detail": "MyApp.user.urls",
         "documentation": {}
     },
@@ -1371,7 +1491,7 @@
         "kind": 5,
         "importPath": "MyApp.user.urls",
         "description": "MyApp.user.urls",
-        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('updateProfile/<int:user_id>/', views.updateProfile, name='updateProfile'),\n    #change password\n    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='user/changePassword.html',success_url = reverse_lazy(\"user:password_change_done\")), name='password_change'),\n    path('password_change_done/', auth_views.PasswordChangeDoneView.as_view(template_name='user/passwordChangeDone.html'), name='password_change_done'),\n    #using email to reset password",
+        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('updateProfile/', views.updateProfile, name='updateProfile'),\n    #change password\n    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='user/changePassword.html',success_url = reverse_lazy(\"user:password_change_done\")), name='password_change'),\n    path('password_change_done/', auth_views.PasswordChangeDoneView.as_view(template_name='user/passwordChangeDone.html'), name='password_change_done'),\n    #using email to reset password",
         "detail": "MyApp.user.urls",
         "documentation": {}
     },
@@ -1380,7 +1500,7 @@
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def signup(request):\n    if request.user.is_authenticated:\n        return redirect('/')\n    if request.method == 'POST':\n        u_form = UserCreationForm(request.POST)\n        if u_form.is_valid():\n            user = u_form.save()\n            Profile.objects.create(user=user)\n            username = u_form.cleaned_data.get('username')\n            print(f'username: {username}')",
+        "peekOfCode": "def signup(request):\n    if request.user.is_authenticated:\n        return redirect('/')\n    if request.method == 'POST':\n        u_form = UserCreationForm(request.POST)\n        if u_form.is_valid():\n            user = u_form.save()\n            Profile.objects.create(user=user)\n            username = u_form.cleaned_data.get('username')\n            password = u_form.cleaned_data.get('password1')",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
@@ -1398,7 +1518,7 @@
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def logoutViews(request):\n    logout(request)\n    return redirect('user:login')\n@login_required\ndef viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html')\n@login_required\ndef updateProfile(request, user_id):",
+        "peekOfCode": "def logoutViews(request):\n    logout(request)\n    return redirect('user:login')\n@login_required\ndef viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html')\n@login_required\ndef updateProfile(request):",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
@@ -1407,7 +1527,7 @@
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html')\n@login_required\ndef updateProfile(request, user_id):\n    user = get_object_or_404(User, id=user_id)\n    profile = Profile.objects.get(user=request.user)\n    if request.method == 'POST':\n        u_form = UserUpdateForm(request.POST, instance=user)",
+        "peekOfCode": "def viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html')\n@login_required\ndef updateProfile(request):\n    user = request.user\n    profile = get_object_or_404(Profile, user=user)\n    if request.method == 'POST':\n        u_form = UserUpdateForm(request.POST, instance=user)",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
@@ -1416,7 +1536,7 @@
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def updateProfile(request, user_id):\n    user = get_object_or_404(User, id=user_id)\n    profile = Profile.objects.get(user=request.user)\n    if request.method == 'POST':\n        u_form = UserUpdateForm(request.POST, instance=user)\n        p_form = UpdateProfileForm(request.POST, request.FILES, instance=user.profile)\n        if u_form.is_valid() and p_form.is_valid():\n            u_form.save()\n            p_form.save()\n            return redirect('user:profile')",
+        "peekOfCode": "def updateProfile(request):\n    user = request.user\n    profile = get_object_or_404(Profile, user=user)\n    if request.method == 'POST':\n        u_form = UserUpdateForm(request.POST, instance=user)\n        p_form = UpdateProfileForm(request.POST, request.FILES, instance=profile)\n        if u_form.is_valid() and p_form.is_valid():\n            u_form.save()\n            p_form.save()\n            return redirect('user:profile')",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
@@ -1439,6 +1559,60 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.wallet.migrations.0002_combopoint_paymenthistory_combo_point",
+        "description": "MyApp.wallet.migrations.0002_combopoint_paymenthistory_combo_point",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('wallet', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ComboPoint',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(blank=True, default='point', max_length=60, null=True)),",
+        "detail": "MyApp.wallet.migrations.0002_combopoint_paymenthistory_combo_point",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.wallet.migrations.0003_alter_combopoint_name",
+        "description": "MyApp.wallet.migrations.0003_alter_combopoint_name",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('wallet', '0002_combopoint_paymenthistory_combo_point'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='combopoint',\n            name='name',\n            field=models.CharField(default='point', max_length=60),\n        ),",
+        "detail": "MyApp.wallet.migrations.0003_alter_combopoint_name",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.wallet.migrations.0004_combopoint_price",
+        "description": "MyApp.wallet.migrations.0004_combopoint_price",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('wallet', '0003_alter_combopoint_name'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='combopoint',\n            name='price',\n            field=models.IntegerField(default=1),\n            preserve_default=False,",
+        "detail": "MyApp.wallet.migrations.0004_combopoint_price",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.wallet.migrations.0005_combopoint_point",
+        "description": "MyApp.wallet.migrations.0005_combopoint_point",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('wallet', '0004_combopoint_price'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='combopoint',\n            name='point',\n            field=models.IntegerField(default=1),\n            preserve_default=False,",
+        "detail": "MyApp.wallet.migrations.0005_combopoint_point",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.wallet.migrations.0006_remove_paymenthistory_order_type",
+        "description": "MyApp.wallet.migrations.0006_remove_paymenthistory_order_type",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('wallet', '0005_combopoint_point'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='paymenthistory',\n            name='order_type',\n        ),\n    ]",
+        "detail": "MyApp.wallet.migrations.0006_remove_paymenthistory_order_type",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.wallet.migrations.0007_alter_paymenthistory_combo_point_and_more",
+        "description": "MyApp.wallet.migrations.0007_alter_paymenthistory_combo_point_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('wallet', '0006_remove_paymenthistory_order_type'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='paymenthistory',\n            name='combo_point',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='wallet.combopoint'),",
+        "detail": "MyApp.wallet.migrations.0007_alter_paymenthistory_combo_point_and_more",
+        "documentation": {}
+    },
+    {
         "label": "WalletConfig",
         "kind": 6,
         "importPath": "MyApp.wallet.apps",
@@ -1452,7 +1626,16 @@
         "kind": 6,
         "importPath": "MyApp.wallet.models",
         "description": "MyApp.wallet.models",
-        "peekOfCode": "class PaymentForm(forms.Form):\n    order_id = forms.CharField(max_length=250)\n    order_date = models.DateTimeField()\n    amount = forms.IntegerField()\n    order_desc = forms.CharField(max_length=100)\n    bank_code = forms.CharField(max_length=20, required=False)\n    language = forms.CharField(max_length=2)\nclass PaymentHistory(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    order_id = models.CharField(max_length=8)",
+        "peekOfCode": "class PaymentForm(forms.Form):\n    order_id = forms.CharField(max_length=250)\n    amount = forms.IntegerField()\n    order_desc = forms.CharField(max_length=100)\n    bank_code = forms.CharField(max_length=20, required=False)\n    language = forms.CharField(max_length=2)\n    point = forms.IntegerField()\n    combo_point = forms.IntegerField()\nclass ComboPoint(models.Model):\n    name = models.CharField(max_length=60, blank=False, null=False, default='point')",
+        "detail": "MyApp.wallet.models",
+        "documentation": {}
+    },
+    {
+        "label": "ComboPoint",
+        "kind": 6,
+        "importPath": "MyApp.wallet.models",
+        "description": "MyApp.wallet.models",
+        "peekOfCode": "class ComboPoint(models.Model):\n    name = models.CharField(max_length=60, blank=False, null=False, default='point')\n    desc = models.CharField(max_length=500, blank= True, null=True, default='point')\n    image = models.ImageField(default='points/default.png', upload_to='points/')\n    price = models.IntegerField()\n    point = models.IntegerField()\nclass PaymentHistory(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE)\n    combo_point= models.ForeignKey(ComboPoint, on_delete=models.CASCADE)  \n    order_id = models.CharField(max_length=8)",
         "detail": "MyApp.wallet.models",
         "documentation": {}
     },
@@ -1461,7 +1644,7 @@
         "kind": 6,
         "importPath": "MyApp.wallet.models",
         "description": "MyApp.wallet.models",
-        "peekOfCode": "class PaymentHistory(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    order_id = models.CharField(max_length=8)\n    order_type = models.CharField(max_length=20)\n    amount = models.IntegerField()\n    order_desc = models.CharField(max_length=100)\n    order_date = models.DateTimeField()\n    class Meta:\n        verbose_name_plural = \"Payment Histories\"",
+        "peekOfCode": "class PaymentHistory(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE)\n    combo_point= models.ForeignKey(ComboPoint, on_delete=models.CASCADE)  \n    order_id = models.CharField(max_length=8)\n    amount = models.IntegerField()\n    order_desc = models.CharField(max_length=100)\n    order_date = models.DateTimeField()\n    class Meta:\n        verbose_name_plural = \"Payment Histories\"",
         "detail": "MyApp.wallet.models",
         "documentation": {}
     },
@@ -1470,7 +1653,7 @@
         "kind": 5,
         "importPath": "MyApp.wallet.urls",
         "description": "MyApp.wallet.urls",
-        "peekOfCode": "app_name = 'wallet'\nurlpatterns = [\n    path('pay/', views.index, name='index'),\n    path('payment/', views.payment, name='payment'),\n    path('payment_ipn/', views.payment_ipn, name='payment_ipn'),\n    path('payment_return/', views.payment_return, name='payment_return'),\n    path('query/', views.query, name='query'),\n    path('refund/', views.refund, name='refund'),\n]",
+        "peekOfCode": "app_name = 'wallet'\nurlpatterns = [\n    path('payment/', views.payment, name='payment'),\n    path('payment_ipn/', views.payment_ipn, name='payment_ipn'),\n    path('payment_return/', views.payment_return, name='payment_return'),\n    path('query/', views.query, name='query'),\n    path('refund/', views.refund, name='refund'),\n    path('buy/',views.view_buy_point, name='buy_point'),\n    path('history/', views.payment_history, name='payment_history'),\n]",
         "detail": "MyApp.wallet.urls",
         "documentation": {}
     },
@@ -1479,17 +1662,8 @@
         "kind": 5,
         "importPath": "MyApp.wallet.urls",
         "description": "MyApp.wallet.urls",
-        "peekOfCode": "urlpatterns = [\n    path('pay/', views.index, name='index'),\n    path('payment/', views.payment, name='payment'),\n    path('payment_ipn/', views.payment_ipn, name='payment_ipn'),\n    path('payment_return/', views.payment_return, name='payment_return'),\n    path('query/', views.query, name='query'),\n    path('refund/', views.refund, name='refund'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('payment/', views.payment, name='payment'),\n    path('payment_ipn/', views.payment_ipn, name='payment_ipn'),\n    path('payment_return/', views.payment_return, name='payment_return'),\n    path('query/', views.query, name='query'),\n    path('refund/', views.refund, name='refund'),\n    path('buy/',views.view_buy_point, name='buy_point'),\n    path('history/', views.payment_history, name='payment_history'),\n]",
         "detail": "MyApp.wallet.urls",
-        "documentation": {}
-    },
-    {
-        "label": "index",
-        "kind": 2,
-        "importPath": "MyApp.wallet.views",
-        "description": "MyApp.wallet.views",
-        "peekOfCode": "def index(request):\n    return render(request, \"payment/index.html\", {\"title\": \"Danh sách demo\"})\ndef hmacsha512(key, data):\n    byteKey = key.encode('utf-8')\n    byteData = data.encode('utf-8')\n    return hmac.new(byteKey, byteData, hashlib.sha512).hexdigest()\ndef payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)",
-        "detail": "MyApp.wallet.views",
         "documentation": {}
     },
     {
@@ -1497,7 +1671,16 @@
         "kind": 2,
         "importPath": "MyApp.wallet.views",
         "description": "MyApp.wallet.views",
-        "peekOfCode": "def hmacsha512(key, data):\n    byteKey = key.encode('utf-8')\n    byteData = data.encode('utf-8')\n    return hmac.new(byteKey, byteData, hashlib.sha512).hexdigest()\ndef payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            order_date = form.cleaned_data['order_date']",
+        "peekOfCode": "def hmacsha512(key, data):\n    byteKey = key.encode('utf-8')\n    byteData = data.encode('utf-8')\n    return hmac.new(byteKey, byteData, hashlib.sha512).hexdigest()\n@login_required\ndef view_buy_point(request):\n    combo_point = ComboPoint.objects.all()\n    return render(request, 'wallet/buy_point.html', {'combo_point' : combo_point})\n@login_required\ndef payment(request):",
+        "detail": "MyApp.wallet.views",
+        "documentation": {}
+    },
+    {
+        "label": "view_buy_point",
+        "kind": 2,
+        "importPath": "MyApp.wallet.views",
+        "description": "MyApp.wallet.views",
+        "peekOfCode": "def view_buy_point(request):\n    combo_point = ComboPoint.objects.all()\n    return render(request, 'wallet/buy_point.html', {'combo_point' : combo_point})\n@login_required\ndef payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            _order_id = form.cleaned_data['order_id']",
         "detail": "MyApp.wallet.views",
         "documentation": {}
     },
@@ -1506,7 +1689,16 @@
         "kind": 2,
         "importPath": "MyApp.wallet.views",
         "description": "MyApp.wallet.views",
-        "peekOfCode": "def payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            order_date = form.cleaned_data['order_date']\n            order_id = form.cleaned_data['order_id']\n            amount = form.cleaned_data['amount']\n            order_desc = form.cleaned_data['order_desc']\n            bank_code = form.cleaned_data['bank_code']",
+        "peekOfCode": "def payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            _order_id = form.cleaned_data['order_id']\n            _amount = form.cleaned_data['amount']\n            _order_desc = form.cleaned_data['order_desc']\n            bank_code = \"\"\n            language = form.cleaned_data['language']",
+        "detail": "MyApp.wallet.views",
+        "documentation": {}
+    },
+    {
+        "label": "payment_history",
+        "kind": 2,
+        "importPath": "MyApp.wallet.views",
+        "description": "MyApp.wallet.views",
+        "peekOfCode": "def payment_history(request):\n    history = PaymentHistory.objects.filter(user=request.user)\n    print(f'history {history}')\n    return render(request, 'wallet/history.html', {'history' : history})\ndef payment_ipn(request):\n    inputData = request.GET\n    if inputData:\n        vnp = vnpay()\n        vnp.responseData = inputData.dict()\n        order_id = inputData['vnp_TxnRef']",
         "detail": "MyApp.wallet.views",
         "documentation": {}
     },

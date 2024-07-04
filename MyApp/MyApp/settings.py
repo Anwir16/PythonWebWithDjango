@@ -180,7 +180,7 @@ EMAIL_HOST_USER = "PhucNDCE171160@fpt.edu.vn"
 EMAIL_HOST_PASSWORD = "xzkkqgqlimkrblkz"
 
 # VNPAY CONFIG
-VNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/payment_return'  # get from config
+VNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config
 VNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config
 VNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'
 VNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config

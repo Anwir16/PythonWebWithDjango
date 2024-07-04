@@ -5,6 +5,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from .models import Profile
+from django.http import HttpResponse
 
 SCOPES = ['https://www.googleapis.com/auth/gmail.send']
 
@@ -18,7 +19,6 @@ def signup(request):
             user = u_form.save()
             Profile.objects.create(user=user)
             username = u_form.cleaned_data.get('username')
-            print(f'username: {username}')
             password = u_form.cleaned_data.get('password1')
             user = authenticate(username=username, password=password)
             login(request, user)
@@ -44,7 +44,6 @@ def loginViews(request):
             u_form = AuthenticationForm()
             return render(request, 'user/login.html', {'u_form': u_form, 'error': error})
     else:
-        print("loi")
         u_form = AuthenticationForm()
     return render(request, 'user/login.html', {'u_form': u_form})
 
@@ -59,17 +58,25 @@ def viewsProfile(request):
     return render(request,'user/profile.html')
 
 @login_required
-def updateProfile(request, user_id):
-    user = get_object_or_404(User, id=user_id)
-    profile = Profile.objects.get(user=request.user)
+def updateProfile(request):
+    user = request.user
+    profile = get_object_or_404(Profile, user=user)
     if request.method == 'POST':
         u_form = UserUpdateForm(request.POST, instance=user)
-        p_form = UpdateProfileForm(request.POST, request.FILES, instance=user.profile)
+        p_form = UpdateProfileForm(request.POST, request.FILES, instance=profile)
         if u_form.is_valid() and p_form.is_valid():
             u_form.save()
             p_form.save()
             return redirect('user:profile')
     else:
         u_form = UserUpdateForm(instance=user)
-        p_form = UpdateProfileForm(instance=user.profile)
-    return render(request, 'user/updateProfile.html', {'u_form': u_form, 'p_form': p_form, 'profile' : profile,'choices' : Profile.CHOICES })
+        p_form = UpdateProfileForm(instance=profile)
+    
+    context = {
+        'u_form': u_form,
+        'p_form': p_form,
+        'profile' : profile,
+        'choices' : Profile.CHOICES
+    }
+    
+    return render(request, 'user/updateProfile.html',context)

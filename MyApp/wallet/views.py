@@ -10,14 +10,11 @@ from datetime import datetime
 from django.conf import settings
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import render, redirect
-#from django.utils.http import urlquote
+from django.contrib.auth.decorators import login_required
 
-from .models import PaymentForm
+from user.models import Profile
+from .models import PaymentForm, ComboPoint, PaymentHistory
 from .vnpay import vnpay
-
-
-def index(request):
-    return render(request, "payment/index.html", {"title": "Danh sách demo"})
 
 
 def hmacsha512(key, data):
@@ -25,30 +22,36 @@ def hmacsha512(key, data):
     byteData = data.encode('utf-8')
     return hmac.new(byteKey, byteData, hashlib.sha512).hexdigest()
 
+@login_required
+def view_buy_point(request):
+    combo_point = ComboPoint.objects.all()
+    return render(request, 'wallet/buy_point.html', {'combo_point' : combo_point})
 
+@login_required
 def payment(request):
-
     if request.method == 'POST':
         # Process input data and build url payment
         form = PaymentForm(request.POST)
         if form.is_valid():
-            order_date = form.cleaned_data['order_date']
-            order_id = form.cleaned_data['order_id']
-            amount = form.cleaned_data['amount']
-            order_desc = form.cleaned_data['order_desc']
-            bank_code = form.cleaned_data['bank_code']
+            _order_id = form.cleaned_data['order_id']
+            _amount = form.cleaned_data['amount']
+            _order_desc = form.cleaned_data['order_desc']
+            bank_code = ""
             language = form.cleaned_data['language']
+            point = form.cleaned_data['point']
+            combo_point_id = form.cleaned_data['combo_point']
+            _combo_point = ComboPoint.objects.get(id=combo_point_id)
             ipaddr = get_client_ip(request)
             # Build URL Payment
             vnp = vnpay()
             vnp.requestData['vnp_Version'] = '2.1.0'
             vnp.requestData['vnp_Command'] = 'pay'
             vnp.requestData['vnp_TmnCode'] = settings.VNPAY_TMN_CODE
-            vnp.requestData['vnp_Amount'] = amount * 100
+            vnp.requestData['vnp_Amount'] = _amount * 100
             vnp.requestData['vnp_CurrCode'] = 'VND'
-            vnp.requestData['vnp_TxnRef'] = order_id
-            vnp.requestData['vnp_OrderInfo'] = order_desc
-            vnp.requestData['vnp_OrderType'] = order_type
+            vnp.requestData['vnp_TxnRef'] = _order_id
+            vnp.requestData['vnp_OrderInfo'] = _order_desc
+            vnp.requestData['vnp_OrderType'] = 'billpayment'
             # Check language, default: vn
             if language and language != '':
                 vnp.requestData['vnp_Locale'] = language
@@ -57,18 +60,35 @@ def payment(request):
                 # Check bank_code, if bank_code is empty, customer will be selected bank on VNPAY
             if bank_code and bank_code != "":
                 vnp.requestData['vnp_BankCode'] = bank_code
-
-            vnp.requestData['vnp_CreateDate'] = datetime.now().strftime('%Y%m%d%H%M%S')  # 20150410063022
+            _order_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            vnp.requestData['vnp_CreateDate'] =   datetime.now().strftime('%Y%m%d%H%M%S')
             vnp.requestData['vnp_IpAddr'] = ipaddr
             vnp.requestData['vnp_ReturnUrl'] = settings.VNPAY_RETURN_URL
             vnpay_payment_url = vnp.get_payment_url(settings.VNPAY_PAYMENT_URL, settings.VNPAY_HASH_SECRET_KEY)
             print(vnpay_payment_url)
+            _profile = Profile.objects.get(user=request.user)
+            _profile.point += point
+            _profile.save()
+            PaymentHistory.objects.create(
+                user=request.user,
+                combo_point = _combo_point,
+                order_id = _order_id,
+                amount = _amount,
+                order_desc = _order_desc,
+                order_date = _order_date,
+            )
             return redirect(vnpay_payment_url)
         else:
             print("Form input not validate")
+            return render(request, "wallet/buy_point.html")
     else:
-        return render(request, "payment/payment.html", {"title": "Thanh toán"})
+        return render(request, "wallet/buy_point.html")
 
+@login_required
+def payment_history(request):
+    history = PaymentHistory.objects.filter(user=request.user)
+    print(f'history {history}')
+    return render(request, 'wallet/history.html', {'history' : history})
 
 def payment_ipn(request):
     inputData = request.GET

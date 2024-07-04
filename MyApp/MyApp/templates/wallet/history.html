@@ -1,0 +1,41 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block css %}
+{% endblock css %}
+{% block main-content %}
+<div class="input-group mb-4">
+    <input type="text" class="form-control" id="advanced-search-input" placeholder="phrase in:column1,column2" />
+    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary" id="advanced-search-button" type="button">
+      <i class="fa fa-search"></i>
+    </button>
+  </div>
+  <table id="datatable">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>User ID</th>
+            <th>Combo point ID</th>
+            <th>Order ID</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in history %}
+        <tr>
+            <th>{{item.id}}</th>
+            <th>{{item.user_id}}</th>
+            <th>{{item.combo_point_id}}</th>
+            <th>{{item.order_id}}</th>
+            <th>{{item.order_desc}}</th>
+            <th>{{item.amount}}</th>
+            <th>{{item.order_date}}</th>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+{% endblock main-content %}
+{% block js %}
+<script src="{% static 'wallet/js/payment_history.js' %}"></script>
+{% endblock js %}

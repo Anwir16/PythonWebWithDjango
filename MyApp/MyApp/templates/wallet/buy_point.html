@@ -1,0 +1,41 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'wallet/css/buy_point.css' %}">
+{% endblock css %}
+{% block main-content %}
+<div class="combo">
+    {% for item in combo_point %}
+        <div class="col-md-4">
+            <div class="row combo-content">
+                <div class="title">
+                    <h4>{{ item.name }}</h4>
+                </div>
+                <div class="content">
+                    <img src="{{ item.image.url }}" alt="100-point" class="combo-image">
+                    <div class="description">
+                        <p>
+                            {{item.desc}}
+                        </p>
+                    </div>
+                    <div class="price">
+                        <p>
+                            {{item.price}} VNĐ
+                        </p>
+                    </div>
+                    <form action="{% url 'wallet:payment' %}" id="create_form" method="post">
+                        <input id="order_id" name="order_id" type="text" value="{% now 'YmdHis' %}" hidden >
+                        <input  id="amount"name="amount" type="number" value="{{item.price}}" hidden >
+                        <input type="text" id="order_desc" name="order_desc" value="Thanh toan don hang thoi gian: {% now 'Y-m-d H:i:s' %}" hidden>
+                        <input type="text" name="language" id="language" hidden value="en">
+                        <input type="text" name="point" id="point" hidden value="{{item.point}}">
+                        <input type="text" name="combo_point" id="combo_point" hidden value="{{item.id}}">
+                        <button type="submit" class="btn btn-secondary">Choose</button>
+                        {% csrf_token %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock main-content %}

@@ -75,10 +75,10 @@
                     <a href="{% url 'user:profile' %}"><i class="fa fa-user"></i> Account</a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-coins"></i>{{profile.point}}</a>
+                    <a href="{% url 'wallet:buy_point' %}"><i class="fa fa-coins"></i>{{profile.point}}</a>
                   </li>
                   <li>
-                    <a href="{% url 'wallet:index' %}"><i class="fa fa-wallet"></i> Wallet</a>
+                    <a href="{% url 'wallet:payment_history' %}"><i class="fa fa-wallet"></i> Wallet</a>
                   </li>
                   <li>
                     <a href="{% url 'user:signout' %}"><i class="fa fa-lock"></i> Logout</a>
@@ -94,6 +94,8 @@
     <main>
       {% block main-content %}
       {% endblock main-content %}
+      {% block js %}
+      {% endblock js %}
     </main>
 
     <footer id="footer">
