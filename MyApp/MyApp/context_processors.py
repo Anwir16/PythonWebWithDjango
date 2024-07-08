@@ -1,6 +1,7 @@
 from user.models import Profile
 
 def profile(request):
-    data = Profile.objects.get(user=request.user)
-    print(f'data: {data}')
-    return {'profile' : data}
+    if request.user.is_authenticated:
+        data = Profile.objects.get(user=request.user)
+        return {'profile' : data}
+    return {}

@@ -23,14 +23,14 @@
                             {{item.price}} VNĐ
                         </p>
                     </div>
-                    <form action="{% url 'wallet:payment' %}" id="create_form" method="post">
+                    <form action="{% url 'wallet:buy_point' %}" id="create_form" method="post">
                         <input id="order_id" name="order_id" type="text" value="{% now 'YmdHis' %}" hidden >
                         <input  id="amount"name="amount" type="number" value="{{item.price}}" hidden >
                         <input type="text" id="order_desc" name="order_desc" value="Thanh toan don hang thoi gian: {% now 'Y-m-d H:i:s' %}" hidden>
                         <input type="text" name="language" id="language" hidden value="en">
                         <input type="text" name="point" id="point" hidden value="{{item.point}}">
                         <input type="text" name="combo_point" id="combo_point" hidden value="{{item.id}}">
-                        <button type="submit" class="btn btn-secondary">Choose</button>
+                        <button type="submit" class="btn btn-success">Choose</button>
                         {% csrf_token %}
                     </form>
                 </div>

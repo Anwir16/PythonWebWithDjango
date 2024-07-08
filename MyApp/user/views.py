@@ -47,17 +47,18 @@ def loginViews(request):
         u_form = AuthenticationForm()
     return render(request, 'user/login.html', {'u_form': u_form})
 
+@login_required(login_url='user/login/')
 def logoutViews(request):
     logout(request)
     return redirect('user:login')
 
-@login_required
+@login_required(login_url='user/login/')
 def viewsProfile(request):
     if request.user.is_superuser:
         return redirect('/admin/')
     return render(request,'user/profile.html')
 
-@login_required
+@login_required(login_url='user/login/')
 def updateProfile(request):
     user = request.user
     profile = get_object_or_404(Profile, user=user)
