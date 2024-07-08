@@ -1,0 +1,55 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap.css">
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+{% endblock css %}
+{% block main-content %}
+  <table id="example" class="table table-striped" style="width:100%;">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>User ID</th>
+            <th>Combo point ID</th>
+            <th>Order ID</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in history %}
+          <tr>
+              <td>{{item.id}}</td>
+              <td>{{item.user_id}}</td>
+              <td>{{item.combo_point_id}}</td>
+              <td>{{item.order_id}}</td>
+              <td>{{item.order_desc}}</td>
+              <td>{{item.amount}}</td>
+              <td>{{item.order_date}}</td>
+          </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>STT</th>
+        <th>User ID</th>
+        <th>Combo point ID</th>
+        <th>Order ID</th>
+        <th>Description</th>
+        <th>Amount</th>
+        <th>Date</th>
+    </tr>
+    </tfoot>
+  </table>
+{% endblock main-content %}
+{% block js %}
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap.js"></script>
+<script>
+  $('#example').DataTable();
+</script>
+{% endblock js %}

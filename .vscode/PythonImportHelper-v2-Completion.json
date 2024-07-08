@@ -32,6 +32,22 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -53,6 +69,57 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "Deck",
+        "importPath": "card",
+        "description": "card",
+        "isExtraImport": true,
+        "detail": "card",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "importPath": "player",
+        "description": "player",
+        "isExtraImport": true,
+        "detail": "player",
+        "documentation": {}
+    },
+    {
+        "label": "House",
+        "importPath": "player",
+        "description": "player",
+        "isExtraImport": true,
+        "detail": "player",
         "documentation": {}
     },
     {
@@ -73,14 +140,6 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -265,6 +324,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -382,6 +457,54 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -406,6 +529,38 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -462,6 +617,54 @@
         "description": "django.urls",
         "isExtraImport": true,
         "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -668,46 +871,6 @@
         "documentation": {}
     },
     {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
         "label": "UserAdmin",
         "importPath": "django.contrib.auth.admin",
         "description": "django.contrib.auth.admin",
@@ -729,38 +892,6 @@
         "description": "django",
         "isExtraImport": true,
         "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "views",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "authenticate",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "login",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "logout",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -788,30 +919,6 @@
         "documentation": {}
     },
     {
-        "label": "HttpResponse",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponseRedirect",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "JsonResponse",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
         "label": "hashlib",
         "kind": 6,
         "isExtraImport": true,
@@ -830,24 +937,6 @@
         "documentation": {}
     },
     {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
-        "documentation": {}
-    },
-    {
-        "label": "urllib",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "urllib",
-        "description": "urllib",
-        "detail": "urllib",
-        "documentation": {}
-    },
-    {
         "label": "urllib.parse",
         "kind": 6,
         "isExtraImport": true,
@@ -857,39 +946,129 @@
         "documentation": {}
     },
     {
-        "label": "urllib.request",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "urllib.request",
-        "description": "urllib.request",
-        "detail": "urllib.request",
-        "documentation": {}
-    },
-    {
-        "label": "random",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "random",
-        "description": "random",
-        "detail": "random",
-        "documentation": {}
-    },
-    {
-        "label": "requests",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
-        "documentation": {}
-    },
-    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "GameConfig",
+        "kind": 6,
+        "importPath": "MyApp.game.apps",
+        "description": "MyApp.game.apps",
+        "peekOfCode": "class GameConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'game'",
+        "detail": "MyApp.game.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Suit",
+        "kind": 6,
+        "importPath": "MyApp.game.card",
+        "description": "MyApp.game.card",
+        "peekOfCode": "class Suit:\n    suit = {\n        \"Heart\": 4,\n        \"Diamond\": 3,\n        \"Club\": 2,\n        \"Spade\": 1    \n    }\nclass Rank:\n    rank = {\n        \"3\": 3,",
+        "detail": "MyApp.game.card",
+        "documentation": {}
+    },
+    {
+        "label": "Rank",
+        "kind": 6,
+        "importPath": "MyApp.game.card",
+        "description": "MyApp.game.card",
+        "peekOfCode": "class Rank:\n    rank = {\n        \"3\": 3,\n        \"4\": 4,\n        \"5\": 5,\n        \"6\": 6,\n        \"7\": 7,\n        \"8\": 8,\n        \"9\": 9,\n        \"10\": 10,",
+        "detail": "MyApp.game.card",
+        "documentation": {}
+    },
+    {
+        "label": "Card",
+        "kind": 6,
+        "importPath": "MyApp.game.card",
+        "description": "MyApp.game.card",
+        "peekOfCode": "class Card:\n    def __init__(self, suit, rank):\n        self._suit = suit\n        self._rank = rank\n    @property\n    def suit(self):\n        return self._suit\n    # Property for rank to manage access\n    @property\n    def rank(self):",
+        "detail": "MyApp.game.card",
+        "documentation": {}
+    },
+    {
+        "label": "Deck",
+        "kind": 6,
+        "importPath": "MyApp.game.card",
+        "description": "MyApp.game.card",
+        "peekOfCode": "class Deck:\n    def __init__(self):\n        self.cards = [\n            Card(suit, rank)\n            for suit in Suit.suit.keys()\n            for rank in Rank.rank.keys()\n            if rank not in (\"Black Joker\", \"Red Joker\")\n        ] + [Card(\"\", \"Black Joker\"), Card(\"\", \"Red Joker\")]\n        self.shuffle()\n    def shuffle(self):",
+        "detail": "MyApp.game.card",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "kind": 6,
+        "importPath": "MyApp.game.game",
+        "description": "MyApp.game.game",
+        "peekOfCode": "class Game:\n    def __init__(self):\n        self.deck = Deck()\n        self.player = Player(\"Player\")\n        self.house = House()\n        self.current_reward = 0\n    # Validate user input using regular expressions\n    @log_method_call\n    def validate_input():\n        isVailid = False",
+        "detail": "MyApp.game.game",
+        "documentation": {}
+    },
+    {
+        "label": "log_method_call",
+        "kind": 2,
+        "importPath": "MyApp.game.game",
+        "description": "MyApp.game.game",
+        "peekOfCode": "def log_method_call(func):\n    def wrapper(*args, **kwargs):\n        logging.info(f\"Calling method: {func.__name__}\")\n        result = func(*args, **kwargs)\n        logging.info(f\"Method {func.__name__} finished\")\n        return result\n    return wrapper\nclass Game:\n    def __init__(self):\n        self.deck = Deck()",
+        "detail": "MyApp.game.game",
+        "documentation": {}
+    },
+    {
+        "label": "History",
+        "kind": 6,
+        "importPath": "MyApp.game.models",
+        "description": "MyApp.game.models",
+        "peekOfCode": "class History(models.Model):\n    CHOICES = [\n        ('H' , 'House'),\n        ('P' , 'Player'),\n    ]\n    user = models.ForeignKey(User, related_name='game_histories', on_delete=models.CASCADE)\n    house = models.CharField(max_length=5, blank=False, null=False)\n    player = models.CharField(max_length=5, blank=False, null=False)\n    result = models.CharField(max_length=6, choices=CHOICES)\n    match_id = models.CharField(max_length=6, blank=False, null=False)",
+        "detail": "MyApp.game.models",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "kind": 6,
+        "importPath": "MyApp.game.player",
+        "description": "MyApp.game.player",
+        "peekOfCode": "class Player:\n    def __init__(self, name):\n        self.name = name\n        self._points = 60\n        self.card = None\n    @property\n    def points(self):\n        return self._points\n    @points.setter\n    def points(self, value):",
+        "detail": "MyApp.game.player",
+        "documentation": {}
+    },
+    {
+        "label": "House",
+        "kind": 6,
+        "importPath": "MyApp.game.player",
+        "description": "MyApp.game.player",
+        "peekOfCode": "class House:\n    def __init__(self):\n        self.card = None\n    def receive_card(self, card):\n        self.card = card",
+        "detail": "MyApp.game.player",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "MyApp.game.urls",
+        "description": "MyApp.game.urls",
+        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('start/',views.start_game, name='start'),\n]",
+        "detail": "MyApp.game.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "MyApp.game.urls",
+        "description": "MyApp.game.urls",
+        "peekOfCode": "urlpatterns = [\n    path('start/',views.start_game, name='start'),\n]",
+        "detail": "MyApp.game.urls",
+        "documentation": {}
+    },
+    {
+        "label": "start_game",
+        "kind": 2,
+        "importPath": "MyApp.game.views",
+        "description": "MyApp.game.views",
+        "peekOfCode": "def start_game(request):\n    return render(request, 'game/start.html')",
+        "detail": "MyApp.game.views",
         "documentation": {}
     },
     {
@@ -942,7 +1121,7 @@
         "kind": 2,
         "importPath": "MyApp.MyApp.context_processors",
         "description": "MyApp.MyApp.context_processors",
-        "peekOfCode": "def profile(request):\n    data = Profile.objects.get(user=request.user)\n    print(f'data: {data}')\n    return {'profile' : data}",
+        "peekOfCode": "def profile(request):\n    if request.user.is_authenticated and not request.user.is_superuser:\n        data = Profile.objects.get(user=request.user)\n        return {'profile' : data}\n    return {}",
         "detail": "MyApp.MyApp.context_processors",
         "documentation": {}
     },
@@ -1023,7 +1202,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ROOT_URLCONF = 'MyApp.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / 'MyApp'/'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "peekOfCode": "ROOT_URLCONF = 'MyApp.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR /'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1032,7 +1211,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / 'MyApp'/'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR /'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1068,7 +1247,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR /\"MyApp\"/ \"static\",\n]",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1077,7 +1256,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR /\"MyApp\"/ \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1086,7 +1265,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR /\"MyApp\"/ \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1095,7 +1274,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR /\"MyApp\"/ \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1104,7 +1283,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "STATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR /\"MyApp\"/ \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url",
+        "peekOfCode": "STATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1113,7 +1292,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR /\"MyApp\"/ \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'",
+        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1302,7 +1481,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.urls",
         "description": "MyApp.MyApp.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('user/',include('user.urls')),\n    path('',include('home.urls')),\n    path('accounts/',include('allauth.urls')),\n    path('wallet/',include('wallet.urls')),\n] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('user/',include('user.urls')),\n    path('',include('home.urls')),\n    path('accounts/',include('allauth.urls')),\n    path('wallet/',include('wallet.urls')),\n    path('play/',include('game.urls')),\n] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)",
         "detail": "MyApp.MyApp.urls",
         "documentation": {}
     },
@@ -1518,7 +1697,7 @@
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def logoutViews(request):\n    logout(request)\n    return redirect('user:login')\n@login_required\ndef viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html')\n@login_required\ndef updateProfile(request):",
+        "peekOfCode": "def logoutViews(request):\n    logout(request)\n    return redirect('user:login')\n@login_required(login_url='user/login/')\ndef viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html')\n@login_required(login_url='user/login/')\ndef updateProfile(request):",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
@@ -1527,7 +1706,7 @@
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html')\n@login_required\ndef updateProfile(request):\n    user = request.user\n    profile = get_object_or_404(Profile, user=user)\n    if request.method == 'POST':\n        u_form = UserUpdateForm(request.POST, instance=user)",
+        "peekOfCode": "def viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html')\n@login_required(login_url='user/login/')\ndef updateProfile(request):\n    user = request.user\n    profile = get_object_or_404(Profile, user=user)\n    if request.method == 'POST':\n        u_form = UserUpdateForm(request.POST, instance=user)",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
@@ -1653,7 +1832,7 @@
         "kind": 5,
         "importPath": "MyApp.wallet.urls",
         "description": "MyApp.wallet.urls",
-        "peekOfCode": "app_name = 'wallet'\nurlpatterns = [\n    path('payment/', views.payment, name='payment'),\n    path('payment_ipn/', views.payment_ipn, name='payment_ipn'),\n    path('payment_return/', views.payment_return, name='payment_return'),\n    path('query/', views.query, name='query'),\n    path('refund/', views.refund, name='refund'),\n    path('buy/',views.view_buy_point, name='buy_point'),\n    path('history/', views.payment_history, name='payment_history'),\n]",
+        "peekOfCode": "app_name = 'wallet'\nurlpatterns = [\n    path('buy/',views.payment, name='buy_point'),\n    path('history/', views.payment_history, name='payment_history'),\n]",
         "detail": "MyApp.wallet.urls",
         "documentation": {}
     },
@@ -1662,17 +1841,8 @@
         "kind": 5,
         "importPath": "MyApp.wallet.urls",
         "description": "MyApp.wallet.urls",
-        "peekOfCode": "urlpatterns = [\n    path('payment/', views.payment, name='payment'),\n    path('payment_ipn/', views.payment_ipn, name='payment_ipn'),\n    path('payment_return/', views.payment_return, name='payment_return'),\n    path('query/', views.query, name='query'),\n    path('refund/', views.refund, name='refund'),\n    path('buy/',views.view_buy_point, name='buy_point'),\n    path('history/', views.payment_history, name='payment_history'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('buy/',views.payment, name='buy_point'),\n    path('history/', views.payment_history, name='payment_history'),\n]",
         "detail": "MyApp.wallet.urls",
-        "documentation": {}
-    },
-    {
-        "label": "hmacsha512",
-        "kind": 2,
-        "importPath": "MyApp.wallet.views",
-        "description": "MyApp.wallet.views",
-        "peekOfCode": "def hmacsha512(key, data):\n    byteKey = key.encode('utf-8')\n    byteData = data.encode('utf-8')\n    return hmac.new(byteKey, byteData, hashlib.sha512).hexdigest()\n@login_required\ndef view_buy_point(request):\n    combo_point = ComboPoint.objects.all()\n    return render(request, 'wallet/buy_point.html', {'combo_point' : combo_point})\n@login_required\ndef payment(request):",
-        "detail": "MyApp.wallet.views",
         "documentation": {}
     },
     {
@@ -1680,7 +1850,7 @@
         "kind": 2,
         "importPath": "MyApp.wallet.views",
         "description": "MyApp.wallet.views",
-        "peekOfCode": "def view_buy_point(request):\n    combo_point = ComboPoint.objects.all()\n    return render(request, 'wallet/buy_point.html', {'combo_point' : combo_point})\n@login_required\ndef payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            _order_id = form.cleaned_data['order_id']",
+        "peekOfCode": "def view_buy_point(request):\n    combo_point = ComboPoint.objects.all()\n    return render(request, 'wallet/buy_point.html', {'combo_point' : combo_point})\n@login_required(login_url='user/login/')\ndef payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            _order_id = form.cleaned_data['order_id']",
         "detail": "MyApp.wallet.views",
         "documentation": {}
     },
@@ -1698,25 +1868,7 @@
         "kind": 2,
         "importPath": "MyApp.wallet.views",
         "description": "MyApp.wallet.views",
-        "peekOfCode": "def payment_history(request):\n    history = PaymentHistory.objects.filter(user=request.user)\n    print(f'history {history}')\n    return render(request, 'wallet/history.html', {'history' : history})\ndef payment_ipn(request):\n    inputData = request.GET\n    if inputData:\n        vnp = vnpay()\n        vnp.responseData = inputData.dict()\n        order_id = inputData['vnp_TxnRef']",
-        "detail": "MyApp.wallet.views",
-        "documentation": {}
-    },
-    {
-        "label": "payment_ipn",
-        "kind": 2,
-        "importPath": "MyApp.wallet.views",
-        "description": "MyApp.wallet.views",
-        "peekOfCode": "def payment_ipn(request):\n    inputData = request.GET\n    if inputData:\n        vnp = vnpay()\n        vnp.responseData = inputData.dict()\n        order_id = inputData['vnp_TxnRef']\n        amount = inputData['vnp_Amount']\n        order_desc = inputData['vnp_OrderInfo']\n        vnp_TransactionNo = inputData['vnp_TransactionNo']\n        vnp_ResponseCode = inputData['vnp_ResponseCode']",
-        "detail": "MyApp.wallet.views",
-        "documentation": {}
-    },
-    {
-        "label": "payment_return",
-        "kind": 2,
-        "importPath": "MyApp.wallet.views",
-        "description": "MyApp.wallet.views",
-        "peekOfCode": "def payment_return(request):\n    inputData = request.GET\n    if inputData:\n        vnp = vnpay()\n        vnp.responseData = inputData.dict()\n        order_id = inputData['vnp_TxnRef']\n        amount = int(inputData['vnp_Amount']) / 100\n        order_desc = inputData['vnp_OrderInfo']\n        vnp_TransactionNo = inputData['vnp_TransactionNo']\n        vnp_ResponseCode = inputData['vnp_ResponseCode']",
+        "peekOfCode": "def payment_history(request):\n    history = PaymentHistory.objects.filter(user=request.user)\n    return render(request, 'wallet/history.html', {'history' : history})\n@login_required(login_url='user/login/')\ndef get_client_ip(request):\n    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')\n    if x_forwarded_for:\n        ip = x_forwarded_for.split(',')[0]\n    else:\n        ip = request.META.get('REMOTE_ADDR')",
         "detail": "MyApp.wallet.views",
         "documentation": {}
     },
@@ -1725,43 +1877,7 @@
         "kind": 2,
         "importPath": "MyApp.wallet.views",
         "description": "MyApp.wallet.views",
-        "peekOfCode": "def get_client_ip(request):\n    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')\n    if x_forwarded_for:\n        ip = x_forwarded_for.split(',')[0]\n    else:\n        ip = request.META.get('REMOTE_ADDR')\n    return ip\nn = random.randint(10**11, 10**12 - 1)\nn_str = str(n)\nwhile len(n_str) < 12:",
-        "detail": "MyApp.wallet.views",
-        "documentation": {}
-    },
-    {
-        "label": "query",
-        "kind": 2,
-        "importPath": "MyApp.wallet.views",
-        "description": "MyApp.wallet.views",
-        "peekOfCode": "def query(request):\n    if request.method == 'GET':\n        return render(request, \"payment/query.html\", {\"title\": \"Kiểm tra kết quả giao dịch\"})\n    url = settings.VNPAY_API_URL\n    secret_key = settings.VNPAY_HASH_SECRET_KEY\n    vnp_TmnCode = settings.VNPAY_TMN_CODE\n    vnp_Version = '2.1.0'\n    vnp_RequestId = n_str\n    vnp_Command = 'querydr'\n    vnp_TxnRef = request.POST['order_id']",
-        "detail": "MyApp.wallet.views",
-        "documentation": {}
-    },
-    {
-        "label": "refund",
-        "kind": 2,
-        "importPath": "MyApp.wallet.views",
-        "description": "MyApp.wallet.views",
-        "peekOfCode": "def refund(request):\n    if request.method == 'GET':\n        return render(request, \"payment/refund.html\", {\"title\": \"Hoàn tiền giao dịch\"})\n    url = settings.VNPAY_API_URL\n    secret_key = settings.VNPAY_HASH_SECRET_KEY\n    vnp_TmnCode = settings.VNPAY_TMN_CODE\n    vnp_RequestId = n_str\n    vnp_Version = '2.1.0'\n    vnp_Command = 'refund'\n    vnp_TransactionType = request.POST['TransactionType']",
-        "detail": "MyApp.wallet.views",
-        "documentation": {}
-    },
-    {
-        "label": "n",
-        "kind": 5,
-        "importPath": "MyApp.wallet.views",
-        "description": "MyApp.wallet.views",
-        "peekOfCode": "n = random.randint(10**11, 10**12 - 1)\nn_str = str(n)\nwhile len(n_str) < 12:\n    n_str = '0' + n_str\ndef query(request):\n    if request.method == 'GET':\n        return render(request, \"payment/query.html\", {\"title\": \"Kiểm tra kết quả giao dịch\"})\n    url = settings.VNPAY_API_URL\n    secret_key = settings.VNPAY_HASH_SECRET_KEY\n    vnp_TmnCode = settings.VNPAY_TMN_CODE",
-        "detail": "MyApp.wallet.views",
-        "documentation": {}
-    },
-    {
-        "label": "n_str",
-        "kind": 5,
-        "importPath": "MyApp.wallet.views",
-        "description": "MyApp.wallet.views",
-        "peekOfCode": "n_str = str(n)\nwhile len(n_str) < 12:\n    n_str = '0' + n_str\ndef query(request):\n    if request.method == 'GET':\n        return render(request, \"payment/query.html\", {\"title\": \"Kiểm tra kết quả giao dịch\"})\n    url = settings.VNPAY_API_URL\n    secret_key = settings.VNPAY_HASH_SECRET_KEY\n    vnp_TmnCode = settings.VNPAY_TMN_CODE\n    vnp_Version = '2.1.0'",
+        "peekOfCode": "def get_client_ip(request):\n    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')\n    if x_forwarded_for:\n        ip = x_forwarded_for.split(',')[0]\n    else:\n        ip = request.META.get('REMOTE_ADDR')\n    return ip",
         "detail": "MyApp.wallet.views",
         "documentation": {}
     },
