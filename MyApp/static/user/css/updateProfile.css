@@ -8,8 +8,9 @@ body {
   font-weight: 400px;
 }
 
-.container {
-    margin-top: 20px;
+.content-main {
+  height: 800px;
+  width: 400px;
 }
 
 .img-thumbnail {

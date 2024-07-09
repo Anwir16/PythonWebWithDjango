@@ -3,10 +3,10 @@ import random
 
 class Suit:
     suit = {
-        "Heart": 4,
-        "Diamond": 3,
-        "Club": 2,
-        "Spade": 1    
+        "heart": 4,
+        "diamond": 3,
+        "club": 2,
+        "spade": 1    
     }
     
 class Rank:
@@ -19,13 +19,13 @@ class Rank:
         "8": 8,
         "9": 9,
         "10": 10,
-        "J": 11,
-        "Q": 12,
-        "K": 13,
-        "A": 14,
+        "j": 11,
+        "q": 12,
+        "k": 13,
+        "a": 14,
         "2": 15,
-        "Black Joker": 16,
-        "Red Joker": 17
+        "black_joker": 16,
+        "red_joker": 17
     }
 
 

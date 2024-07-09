@@ -8,8 +8,11 @@ class History(models.Model):
         ('P' , 'Player'),
     ]
     user = models.ForeignKey(User, related_name='game_histories', on_delete=models.CASCADE)
-    house = models.CharField(max_length=5, blank=False, null=False)
-    player = models.CharField(max_length=5, blank=False, null=False)
+    house = models.CharField(max_length=50, blank=False, null=False)
+    player = models.CharField(max_length=50, blank=False, null=False)
     result = models.CharField(max_length=6, choices=CHOICES)
     match_id = models.CharField(max_length=6, blank=False, null=False)
+    level = models.CharField(max_length=6, blank=False, null=False)
     reward_point = models.IntegerField()
+    class Meta:
+        verbose_name_plural = "Round Histories"

@@ -7,53 +7,57 @@
     {% block main-content %}
     
     <div class="container">
-        <h3>Update Information</h3>
-        <form method="post" enctype="multipart/form-data">
-            {% csrf_token %}
-            <div class="form-group">
-                <label for="id_username">Username:</label>
-                <input type="text" name="username" class="form-control" id="id_username" required readonly value="{{ user.username }}">
-                <p class="error"></p>
+        <div class="content">
+            <div class="content-main row">
+                <h3>Update Information</h3>
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="id_username">Username:</label>
+                        <input type="text" name="username" class="form-control" id="id_username" required readonly value="{{ user.username }}">
+                        <p class="error"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_email">Email address:</label>
+                        <input type="email" name="email" class="form-control" id="id_email" required value="{{ user.email }}">
+                        <p class="error"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_first_name">First name:</label>
+                        <input type="text" name="first_name" class="form-control" id="id_first_name" required value="{{ user.first_name }}">
+                        <p class="error"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_last_name">Last name:</label>
+                        <input type="text" name="last_name" class="form-control" id="id_last_name" required value="{{ user.last_name }}">
+                        <p class="error"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_image">Avatar:</label>
+                        <input type="file" name="image" class="form-control-file" id="id_image" accept="image/*">
+                        {% if profile.image %}
+                            <img src="{{ profile.image.url }}" alt="Avatar" class="img-thumbnail mt-2" width="150">
+                        {% endif %}
+                        <p class="error"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_gender">Gender:</label>
+                        <select name="gender" class="form-control" id="id_gender">
+                            {% for key, value in choices %}
+                                <option value="{{ key }}" {% if profile.gender == key %}selected{% endif %}>{{ value }}</option>
+                            {% endfor %}
+                        </select>
+                        <p class="error"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_birthday">Birthday:</label>
+                        <input type="date" name="birthday" class="form-control" id="id_birthday" required value="{{ profile.birthday|date:'Y-m-d' }}">
+                        <p class="error"></p>
+                    </div>
+                    <button type="submit" class="btn btn-success">Update</button>
+                    <a href="{% url 'user:profile' %}" class="btn btn-danger">Back</a>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="id_email">Email address:</label>
-                <input type="email" name="email" class="form-control" id="id_email" required value="{{ user.email }}">
-                <p class="error"></p>
-            </div>
-            <div class="form-group">
-                <label for="id_first_name">First name:</label>
-                <input type="text" name="first_name" class="form-control" id="id_first_name" required value="{{ user.first_name }}">
-                <p class="error"></p>
-            </div>
-            <div class="form-group">
-                <label for="id_last_name">Last name:</label>
-                <input type="text" name="last_name" class="form-control" id="id_last_name" required value="{{ user.last_name }}">
-                <p class="error"></p>
-            </div>
-            <div class="form-group">
-                <label for="id_image">Avatar:</label>
-                <input type="file" name="image" class="form-control-file" id="id_image" accept="image/*">
-                {% if profile.image %}
-                    <img src="{{ profile.image.url }}" alt="Avatar" class="img-thumbnail mt-2" width="150">
-                {% endif %}
-                <p class="error"></p>
-            </div>
-            <div class="form-group">
-                <label for="id_gender">Gender:</label>
-                <select name="gender" class="form-control" id="id_gender">
-                    {% for key, value in choices %}
-                        <option value="{{ key }}" {% if profile.gender == key %}selected{% endif %}>{{ value }}</option>
-                    {% endfor %}
-                </select>
-                <p class="error"></p>
-            </div>
-            <div class="form-group">
-                <label for="id_birthday">Birthday:</label>
-                <input type="date" name="birthday" class="form-control" id="id_birthday" required value="{{ profile.birthday|date:'Y-m-d' }}">
-                <p class="error"></p>
-            </div>
-            <button type="submit" class="btn btn-success">Update</button>
-            <a href="{% url 'user:profile' %}" class="btn btn-danger">Back</a>
-        </form>
+        </div>
     </div>
     {% endblock main-content %}

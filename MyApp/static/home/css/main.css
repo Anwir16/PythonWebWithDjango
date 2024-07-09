@@ -35,6 +35,12 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 ul li {
   list-style: none;
 }
@@ -368,6 +374,12 @@ a#scrollUp i {
   font-size: 14px;
   font-weight: 300;
   margin-top: 25px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*************************

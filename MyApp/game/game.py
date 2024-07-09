@@ -1,7 +1,7 @@
 import logging
 import re  # Regular Expressions for input validation
-from card import Deck
-from player import Player, House
+from game.card import Deck
+from game.player import Player, House
 
 logging.basicConfig(level=logging.INFO)
 
@@ -14,11 +14,12 @@ def log_method_call(func):
         return result
     return wrapper
 class Game:
-    def __init__(self):
+    def __init__(self, bet_point):
         self.deck = Deck()
         self.player = Player("Player")
         self.house = House()
         self.current_reward = 0
+        self.bet_point = bet_point
 
     # Validate user input using regular expressions
     @log_method_call
@@ -35,25 +36,29 @@ class Game:
             except ValueError as e:
                 print(e)
         return guess
+    
+    @log_method_call
+    def auto_create_card(self):
+        if self.player.points > self.bet_point:
+            self.house.receive_card(self.deck.deal())
+            logging.info(f"House card: {self.house.card}")
+
+            self.player.card = self.deck.deal()
+            logging.info(f"Player card: {self.player.card}")
 
     # Play a round of the game
     @log_method_call
     def play_round(self):
-        if self.player.points < 25:
+        if self.player.points < self.bet_point:
             logging.info("Player does not have enough points to continue.")
             return
 
-        self.player.update_points(-25)
-        self.house.receive_card(self.deck.deal())
-        logging.info(f"House card: {self.house.card}")
-
-        self.player.card = self.deck.deal()
-        logging.info(f"Player card: {self.player.card}")
+        self.player.update_points(-self.bet_point)
 
         guess = Game.validate_input()
         if self.player.make_guess(self.house.card, guess):
             self.current_reward += 20
-            self.player.update_points(25)
+            self.player.update_points(self.bet_point)
             logging.info(f"Correct guess! Current reward: {self.current_reward} points.")
         else:
             self.current_reward = 0

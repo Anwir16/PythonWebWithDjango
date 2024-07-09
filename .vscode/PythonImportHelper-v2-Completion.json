@@ -81,6 +81,30 @@
         "documentation": {}
     },
     {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
         "label": "logging",
         "kind": 6,
         "isExtraImport": true,
@@ -100,26 +124,26 @@
     },
     {
         "label": "Deck",
-        "importPath": "card",
-        "description": "card",
+        "importPath": "game.card",
+        "description": "game.card",
         "isExtraImport": true,
-        "detail": "card",
+        "detail": "game.card",
         "documentation": {}
     },
     {
         "label": "Player",
-        "importPath": "player",
-        "description": "player",
+        "importPath": "game.player",
+        "description": "game.player",
         "isExtraImport": true,
-        "detail": "player",
+        "detail": "game.player",
         "documentation": {}
     },
     {
         "label": "House",
-        "importPath": "player",
-        "description": "player",
+        "importPath": "game.player",
+        "description": "game.player",
         "isExtraImport": true,
-        "detail": "player",
+        "detail": "game.player",
         "documentation": {}
     },
     {
@@ -548,22 +572,6 @@
         "documentation": {}
     },
     {
-        "label": "include",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "reverse_lazy",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -620,43 +628,11 @@
         "documentation": {}
     },
     {
-        "label": "views",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
         "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "views",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "authenticate",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "login",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "logout",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -713,6 +689,22 @@
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "game.game",
+        "description": "game.game",
+        "isExtraImport": true,
+        "detail": "game.game",
+        "documentation": {}
+    },
+    {
+        "label": "GameForm",
+        "importPath": "game.forms",
+        "description": "game.forms",
+        "isExtraImport": true,
+        "detail": "game.forms",
         "documentation": {}
     },
     {
@@ -879,19 +871,35 @@
         "documentation": {}
     },
     {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
+        "label": "views",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
         "isExtraImport": true,
-        "detail": "django",
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
         "isExtraImport": true,
-        "detail": "django",
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -968,7 +976,7 @@
         "kind": 6,
         "importPath": "MyApp.game.card",
         "description": "MyApp.game.card",
-        "peekOfCode": "class Suit:\n    suit = {\n        \"Heart\": 4,\n        \"Diamond\": 3,\n        \"Club\": 2,\n        \"Spade\": 1    \n    }\nclass Rank:\n    rank = {\n        \"3\": 3,",
+        "peekOfCode": "class Suit:\n    suit = {\n        \"heart\": 4,\n        \"diamond\": 3,\n        \"club\": 2,\n        \"spade\": 1    \n    }\nclass Rank:\n    rank = {\n        \"3\": 3,",
         "detail": "MyApp.game.card",
         "documentation": {}
     },
@@ -1000,11 +1008,20 @@
         "documentation": {}
     },
     {
+        "label": "GameForm",
+        "kind": 6,
+        "importPath": "MyApp.game.forms",
+        "description": "MyApp.game.forms",
+        "peekOfCode": "class GameForm(forms.Form):\n    choice_level = forms.CharField(max_length=6)\n    choice_bet_point = forms.IntegerField()",
+        "detail": "MyApp.game.forms",
+        "documentation": {}
+    },
+    {
         "label": "Game",
         "kind": 6,
         "importPath": "MyApp.game.game",
         "description": "MyApp.game.game",
-        "peekOfCode": "class Game:\n    def __init__(self):\n        self.deck = Deck()\n        self.player = Player(\"Player\")\n        self.house = House()\n        self.current_reward = 0\n    # Validate user input using regular expressions\n    @log_method_call\n    def validate_input():\n        isVailid = False",
+        "peekOfCode": "class Game:\n    def __init__(self, bet_point):\n        self.deck = Deck()\n        self.player = Player(\"Player\")\n        self.house = House()\n        self.current_reward = 0\n        self.bet_point = bet_point\n    # Validate user input using regular expressions\n    @log_method_call\n    def validate_input():",
         "detail": "MyApp.game.game",
         "documentation": {}
     },
@@ -1013,7 +1030,7 @@
         "kind": 2,
         "importPath": "MyApp.game.game",
         "description": "MyApp.game.game",
-        "peekOfCode": "def log_method_call(func):\n    def wrapper(*args, **kwargs):\n        logging.info(f\"Calling method: {func.__name__}\")\n        result = func(*args, **kwargs)\n        logging.info(f\"Method {func.__name__} finished\")\n        return result\n    return wrapper\nclass Game:\n    def __init__(self):\n        self.deck = Deck()",
+        "peekOfCode": "def log_method_call(func):\n    def wrapper(*args, **kwargs):\n        logging.info(f\"Calling method: {func.__name__}\")\n        result = func(*args, **kwargs)\n        logging.info(f\"Method {func.__name__} finished\")\n        return result\n    return wrapper\nclass Game:\n    def __init__(self, bet_point):\n        self.deck = Deck()",
         "detail": "MyApp.game.game",
         "documentation": {}
     },
@@ -1022,7 +1039,7 @@
         "kind": 6,
         "importPath": "MyApp.game.models",
         "description": "MyApp.game.models",
-        "peekOfCode": "class History(models.Model):\n    CHOICES = [\n        ('H' , 'House'),\n        ('P' , 'Player'),\n    ]\n    user = models.ForeignKey(User, related_name='game_histories', on_delete=models.CASCADE)\n    house = models.CharField(max_length=5, blank=False, null=False)\n    player = models.CharField(max_length=5, blank=False, null=False)\n    result = models.CharField(max_length=6, choices=CHOICES)\n    match_id = models.CharField(max_length=6, blank=False, null=False)",
+        "peekOfCode": "class History(models.Model):\n    CHOICES = [\n        ('H' , 'House'),\n        ('P' , 'Player'),\n    ]\n    user = models.ForeignKey(User, related_name='game_histories', on_delete=models.CASCADE)\n    house = models.CharField(max_length=50, blank=False, null=False)\n    player = models.CharField(max_length=50, blank=False, null=False)\n    result = models.CharField(max_length=6, choices=CHOICES)\n    match_id = models.CharField(max_length=6, blank=False, null=False)",
         "detail": "MyApp.game.models",
         "documentation": {}
     },
@@ -1049,7 +1066,7 @@
         "kind": 5,
         "importPath": "MyApp.game.urls",
         "description": "MyApp.game.urls",
-        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('start/',views.start_game, name='start'),\n]",
+        "peekOfCode": "app_name = 'game'\nurlpatterns = [\n    path('start/',views.start_game, name='start'),\n]",
         "detail": "MyApp.game.urls",
         "documentation": {}
     },
@@ -1063,11 +1080,38 @@
         "documentation": {}
     },
     {
+        "label": "format_string",
+        "kind": 2,
+        "importPath": "MyApp.game.views",
+        "description": "MyApp.game.views",
+        "peekOfCode": "def format_string(input_string):\n    parts = input_string.split(\" of \")\n    if len(parts) == 2:\n        x = parts[0]\n        y = parts[1]\n        return f\"{y}/{x}\"\n    else:\n        return \"Invalid input format\"\n# Create your views here.\ndef start_game(request):",
+        "detail": "MyApp.game.views",
+        "documentation": {}
+    },
+    {
         "label": "start_game",
         "kind": 2,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "def start_game(request):\n    return render(request, 'game/start.html')",
+        "peekOfCode": "def start_game(request):\n    global current_game\n    if request.method == 'POST':\n        s_form = GameForm(request.POST)\n        if s_form.is_valid():\n            level = s_form.cleaned_data['choice_level']\n            bet_point = s_form.cleaned_data['choice_bet_point']\n        current_game = Game(bet_point)\n        current_game.auto_create_card()\n        print(f'current_game: {current_game.player}')",
+        "detail": "MyApp.game.views",
+        "documentation": {}
+    },
+    {
+        "label": "play_round",
+        "kind": 2,
+        "importPath": "MyApp.game.views",
+        "description": "MyApp.game.views",
+        "peekOfCode": "def play_round(request):\n    global current_game\n    if current_game is None:\n        return redirect('/')\n    if request.method == 'POST':\n        guess = request.POST.get('guess')\n        if guess:\n            current_game.play_round(guess)\n    if current_game.player.points < 30 or current_game.player.points >= 1000:\n        return redirect('game_over')",
+        "detail": "MyApp.game.views",
+        "documentation": {}
+    },
+    {
+        "label": "current_game",
+        "kind": 5,
+        "importPath": "MyApp.game.views",
+        "description": "MyApp.game.views",
+        "peekOfCode": "current_game = None\ndef format_string(input_string):\n    parts = input_string.split(\" of \")\n    if len(parts) == 2:\n        x = parts[0]\n        y = parts[1]\n        return f\"{y}/{x}\"\n    else:\n        return \"Invalid input format\"\n# Create your views here.",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -1814,7 +1858,7 @@
         "kind": 6,
         "importPath": "MyApp.wallet.models",
         "description": "MyApp.wallet.models",
-        "peekOfCode": "class ComboPoint(models.Model):\n    name = models.CharField(max_length=60, blank=False, null=False, default='point')\n    desc = models.CharField(max_length=500, blank= True, null=True, default='point')\n    image = models.ImageField(default='points/default.png', upload_to='points/')\n    price = models.IntegerField()\n    point = models.IntegerField()\nclass PaymentHistory(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE)\n    combo_point= models.ForeignKey(ComboPoint, on_delete=models.CASCADE)  \n    order_id = models.CharField(max_length=8)",
+        "peekOfCode": "class ComboPoint(models.Model):\n    name = models.CharField(max_length=60, blank=False, null=False, default='point')\n    desc = models.CharField(max_length=500, blank= True, null=True, default='point')\n    image = models.ImageField(default='points/default.png', upload_to='points/')\n    price = models.IntegerField()\n    point = models.IntegerField()\n    class Meta:\n        verbose_name_plural = \"Combo Points\"\nclass PaymentHistory(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE)",
         "detail": "MyApp.wallet.models",
         "documentation": {}
     },
