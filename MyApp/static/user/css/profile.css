@@ -20,6 +20,8 @@
 
 .content {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .title-content {
@@ -28,14 +30,33 @@
 
 .info-content {
     margin-top: 20px;
+    width: 100%;
+    display: flex;
+    text-align: center;
 }
 
-.info-content label {
-    font-weight: bold;
+.info-content .col-md-6 {
+    display: flex;
+    flex-direction: column;
 }
 
-.info-content p {
-    margin-left: 10px;
+.info-content .col-md-6 > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Khoảng cách giữa các cặp label và p */
+}
+
+.info-content .col-md-6 label {
+    flex: 1; /* Để label chiếm hết không gian cần thiết */
+    margin-right: 10px; /* Khoảng cách giữa label và p */
+    font-weight: bold; /* In đậm label nếu cần thiết */
+    min-width: 120px; /* Độ rộng tối thiểu của label */
+    text-align: right; /* Căn chỉnh label sang phải */
+}
+
+.info-content .col-md-6 p {
+    flex: 2; /* Để p chiếm hết không gian cần thiết */
 }
 
 .btn-content {
@@ -46,9 +67,10 @@
 .btn-content .btn {
     margin: 0 10px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

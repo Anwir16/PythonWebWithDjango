@@ -48,26 +48,32 @@ class Game:
 
     # Play a round of the game
     @log_method_call
-    def play_round(self):
+    def play_round(self,guess):
+        result = ''
         if self.player.points < self.bet_point:
             logging.info("Player does not have enough points to continue.")
-            return
+            result = "Player does not have enough points to continue."
+            return result
 
         self.player.update_points(-self.bet_point)
 
-        guess = Game.validate_input()
         if self.player.make_guess(self.house.card, guess):
             self.current_reward += 20
             self.player.update_points(self.bet_point)
             logging.info(f"Correct guess! Current reward: {self.current_reward} points.")
+            result = "Correct"
         else:
             self.current_reward = 0
             logging.info("Wrong guess. You lose the current round's reward.")
+            result = "Wrong"
 
         if self.player.points >= 1000:
             logging.info("Congratulations! You win the game.")
+            result = "Win"
         elif self.player.points < 30:
             logging.info("You do not have enough points. Game over.")
+            result = "Game over"
+        return result
 
     @log_method_call
     def start_game(self):

@@ -1,11 +1,12 @@
 from . import views
-from django.urls import path, include, reverse_lazy
+from django.urls import path, reverse_lazy
 from django.contrib.auth import views as auth_views
 
 app_name = 'user'
 urlpatterns = [
     path('login/',views.loginViews, name='login'),
     path('register/',views.signup, name='register'),
+    path('validation/username/',views.checkUsername, name='validate_username'),
     path('signout/',views.logoutViews, name='signout'),
     path('profile/',views.viewsProfile, name='profile'),
     path('updateProfile/', views.updateProfile, name='updateProfile'),

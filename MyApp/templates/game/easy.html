@@ -23,10 +23,11 @@
                 <img src="{% static 'game/img/' %}{{player_card}}.png" alt="{{player_card}}">
             </div>
             <div class="card-btn">
-                <form action="{% url 'game:start' %}" method="post">
+                <form action="{% url 'game:play_round' %}" method="post">
                     {% csrf_token %}
-                    <input type="submit" value="less" class="btn btn-success less-btn">
-                    <input type="submit" value="greater" class="btn btn-secondary greater-btn">
+                    <input type="submit" value="Continue" name="continue" id="continue" class="btn btn-success">
+                    <input type="submit" value="less" name="guess" id="guess" class="btn btn-success less-btn">
+                    <input type="submit" value="greater" name="guess" id="guess" class="btn btn-secondary greater-btn">
                 </form>
             </div>
         </div>

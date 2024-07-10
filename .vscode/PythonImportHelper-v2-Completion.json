@@ -147,6 +147,14 @@
         "documentation": {}
     },
     {
+        "label": "Player",
+        "importPath": "game.player",
+        "description": "game.player",
+        "isExtraImport": true,
+        "detail": "game.player",
+        "documentation": {}
+    },
+    {
         "label": "django.db",
         "kind": 6,
         "isExtraImport": true,
@@ -532,6 +540,22 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -597,14 +621,6 @@
     },
     {
         "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "include",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -708,6 +724,30 @@
         "documentation": {}
     },
     {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
         "label": "login_required",
         "importPath": "django.contrib.auth.decorators",
         "description": "django.contrib.auth.decorators",
@@ -746,22 +786,6 @@
         "description": "django.core.asgi",
         "isExtraImport": true,
         "detail": "django.core.asgi",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
         "documentation": {}
     },
     {
@@ -919,7 +943,7 @@
         "documentation": {}
     },
     {
-        "label": "HttpResponse",
+        "label": "JsonResponse",
         "importPath": "django.http",
         "description": "django.http",
         "isExtraImport": true,
@@ -1048,7 +1072,7 @@
         "kind": 6,
         "importPath": "MyApp.game.player",
         "description": "MyApp.game.player",
-        "peekOfCode": "class Player:\n    def __init__(self, name):\n        self.name = name\n        self._points = 60\n        self.card = None\n    @property\n    def points(self):\n        return self._points\n    @points.setter\n    def points(self, value):",
+        "peekOfCode": "class Player:\n    def __init__(self, name, point):\n        self.name = name\n        self._points = point\n        self.card = None\n    @property\n    def points(self):\n        return self._points\n    @points.setter\n    def points(self, value):",
         "detail": "MyApp.game.player",
         "documentation": {}
     },
@@ -1066,7 +1090,7 @@
         "kind": 5,
         "importPath": "MyApp.game.urls",
         "description": "MyApp.game.urls",
-        "peekOfCode": "app_name = 'game'\nurlpatterns = [\n    path('start/',views.start_game, name='start'),\n]",
+        "peekOfCode": "app_name = 'game'\nurlpatterns = [\n    path('start/',views.start_game, name='start'),\n    path('round/', views.play_round, name='play_round'),\n]",
         "detail": "MyApp.game.urls",
         "documentation": {}
     },
@@ -1075,7 +1099,7 @@
         "kind": 5,
         "importPath": "MyApp.game.urls",
         "description": "MyApp.game.urls",
-        "peekOfCode": "urlpatterns = [\n    path('start/',views.start_game, name='start'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('start/',views.start_game, name='start'),\n    path('round/', views.play_round, name='play_round'),\n]",
         "detail": "MyApp.game.urls",
         "documentation": {}
     },
@@ -1084,7 +1108,7 @@
         "kind": 2,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "def format_string(input_string):\n    parts = input_string.split(\" of \")\n    if len(parts) == 2:\n        x = parts[0]\n        y = parts[1]\n        return f\"{y}/{x}\"\n    else:\n        return \"Invalid input format\"\n# Create your views here.\ndef start_game(request):",
+        "peekOfCode": "def format_string(input_string):\n    parts = input_string.split(\" of \")\n    if parts and len(parts) == 2:\n        x = parts[0]\n        y = parts[1]\n        return f\"{y}/{x}\"\n    return input_string\ndef start_game(request):\n    global current_game\n    global player",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -1093,7 +1117,7 @@
         "kind": 2,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "def start_game(request):\n    global current_game\n    if request.method == 'POST':\n        s_form = GameForm(request.POST)\n        if s_form.is_valid():\n            level = s_form.cleaned_data['choice_level']\n            bet_point = s_form.cleaned_data['choice_bet_point']\n        current_game = Game(bet_point)\n        current_game.auto_create_card()\n        print(f'current_game: {current_game.player}')",
+        "peekOfCode": "def start_game(request):\n    global current_game\n    global player\n    if request.method == 'POST':\n        s_form = GameForm(request.POST)\n        user = User.objects.get(user=request.user)\n        profile = Profile.objects.get(profile=request.user)\n        if s_form.is_valid():\n            level = s_form.cleaned_data['choice_level']\n            bet_point = s_form.cleaned_data['choice_bet_point']",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -1102,7 +1126,7 @@
         "kind": 2,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "def play_round(request):\n    global current_game\n    if current_game is None:\n        return redirect('/')\n    if request.method == 'POST':\n        guess = request.POST.get('guess')\n        if guess:\n            current_game.play_round(guess)\n    if current_game.player.points < 30 or current_game.player.points >= 1000:\n        return redirect('game_over')",
+        "peekOfCode": "def play_round(request):\n    global current_game\n    result = \"\"\n    house_card = \"back_card\"\n    if current_game is None:\n        return redirect('/')\n    if request.method == 'POST':\n        guess = request.POST.get('guess')\n        print(f'guess: {guess}')\n        if guess in ('less','greater'):",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -1111,7 +1135,16 @@
         "kind": 5,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "current_game = None\ndef format_string(input_string):\n    parts = input_string.split(\" of \")\n    if len(parts) == 2:\n        x = parts[0]\n        y = parts[1]\n        return f\"{y}/{x}\"\n    else:\n        return \"Invalid input format\"\n# Create your views here.",
+        "peekOfCode": "current_game = None\nplayer = None\ndef format_string(input_string):\n    parts = input_string.split(\" of \")\n    if parts and len(parts) == 2:\n        x = parts[0]\n        y = parts[1]\n        return f\"{y}/{x}\"\n    return input_string\ndef start_game(request):",
+        "detail": "MyApp.game.views",
+        "documentation": {}
+    },
+    {
+        "label": "player",
+        "kind": 5,
+        "importPath": "MyApp.game.views",
+        "description": "MyApp.game.views",
+        "peekOfCode": "player = None\ndef format_string(input_string):\n    parts = input_string.split(\" of \")\n    if parts and len(parts) == 2:\n        x = parts[0]\n        y = parts[1]\n        return f\"{y}/{x}\"\n    return input_string\ndef start_game(request):\n    global current_game",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -1705,7 +1738,7 @@
         "kind": 5,
         "importPath": "MyApp.user.urls",
         "description": "MyApp.user.urls",
-        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('updateProfile/', views.updateProfile, name='updateProfile'),\n    #change password\n    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='user/changePassword.html',success_url = reverse_lazy(\"user:password_change_done\")), name='password_change'),\n    path('password_change_done/', auth_views.PasswordChangeDoneView.as_view(template_name='user/passwordChangeDone.html'), name='password_change_done'),",
+        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('validation/username/',views.checkUsername, name='validate_username'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('updateProfile/', views.updateProfile, name='updateProfile'),\n    #change password\n    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='user/changePassword.html',success_url = reverse_lazy(\"user:password_change_done\")), name='password_change'),",
         "detail": "MyApp.user.urls",
         "documentation": {}
     },
@@ -1714,8 +1747,17 @@
         "kind": 5,
         "importPath": "MyApp.user.urls",
         "description": "MyApp.user.urls",
-        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('updateProfile/', views.updateProfile, name='updateProfile'),\n    #change password\n    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='user/changePassword.html',success_url = reverse_lazy(\"user:password_change_done\")), name='password_change'),\n    path('password_change_done/', auth_views.PasswordChangeDoneView.as_view(template_name='user/passwordChangeDone.html'), name='password_change_done'),\n    #using email to reset password",
+        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('validation/username/',views.checkUsername, name='validate_username'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('updateProfile/', views.updateProfile, name='updateProfile'),\n    #change password\n    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='user/changePassword.html',success_url = reverse_lazy(\"user:password_change_done\")), name='password_change'),\n    path('password_change_done/', auth_views.PasswordChangeDoneView.as_view(template_name='user/passwordChangeDone.html'), name='password_change_done'),",
         "detail": "MyApp.user.urls",
+        "documentation": {}
+    },
+    {
+        "label": "checkUsername",
+        "kind": 2,
+        "importPath": "MyApp.user.views",
+        "description": "MyApp.user.views",
+        "peekOfCode": "def checkUsername(request):\n    if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'GET':\n        username = request.GET.get('username', None)\n        if User.objects.filter(username = username).exists():\n            return JsonResponse({'valid' : False}, status = 200)\n        else:\n            return JsonResponse({'valid' : True}, status = 200)\n    return JsonResponse({}, status = 400)\ndef signup(request):\n    if request.user.is_authenticated:",
+        "detail": "MyApp.user.views",
         "documentation": {}
     },
     {
@@ -1760,15 +1802,6 @@
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
         "peekOfCode": "def updateProfile(request):\n    user = request.user\n    profile = get_object_or_404(Profile, user=user)\n    if request.method == 'POST':\n        u_form = UserUpdateForm(request.POST, instance=user)\n        p_form = UpdateProfileForm(request.POST, request.FILES, instance=profile)\n        if u_form.is_valid() and p_form.is_valid():\n            u_form.save()\n            p_form.save()\n            return redirect('user:profile')",
-        "detail": "MyApp.user.views",
-        "documentation": {}
-    },
-    {
-        "label": "SCOPES",
-        "kind": 5,
-        "importPath": "MyApp.user.views",
-        "description": "MyApp.user.views",
-        "peekOfCode": "SCOPES = ['https://www.googleapis.com/auth/gmail.send']\n# Create your views here.\ndef signup(request):\n    if request.user.is_authenticated:\n        return redirect('/')\n    if request.method == 'POST':\n        u_form = UserCreationForm(request.POST)\n        if u_form.is_valid():\n            user = u_form.save()\n            Profile.objects.create(user=user)",
         "detail": "MyApp.user.views",
         "documentation": {}
     },

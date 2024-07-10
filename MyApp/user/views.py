@@ -5,11 +5,18 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from .models import Profile
-from django.http import HttpResponse
+from django.http import JsonResponse
 
-SCOPES = ['https://www.googleapis.com/auth/gmail.send']
 
-# Create your views here.
+def checkUsername(request):
+    if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'GET':
+        username = request.GET.get('username', None)
+        if User.objects.filter(username = username).exists():
+            return JsonResponse({'valid' : False}, status = 200)
+        else:
+            return JsonResponse({'valid' : True}, status = 200)
+    return JsonResponse({}, status = 400)
+
 def signup(request):
     if request.user.is_authenticated:
         return redirect('/')
@@ -76,7 +83,6 @@ def updateProfile(request):
     context = {
         'u_form': u_form,
         'p_form': p_form,
-        'profile' : profile,
         'choices' : Profile.CHOICES
     }
     

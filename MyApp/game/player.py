@@ -1,7 +1,8 @@
+from django.contrib.auth.models import User
 class Player:
-    def __init__(self, name):
+    def __init__(self, name, point):
         self.name = name
-        self._points = 60
+        self._points = point
         self.card = None
     
     @property
