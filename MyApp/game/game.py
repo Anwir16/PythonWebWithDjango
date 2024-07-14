@@ -2,6 +2,7 @@ import logging
 import re  # Regular Expressions for input validation
 from game.card import Deck
 from game.player import Player, House
+from user.models import Profile
 
 logging.basicConfig(level=logging.INFO)
 
@@ -16,7 +17,7 @@ def log_method_call(func):
 class Game:
     def __init__(self, bet_point):
         self.deck = Deck()
-        self.player = Player("Player")
+        self.player = None
         self.house = House()
         self.current_reward = 0
         self.bet_point = bet_point
@@ -54,12 +55,9 @@ class Game:
             logging.info("Player does not have enough points to continue.")
             result = "Player does not have enough points to continue."
             return result
-
-        self.player.update_points(-self.bet_point)
-
+          
         if self.player.make_guess(self.house.card, guess):
-            self.current_reward += 20
-            self.player.update_points(self.bet_point)
+            self.current_reward += self.bet_point + (self.bet_point * 0.1)
             logging.info(f"Correct guess! Current reward: {self.current_reward} points.")
             result = "Correct"
         else:
@@ -67,7 +65,7 @@ class Game:
             logging.info("Wrong guess. You lose the current round's reward.")
             result = "Wrong"
 
-        if self.player.points >= 1000:
+        if self.current_reward >= 1000:
             logging.info("Congratulations! You win the game.")
             result = "Win"
         elif self.player.points < 30:

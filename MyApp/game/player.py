@@ -1,16 +1,25 @@
 from django.contrib.auth.models import User
 class Player:
     def __init__(self, name, point):
-        self.name = name
+        self._name = name
         self._points = point
         self.card = None
     
     @property
     def points(self):
         return self._points
+
     @points.setter
     def points(self, value):
         self._points = value
+        
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, value):
+        self._name = value
 
     def make_guess(self, house_card, guess):
         return (guess == "greater" and self.card > house_card) or (

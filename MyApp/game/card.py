@@ -44,7 +44,7 @@ class Card:
         return self._rank
 
     def __str__(self):
-        if self.rank in ("Black Joker", "Red Joker"):
+        if self.rank in ("black_joker", "red_joker"):
             return f"{self.rank}"
         return f"{self.rank} of {self.suit}"
 
@@ -64,8 +64,8 @@ class Deck:
             Card(suit, rank)
             for suit in Suit.suit.keys()
             for rank in Rank.rank.keys()
-            if rank not in ("Black Joker", "Red Joker")
-        ] + [Card("", "Black Joker"), Card("", "Red Joker")]
+            if rank not in ("black_joker", "red_joker")
+        ] + [Card("", "black_joker"), Card("", "red_joker")]
         self.shuffle()
 
     def shuffle(self):

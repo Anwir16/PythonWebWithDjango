@@ -25,9 +25,13 @@
             <div class="card-btn">
                 <form action="{% url 'game:play_round' %}" method="post">
                     {% csrf_token %}
-                    <input type="submit" value="Continue" name="continue" id="continue" class="btn btn-success">
+                    {% if result %}
+                    <input type="submit" value="Continue" name="guess" id="continue" class="btn btn-success">
+                    <input type="submit" value="Stop" name="guess" id="stop" class="btn btn-danger">
+                    {% else %}
                     <input type="submit" value="less" name="guess" id="guess" class="btn btn-success less-btn">
                     <input type="submit" value="greater" name="guess" id="guess" class="btn btn-secondary greater-btn">
+                    {% endif %}
                 </form>
             </div>
         </div>

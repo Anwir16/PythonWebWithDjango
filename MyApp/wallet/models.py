@@ -19,6 +19,7 @@ class ComboPoint(models.Model):
     image = models.ImageField(default='points/default.png', upload_to='points/')
     price = models.IntegerField()
     point = models.IntegerField()
+    
     class Meta:
         verbose_name_plural = "Combo Points"
 class PaymentHistory(models.Model):

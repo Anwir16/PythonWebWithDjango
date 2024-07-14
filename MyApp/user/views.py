@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 from .models import Profile
 from django.http import JsonResponse
 
-
+# use ajax to check username
 def checkUsername(request):
     if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'GET':
         username = request.GET.get('username', None)
