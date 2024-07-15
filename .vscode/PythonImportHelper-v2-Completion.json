@@ -1,5 +1,447 @@
 [
     {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "django.db",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db",
+        "description": "django.db",
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -81,30 +523,6 @@
         "documentation": {}
     },
     {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
-        "documentation": {}
-    },
-    {
         "label": "logging",
         "kind": 6,
         "isExtraImport": true,
@@ -155,348 +573,35 @@
         "documentation": {}
     },
     {
-        "label": "django.db",
-        "kind": 6,
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
         "isExtraImport": true,
-        "importPath": "django.db",
-        "description": "django.db",
-        "detail": "django.db",
+        "detail": "user.models",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "user.models",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "user.models",
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
         "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
+        "detail": "user.models",
         "documentation": {}
     },
     {
@@ -708,6 +813,14 @@
         "documentation": {}
     },
     {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "Game",
         "importPath": "game.game",
         "description": "game.game",
@@ -716,35 +829,19 @@
         "documentation": {}
     },
     {
-        "label": "GameForm",
-        "importPath": "game.forms",
-        "description": "game.forms",
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
         "isExtraImport": true,
-        "detail": "game.forms",
+        "detail": "django.http",
         "documentation": {}
     },
     {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
         "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
+        "detail": "django.http",
         "documentation": {}
     },
     {
@@ -797,46 +894,6 @@
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
         "label": "static",
         "importPath": "django.conf.urls.static",
         "description": "django.conf.urls.static",
@@ -850,15 +907,6 @@
         "description": "django.core.wsgi",
         "isExtraImport": true,
         "detail": "django.core.wsgi",
-        "documentation": {}
-    },
-    {
-        "label": "django.db.models.deletion",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.db.models.deletion",
-        "description": "django.db.models.deletion",
-        "detail": "django.db.models.deletion",
         "documentation": {}
     },
     {
@@ -892,6 +940,22 @@
         "description": "django.contrib.auth.admin",
         "isExtraImport": true,
         "detail": "django.contrib.auth.admin",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
         "documentation": {}
     },
     {
@@ -943,11 +1007,11 @@
         "documentation": {}
     },
     {
-        "label": "JsonResponse",
-        "importPath": "django.http",
-        "description": "django.http",
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
         "isExtraImport": true,
-        "detail": "django.http",
+        "detail": "django.utils",
         "documentation": {}
     },
     {
@@ -984,6 +1048,24 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.game.migrations.0001_initial",
+        "description": "MyApp.game.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='History',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "MyApp.game.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.game.migrations.0002_alter_history_user",
+        "description": "MyApp.game.migrations.0002_alter_history_user",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('game', '0001_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='history',\n            name='user',\n            field=models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL),",
+        "detail": "MyApp.game.migrations.0002_alter_history_user",
         "documentation": {}
     },
     {
@@ -1027,17 +1109,8 @@
         "kind": 6,
         "importPath": "MyApp.game.card",
         "description": "MyApp.game.card",
-        "peekOfCode": "class Deck:\n    def __init__(self):\n        self.cards = [\n            Card(suit, rank)\n            for suit in Suit.suit.keys()\n            for rank in Rank.rank.keys()\n            if rank not in (\"Black Joker\", \"Red Joker\")\n        ] + [Card(\"\", \"Black Joker\"), Card(\"\", \"Red Joker\")]\n        self.shuffle()\n    def shuffle(self):",
+        "peekOfCode": "class Deck:\n    def __init__(self):\n        self.cards = [\n            Card(suit, rank)\n            for suit in Suit.suit.keys()\n            for rank in Rank.rank.keys()\n            if rank not in (\"black_joker\", \"red_joker\")\n        ] + [Card(\"\", \"black_joker\"), Card(\"\", \"red_joker\")]\n        self.shuffle()\n    def shuffle(self):",
         "detail": "MyApp.game.card",
-        "documentation": {}
-    },
-    {
-        "label": "GameForm",
-        "kind": 6,
-        "importPath": "MyApp.game.forms",
-        "description": "MyApp.game.forms",
-        "peekOfCode": "class GameForm(forms.Form):\n    choice_level = forms.CharField(max_length=6)\n    choice_bet_point = forms.IntegerField()",
-        "detail": "MyApp.game.forms",
         "documentation": {}
     },
     {
@@ -1045,7 +1118,7 @@
         "kind": 6,
         "importPath": "MyApp.game.game",
         "description": "MyApp.game.game",
-        "peekOfCode": "class Game:\n    def __init__(self, bet_point):\n        self.deck = Deck()\n        self.player = Player(\"Player\")\n        self.house = House()\n        self.current_reward = 0\n        self.bet_point = bet_point\n    # Validate user input using regular expressions\n    @log_method_call\n    def validate_input():",
+        "peekOfCode": "class Game:\n    def __init__(self, bet_point):\n        self.deck = Deck()\n        self.player = None\n        self.house = House()\n        self.current_reward = 0\n        self.bet_point = bet_point\n    # Validate user input using regular expressions\n    @log_method_call\n    def validate_input():",
         "detail": "MyApp.game.game",
         "documentation": {}
     },
@@ -1063,7 +1136,7 @@
         "kind": 6,
         "importPath": "MyApp.game.models",
         "description": "MyApp.game.models",
-        "peekOfCode": "class History(models.Model):\n    CHOICES = [\n        ('H' , 'House'),\n        ('P' , 'Player'),\n    ]\n    user = models.ForeignKey(User, related_name='game_histories', on_delete=models.CASCADE)\n    house = models.CharField(max_length=50, blank=False, null=False)\n    player = models.CharField(max_length=50, blank=False, null=False)\n    result = models.CharField(max_length=6, choices=CHOICES)\n    match_id = models.CharField(max_length=6, blank=False, null=False)",
+        "peekOfCode": "class History(models.Model):\n    CHOICES = [\n        ('H' , 'House'),\n        ('P' , 'Player'),\n    ]\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    house = models.CharField(max_length=50, blank=False, null=False)\n    player = models.CharField(max_length=50, blank=False, null=False)\n    result = models.CharField(max_length=6, choices=CHOICES)\n    match_id = models.CharField(max_length=6, blank=False, null=False)",
         "detail": "MyApp.game.models",
         "documentation": {}
     },
@@ -1072,7 +1145,7 @@
         "kind": 6,
         "importPath": "MyApp.game.player",
         "description": "MyApp.game.player",
-        "peekOfCode": "class Player:\n    def __init__(self, name, point):\n        self.name = name\n        self._points = point\n        self.card = None\n    @property\n    def points(self):\n        return self._points\n    @points.setter\n    def points(self, value):",
+        "peekOfCode": "class Player:\n    def __init__(self, name, point):\n        self._name = name\n        self._points = point\n        self.card = None\n    @property\n    def points(self):\n        return self._points\n    @points.setter\n    def points(self, value):",
         "detail": "MyApp.game.player",
         "documentation": {}
     },
@@ -1104,20 +1177,11 @@
         "documentation": {}
     },
     {
-        "label": "format_string",
-        "kind": 2,
-        "importPath": "MyApp.game.views",
-        "description": "MyApp.game.views",
-        "peekOfCode": "def format_string(input_string):\n    parts = input_string.split(\" of \")\n    if parts and len(parts) == 2:\n        x = parts[0]\n        y = parts[1]\n        return f\"{y}/{x}\"\n    return input_string\ndef start_game(request):\n    global current_game\n    global player",
-        "detail": "MyApp.game.views",
-        "documentation": {}
-    },
-    {
         "label": "start_game",
         "kind": 2,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "def start_game(request):\n    global current_game\n    global player\n    if request.method == 'POST':\n        s_form = GameForm(request.POST)\n        user = User.objects.get(user=request.user)\n        profile = Profile.objects.get(profile=request.user)\n        if s_form.is_valid():\n            level = s_form.cleaned_data['choice_level']\n            bet_point = s_form.cleaned_data['choice_bet_point']",
+        "peekOfCode": "def start_game(request):\n    global current_game, profile, player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        bet_point = int(request.POST.get('choice_bet_point'))\n        current_game = Game(bet_point)\n        player = Player(name=user.username, point=profile.point)\n        current_game.player = player\n        if profile.point > bet_point:",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -1126,7 +1190,7 @@
         "kind": 2,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "def play_round(request):\n    global current_game\n    result = \"\"\n    house_card = \"back_card\"\n    if current_game is None:\n        return redirect('/')\n    if request.method == 'POST':\n        guess = request.POST.get('guess')\n        print(f'guess: {guess}')\n        if guess in ('less','greater'):",
+        "peekOfCode": "def play_round(request):\n    global current_game, bet_point, profile\n    result = \"\"\n    house_card = \"back_card\"\n    if current_game is None:\n        print(f'current_game: {current_game}')\n        return JsonResponse({'redirect' : '/'})\n    if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'POST':\n        guess = request.POST.get('guess', None)\n        action = request.POST.get('action', None)",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -1135,16 +1199,16 @@
         "kind": 5,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "current_game = None\nplayer = None\ndef format_string(input_string):\n    parts = input_string.split(\" of \")\n    if parts and len(parts) == 2:\n        x = parts[0]\n        y = parts[1]\n        return f\"{y}/{x}\"\n    return input_string\ndef start_game(request):",
+        "peekOfCode": "current_game = player = profile = None\nbet_point = 0\ndef start_game(request):\n    global current_game, profile, player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        bet_point = int(request.POST.get('choice_bet_point'))\n        current_game = Game(bet_point)\n        player = Player(name=user.username, point=profile.point)",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
     {
-        "label": "player",
+        "label": "bet_point",
         "kind": 5,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "player = None\ndef format_string(input_string):\n    parts = input_string.split(\" of \")\n    if parts and len(parts) == 2:\n        x = parts[0]\n        y = parts[1]\n        return f\"{y}/{x}\"\n    return input_string\ndef start_game(request):\n    global current_game",
+        "peekOfCode": "bet_point = 0\ndef start_game(request):\n    global current_game, profile, player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        bet_point = int(request.POST.get('choice_bet_point'))\n        current_game = Game(bet_point)\n        player = Player(name=user.username, point=profile.point)\n        current_game.player = player",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -1869,6 +1933,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.wallet.migrations.0008_alter_combopoint_options",
+        "description": "MyApp.wallet.migrations.0008_alter_combopoint_options",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('wallet', '0007_alter_paymenthistory_combo_point_and_more'),\n    ]\n    operations = [\n        migrations.AlterModelOptions(\n            name='combopoint',\n            options={'verbose_name_plural': 'Combo Points'},\n        ),\n    ]",
+        "detail": "MyApp.wallet.migrations.0008_alter_combopoint_options",
+        "documentation": {}
+    },
+    {
         "label": "WalletConfig",
         "kind": 6,
         "importPath": "MyApp.wallet.apps",
@@ -1927,7 +2000,7 @@
         "kind": 2,
         "importPath": "MyApp.wallet.views",
         "description": "MyApp.wallet.views",
-        "peekOfCode": "def view_buy_point(request):\n    combo_point = ComboPoint.objects.all()\n    return render(request, 'wallet/buy_point.html', {'combo_point' : combo_point})\n@login_required(login_url='user/login/')\ndef payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            _order_id = form.cleaned_data['order_id']",
+        "peekOfCode": "def view_buy_point(request):\n    global point, _order_id, _amount, _order_desc, combo_point_id\n    return_code = request.GET.get('vnp_ResponseCode')\n    if return_code == '00':\n        _profile = get_object_or_404(Profile, user=request.user)\n        _profile.point += point\n        _profile.save()\n        _combo_point = get_object_or_404(ComboPoint, id=combo_point_id)\n        PaymentHistory.objects.create(\n            user=request.user,",
         "detail": "MyApp.wallet.views",
         "documentation": {}
     },
@@ -1936,7 +2009,7 @@
         "kind": 2,
         "importPath": "MyApp.wallet.views",
         "description": "MyApp.wallet.views",
-        "peekOfCode": "def payment(request):\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            _order_id = form.cleaned_data['order_id']\n            _amount = form.cleaned_data['amount']\n            _order_desc = form.cleaned_data['order_desc']\n            bank_code = \"\"\n            language = form.cleaned_data['language']",
+        "peekOfCode": "def payment(request):\n    global point, _order_id, _amount, _order_desc, combo_point_id\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            _order_id = form.cleaned_data['order_id']\n            _amount = form.cleaned_data['amount']\n            _order_desc = form.cleaned_data['order_desc']\n            bank_code = \"\"",
         "detail": "MyApp.wallet.views",
         "documentation": {}
     },
@@ -1955,6 +2028,15 @@
         "importPath": "MyApp.wallet.views",
         "description": "MyApp.wallet.views",
         "peekOfCode": "def get_client_ip(request):\n    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')\n    if x_forwarded_for:\n        ip = x_forwarded_for.split(',')[0]\n    else:\n        ip = request.META.get('REMOTE_ADDR')\n    return ip",
+        "detail": "MyApp.wallet.views",
+        "documentation": {}
+    },
+    {
+        "label": "point",
+        "kind": 5,
+        "importPath": "MyApp.wallet.views",
+        "description": "MyApp.wallet.views",
+        "peekOfCode": "point = _order_id = _amount = _order_desc = combo_point_id = None\n@login_required(login_url='user/login/')\ndef view_buy_point(request):\n    global point, _order_id, _amount, _order_desc, combo_point_id\n    return_code = request.GET.get('vnp_ResponseCode')\n    if return_code == '00':\n        _profile = get_object_or_404(Profile, user=request.user)\n        _profile.point += point\n        _profile.save()\n        _combo_point = get_object_or_404(ComboPoint, id=combo_point_id)",
         "detail": "MyApp.wallet.views",
         "documentation": {}
     },

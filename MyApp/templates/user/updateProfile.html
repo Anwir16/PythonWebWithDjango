@@ -15,22 +15,22 @@
                     <div class="form-group">
                         <label for="id_username">Username:</label>
                         <input type="text" name="username" class="form-control" id="id_username" required readonly value="{{ user.username }}">
-                        <p class="error">{{u_form.username}}</p>
+                        <p class="error">{{u_form.username.error}}</p>
                     </div>
                     <div class="form-group">
                         <label for="id_email">Email address:</label>
                         <input type="email" name="email" class="form-control" id="id_email" required value="{{ user.email }}">
-                        <p class="error">{{u_form.email}}</p>
+                        <p class="error">{{u_form.email.error}}</p>
                     </div>
                     <div class="form-group">
                         <label for="id_first_name">First name:</label>
                         <input type="text" name="first_name" class="form-control" id="id_first_name" required value="{{ user.first_name }}">
-                        <p class="error">{{u_form.first_name}}</p>
+                        <p class="error">{{u_form.first_name.errors}}</p>
                     </div>
                     <div class="form-group">
                         <label for="id_last_name">Last name:</label>
                         <input type="text" name="last_name" class="form-control" id="id_last_name" required value="{{ user.last_name }}">
-                        <p class="error">{{u_form.last_name}}</p>
+                        <p class="error">{{u_form.last_name.errors}}</p>
                     </div>
                     <div class="form-group">
                         <label for="id_image">Avatar:</label>
@@ -38,7 +38,7 @@
                         {% if profile.image %}
                             <img src="{{ profile.image.url }}" alt="Avatar" class="img-thumbnail mt-2" width="150">
                         {% endif %}
-                        <p class="error">{{p_form.image}}</p>
+                        <p class="error">{{p_form.image.errors}}</p>
                     </div>
                     <div class="form-group">
                         <label for="id_gender">Gender:</label>
@@ -47,12 +47,12 @@
                                 <option value="{{ key }}" {% if profile.gender == key %}selected{% endif %}>{{ value }}</option>
                             {% endfor %}
                         </select>
-                        <p class="error">{{p_form.gender}}</p>
+                        <p class="error">{{p_form.gender.errors}}</p>
                     </div>
                     <div class="form-group">
                         <label for="id_birthday">Birthday:</label>
                         <input type="date" name="birthday" class="form-control" id="id_birthday" required value="{{ profile.birthday|date:'Y-m-d' }}">
-                        <p class="error">{{p_form.birthday}}</p>
+                        <p class="error">{{p_form.birthday.errors}}</p>
                     </div>
                     <button type="submit" class="btn btn-success">Update</button>
                     <a href="{% url 'user:profile' %}" class="btn btn-danger">Back</a>

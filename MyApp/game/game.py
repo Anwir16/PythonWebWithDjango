@@ -53,9 +53,9 @@ class Game:
         result = ''
         if self.player.points < self.bet_point:
             logging.info("Player does not have enough points to continue.")
-            result = "Player does not have enough points to continue."
+            result = "Game over"
             return result
-          
+
         if self.player.make_guess(self.house.card, guess):
             self.current_reward += self.bet_point + (self.bet_point * 0.1)
             logging.info(f"Correct guess! Current reward: {self.current_reward} points.")

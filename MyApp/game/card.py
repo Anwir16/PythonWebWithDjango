@@ -46,7 +46,7 @@ class Card:
     def __str__(self):
         if self.rank in ("black_joker", "red_joker"):
             return f"{self.rank}"
-        return f"{self.rank} of {self.suit}"
+        return f"{self.suit}/{self.rank}"
 
     def __lt__(self, other):
         if Rank.rank[self.rank] == Rank.rank[other.rank]:

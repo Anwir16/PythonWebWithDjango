@@ -1,7 +1,7 @@
 from datetime import datetime
 from django.utils import timezone
 from django.conf import settings
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 
 from user.models import Profile
@@ -15,10 +15,10 @@ def view_buy_point(request):
     global point, _order_id, _amount, _order_desc, combo_point_id
     return_code = request.GET.get('vnp_ResponseCode')
     if return_code == '00':
-        _profile = Profile.objects.get(user=request.user)
+        _profile = get_object_or_404(Profile, user=request.user)
         _profile.point += point
         _profile.save()
-        _combo_point = ComboPoint.objects.get(id=combo_point_id)
+        _combo_point = get_object_or_404(ComboPoint, id=combo_point_id)
         PaymentHistory.objects.create(
             user=request.user,
             combo_point = _combo_point,
