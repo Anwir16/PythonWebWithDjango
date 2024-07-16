@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     alert('Game Over');
                     window.location.href = '/';
                 }
+                else if (response.redirect === '//'){
+                    alert('Win');
+                    window.location.href = '/';
+                }
                 $('#player-card').attr('src', "/static/game/img/" + response.player_card + ".png");
                 $('#house-card').attr('src', "/static/game/img/" + response.house_card + ".png");
                 $('#profile-point').text(response.player_points);
@@ -59,6 +63,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log(response.redirect);
                 if (response.redirect) {
                     alert('Game Over');
+                    window.location.href = '/';
+                }
+                else if (response.redirect === '//'){
+                    alert('Win');
                     window.location.href = '/';
                 }
                 $('#player-card').attr('src', "/static/game/img/" + response.player_card + ".png");

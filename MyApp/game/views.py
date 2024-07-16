@@ -17,9 +17,10 @@ def start_game(request):
         current_game = Game(bet_point)
         player = Player(name=user.username, point=profile.point)
         current_game.player = player
-        if profile.point > bet_point:
+        if profile.point >= bet_point:
             current_game.auto_create_card()
             player_card = current_game.player.card
+            print(f'player_card: {player_card}')
             result = ''
         else:
             player_card = 'back_card'
@@ -60,8 +61,15 @@ def play_round(request):
             profile.save()
             current_game = None
             return JsonResponse({'redirect' : '/'})
-        if profile.point < bet_point or current_game.current_reward >= 1000:
+        print(f'profile.point: {profile.point}')
+        if profile.point < bet_point:
+            current_game = None
             return JsonResponse({'redirect' : '/'})
+        elif current_game.current_reward >= 1000:
+            profile.point += current_game.current_reward
+            profile.save()
+            current_game = None
+            return JsonResponse({'redirect' : '//'})
         context = {
             'player_card': current_game.player.card.__str__(),
             'house_card': house_card,

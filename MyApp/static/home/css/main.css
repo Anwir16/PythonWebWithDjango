@@ -20,7 +20,7 @@ body {
 }
 
 main {
-  min-height: calc( 100vh - 438.79px );
+  min-height: calc( 100vh - 300.74px );
   display: flex;
   flex-direction: column; /* Đảm bảo các phần tử con được sắp xếp theo cột */
   align-items: center; /* Canh giữa theo chiều ngang */

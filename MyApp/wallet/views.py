@@ -14,6 +14,7 @@ point = _order_id = _amount = _order_desc = combo_point_id = None
 def view_buy_point(request):
     global point, _order_id, _amount, _order_desc, combo_point_id
     return_code = request.GET.get('vnp_ResponseCode')
+    print(f'return_code: {return_code}')
     if return_code == '00':
         _profile = get_object_or_404(Profile, user=request.user)
         _profile.point += point
@@ -74,6 +75,21 @@ def payment(request):
             combo_point = ComboPoint.objects.all()
             return render(request, 'wallet/buy_point.html', {'combo_point' : combo_point})
     else:
+        return_code = request.GET.get('vnp_ResponseCode')
+        print(f'return_code: {return_code}')
+        if return_code == '00':
+            _profile = get_object_or_404(Profile, user=request.user)
+            _profile.point += point
+            _profile.save()
+            _combo_point = get_object_or_404(ComboPoint, id=combo_point_id)
+            PaymentHistory.objects.create(
+                user=request.user,
+                combo_point = _combo_point,
+                order_id = _order_id,
+                amount = _amount,
+                order_desc = _order_desc,
+                order_date = timezone.now(),
+            )
         combo_point = ComboPoint.objects.all()
         return render(request, 'wallet/buy_point.html', {'combo_point' : combo_point})
 

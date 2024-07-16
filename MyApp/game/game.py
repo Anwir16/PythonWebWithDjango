@@ -40,7 +40,7 @@ class Game:
     
     @log_method_call
     def auto_create_card(self):
-        if self.player.points > self.bet_point:
+        if self.player.points >= self.bet_point:
             self.house.receive_card(self.deck.deal())
             logging.info(f"House card: {self.house.card}")
 
