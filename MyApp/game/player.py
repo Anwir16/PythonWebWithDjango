@@ -1,9 +1,11 @@
-from django.contrib.auth.models import User
+from user.models import Profile
+
 class Player:
-    def __init__(self, name, point):
+    def __init__(self, name, point, user):
         self._name = name
         self._points = point
         self.card = None
+        self.user = user
     
     @property
     def points(self):
@@ -27,7 +29,14 @@ class Player:
         )
 
     def update_points(self, amount):
-        self.points += amount
+        try:
+            profile = Profile.objects.get(user=self.user)
+            profile.point += amount
+            profile.save()
+            self.points += amount
+        except Profile.DoesNotExist:
+            # Handle the case where the profile does not exist
+            print(f"Profile for username {self.name} does not exist.")
 
 
 class House:

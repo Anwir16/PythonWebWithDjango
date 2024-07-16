@@ -12,8 +12,8 @@ class History(models.Model):
     player = models.CharField(max_length=50, blank=False, null=False)
     result = models.CharField(max_length=6, choices=CHOICES)
     match_id = models.CharField(max_length=6, blank=False, null=False)
-    level = models.CharField(max_length=6, blank=False, null=False)
     reward_point = models.IntegerField()
+    point =  models.IntegerField()
     
     class Meta:
         verbose_name_plural = "Round Histories"

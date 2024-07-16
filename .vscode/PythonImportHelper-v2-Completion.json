@@ -65,6 +65,14 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
         "label": "django.db",
         "kind": 6,
         "isExtraImport": true,
@@ -442,6 +450,249 @@
         "documentation": {}
     },
     {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "Deck",
+        "importPath": "game.card",
+        "description": "game.card",
+        "isExtraImport": true,
+        "detail": "game.card",
+        "documentation": {}
+    },
+    {
+        "label": "Card",
+        "importPath": "game.card",
+        "description": "game.card",
+        "isExtraImport": true,
+        "detail": "game.card",
+        "documentation": {}
+    },
+    {
+        "label": "Card",
+        "importPath": "game.card",
+        "description": "game.card",
+        "isExtraImport": true,
+        "detail": "game.card",
+        "documentation": {}
+    },
+    {
+        "label": "Deck",
+        "importPath": "game.card",
+        "description": "game.card",
+        "isExtraImport": true,
+        "detail": "game.card",
+        "documentation": {}
+    },
+    {
+        "label": "django",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django",
+        "description": "django",
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "setup_test_environment",
+        "importPath": "django.test.utils",
+        "description": "django.test.utils",
+        "isExtraImport": true,
+        "detail": "django.test.utils",
+        "documentation": {}
+    },
+    {
+        "label": "teardown_test_environment",
+        "importPath": "django.test.utils",
+        "description": "django.test.utils",
+        "isExtraImport": true,
+        "detail": "django.test.utils",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "importPath": "game.player",
+        "description": "game.player",
+        "isExtraImport": true,
+        "detail": "game.player",
+        "documentation": {}
+    },
+    {
+        "label": "House",
+        "importPath": "game.player",
+        "description": "game.player",
+        "isExtraImport": true,
+        "detail": "game.player",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "importPath": "game.player",
+        "description": "game.player",
+        "isExtraImport": true,
+        "detail": "game.player",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "game.game",
+        "description": "game.game",
+        "isExtraImport": true,
+        "detail": "game.game",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "game.game",
+        "description": "game.game",
+        "isExtraImport": true,
+        "detail": "game.game",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -538,158 +789,6 @@
         "importPath": "re",
         "description": "re",
         "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "Deck",
-        "importPath": "game.card",
-        "description": "game.card",
-        "isExtraImport": true,
-        "detail": "game.card",
-        "documentation": {}
-    },
-    {
-        "label": "Player",
-        "importPath": "game.player",
-        "description": "game.player",
-        "isExtraImport": true,
-        "detail": "game.player",
-        "documentation": {}
-    },
-    {
-        "label": "House",
-        "importPath": "game.player",
-        "description": "game.player",
-        "isExtraImport": true,
-        "detail": "game.player",
-        "documentation": {}
-    },
-    {
-        "label": "Player",
-        "importPath": "game.player",
-        "description": "game.player",
-        "isExtraImport": true,
-        "detail": "game.player",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -821,14 +920,6 @@
         "documentation": {}
     },
     {
-        "label": "Game",
-        "importPath": "game.game",
-        "description": "game.game",
-        "isExtraImport": true,
-        "detail": "game.game",
-        "documentation": {}
-    },
-    {
         "label": "JsonResponse",
         "importPath": "django.http",
         "description": "django.http",
@@ -845,11 +936,27 @@
         "documentation": {}
     },
     {
-        "label": "login_required",
-        "importPath": "django.contrib.auth.decorators",
-        "description": "django.contrib.auth.decorators",
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
         "isExtraImport": true,
-        "detail": "django.contrib.auth.decorators",
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -869,12 +976,11 @@
         "documentation": {}
     },
     {
-        "label": "os",
-        "kind": 6,
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
         "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
+        "detail": "django.contrib.auth.decorators",
         "documentation": {}
     },
     {
@@ -940,22 +1046,6 @@
         "description": "django.contrib.auth.admin",
         "isExtraImport": true,
         "detail": "django.contrib.auth.admin",
-        "documentation": {}
-    },
-    {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
         "documentation": {}
     },
     {
@@ -1069,6 +1159,33 @@
         "documentation": {}
     },
     {
+        "label": "TestCard",
+        "kind": 6,
+        "importPath": "MyApp.game.tests.card_test",
+        "description": "MyApp.game.tests.card_test",
+        "peekOfCode": "class TestCard(unittest.TestCase):\n    def setUp(self):\n        self.deck = Deck()\n    def test_deck_initialization(self):\n        # Check that the deck contains 54 cards (52 + 2 jokers)\n        self.assertEqual(len(self.deck.cards), 54)\n        # Check the presence of black and red jokers\n        black_joker = Card(\"\", \"black_joker\")\n        red_joker = Card(\"\", \"red_joker\")\n        self.assertIn(black_joker, self.deck.cards)",
+        "detail": "MyApp.game.tests.card_test",
+        "documentation": {}
+    },
+    {
+        "label": "TestGame",
+        "kind": 6,
+        "importPath": "MyApp.game.tests.game_test",
+        "description": "MyApp.game.tests.game_test",
+        "peekOfCode": "class TestGame(unittest.TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()\n    @classmethod\n    def tearDownClass(cls):\n        teardown_test_environment()\n    def setUp(self):\n        self.user = User.objects.create_user(username=f'testuser_{self.id()}', password='12345')\n        self.profile = Profile.objects.create(user=self.user, point=1000)",
+        "detail": "MyApp.game.tests.game_test",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ['DJANGO_SETTINGS_MODULE']",
+        "kind": 5,
+        "importPath": "MyApp.game.tests.game_test",
+        "description": "MyApp.game.tests.game_test",
+        "peekOfCode": "os.environ['DJANGO_SETTINGS_MODULE'] = 'MyApp.settings'  \n# Initialize Django\ndjango.setup()\nfrom game.player import Player\nfrom game.game import Game\nfrom game.card import Card\nfrom django.contrib.auth.models import User\nfrom user.models import Profile\nclass TestGame(unittest.TestCase):\n    @classmethod",
+        "detail": "MyApp.game.tests.game_test",
+        "documentation": {}
+    },
+    {
         "label": "GameConfig",
         "kind": 6,
         "importPath": "MyApp.game.apps",
@@ -1118,7 +1235,7 @@
         "kind": 6,
         "importPath": "MyApp.game.game",
         "description": "MyApp.game.game",
-        "peekOfCode": "class Game:\n    def __init__(self, bet_point):\n        self.deck = Deck()\n        self.player = None\n        self.house = House()\n        self.current_reward = 0\n        self.bet_point = bet_point\n    # Validate user input using regular expressions\n    @log_method_call\n    def validate_input():",
+        "peekOfCode": "class Game:\n    def __init__(self, bet_point, player):\n        self.deck = Deck()\n        self.player = player\n        self.house = House()\n        self.current_reward = 0\n        self.bet_point = bet_point\n    @log_method_call\n    def auto_create_card(self):\n        if self.player.points >= self.bet_point:",
         "detail": "MyApp.game.game",
         "documentation": {}
     },
@@ -1127,7 +1244,7 @@
         "kind": 2,
         "importPath": "MyApp.game.game",
         "description": "MyApp.game.game",
-        "peekOfCode": "def log_method_call(func):\n    def wrapper(*args, **kwargs):\n        logging.info(f\"Calling method: {func.__name__}\")\n        result = func(*args, **kwargs)\n        logging.info(f\"Method {func.__name__} finished\")\n        return result\n    return wrapper\nclass Game:\n    def __init__(self, bet_point):\n        self.deck = Deck()",
+        "peekOfCode": "def log_method_call(func):\n    def wrapper(*args, **kwargs):\n        logging.info(f\"Calling method: {func.__name__}\")\n        result = func(*args, **kwargs)\n        logging.info(f\"Method {func.__name__} finished\")\n        return result\n    return wrapper\nclass Game:\n    def __init__(self, bet_point, player):\n        self.deck = Deck()",
         "detail": "MyApp.game.game",
         "documentation": {}
     },
@@ -1145,7 +1262,7 @@
         "kind": 6,
         "importPath": "MyApp.game.player",
         "description": "MyApp.game.player",
-        "peekOfCode": "class Player:\n    def __init__(self, name, point):\n        self._name = name\n        self._points = point\n        self.card = None\n    @property\n    def points(self):\n        return self._points\n    @points.setter\n    def points(self, value):",
+        "peekOfCode": "class Player:\n    def __init__(self, name, point, user):\n        self._name = name\n        self._points = point\n        self.card = None\n        self.user = user\n    @property\n    def points(self):\n        return self._points\n    @points.setter",
         "detail": "MyApp.game.player",
         "documentation": {}
     },
@@ -1181,7 +1298,7 @@
         "kind": 2,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "def start_game(request):\n    global current_game, profile, player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        bet_point = int(request.POST.get('choice_bet_point'))\n        current_game = Game(bet_point)\n        player = Player(name=user.username, point=profile.point)\n        current_game.player = player\n        if profile.point > bet_point:",
+        "peekOfCode": "def start_game(request):\n    global current_game, profile, _player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        _bet_point = int(request.POST.get('choice_bet_point'))\n        _player = Player(name=user.username, point=profile.point, user=user)\n        current_game = Game(bet_point=_bet_point, player=_player)\n        current_game.auto_create_card()\n        print(f's_current_game: {current_game}')",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -1190,7 +1307,7 @@
         "kind": 2,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "def play_round(request):\n    global current_game, bet_point, profile\n    result = \"\"\n    house_card = \"back_card\"\n    if current_game is None:\n        print(f'current_game: {current_game}')\n        return JsonResponse({'redirect' : '/'})\n    if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'POST':\n        guess = request.POST.get('guess', None)\n        action = request.POST.get('action', None)",
+        "peekOfCode": "def play_round(request):\n    global current_game, bet_point\n    result = \"\"\n    house_card = \"back_card\"\n    if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'POST':\n        guess = request.POST.get('guess', None)\n        action = request.POST.get('action', None)\n        print(f'guess: {guess}')\n        user = request.user\n        profile = Profile.objects.get(user=user)",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -1199,7 +1316,7 @@
         "kind": 5,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "current_game = player = profile = None\nbet_point = 0\ndef start_game(request):\n    global current_game, profile, player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        bet_point = int(request.POST.get('choice_bet_point'))\n        current_game = Game(bet_point)\n        player = Player(name=user.username, point=profile.point)",
+        "peekOfCode": "current_game = player = None\nbet_point = 0\ndef start_game(request):\n    global current_game, profile, _player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        _bet_point = int(request.POST.get('choice_bet_point'))\n        _player = Player(name=user.username, point=profile.point, user=user)\n        current_game = Game(bet_point=_bet_point, player=_player)",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -1208,7 +1325,7 @@
         "kind": 5,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "bet_point = 0\ndef start_game(request):\n    global current_game, profile, player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        bet_point = int(request.POST.get('choice_bet_point'))\n        current_game = Game(bet_point)\n        player = Player(name=user.username, point=profile.point)\n        current_game.player = player",
+        "peekOfCode": "bet_point = 0\ndef start_game(request):\n    global current_game, profile, _player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        _bet_point = int(request.POST.get('choice_bet_point'))\n        _player = Player(name=user.username, point=profile.point, user=user)\n        current_game = Game(bet_point=_bet_point, player=_player)\n        current_game.auto_create_card()",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -2000,7 +2117,7 @@
         "kind": 2,
         "importPath": "MyApp.wallet.views",
         "description": "MyApp.wallet.views",
-        "peekOfCode": "def view_buy_point(request):\n    global point, _order_id, _amount, _order_desc, combo_point_id\n    return_code = request.GET.get('vnp_ResponseCode')\n    if return_code == '00':\n        _profile = get_object_or_404(Profile, user=request.user)\n        _profile.point += point\n        _profile.save()\n        _combo_point = get_object_or_404(ComboPoint, id=combo_point_id)\n        PaymentHistory.objects.create(\n            user=request.user,",
+        "peekOfCode": "def view_buy_point(request):\n    global point, _order_id, _amount, _order_desc, combo_point_id\n    return_code = request.GET.get('vnp_ResponseCode')\n    print(f'return_code: {return_code}')\n    if return_code == '00':\n        _profile = get_object_or_404(Profile, user=request.user)\n        _profile.point += point\n        _profile.save()\n        _combo_point = get_object_or_404(ComboPoint, id=combo_point_id)\n        PaymentHistory.objects.create(",
         "detail": "MyApp.wallet.views",
         "documentation": {}
     },
@@ -2036,7 +2153,7 @@
         "kind": 5,
         "importPath": "MyApp.wallet.views",
         "description": "MyApp.wallet.views",
-        "peekOfCode": "point = _order_id = _amount = _order_desc = combo_point_id = None\n@login_required(login_url='user/login/')\ndef view_buy_point(request):\n    global point, _order_id, _amount, _order_desc, combo_point_id\n    return_code = request.GET.get('vnp_ResponseCode')\n    if return_code == '00':\n        _profile = get_object_or_404(Profile, user=request.user)\n        _profile.point += point\n        _profile.save()\n        _combo_point = get_object_or_404(ComboPoint, id=combo_point_id)",
+        "peekOfCode": "point = _order_id = _amount = _order_desc = combo_point_id = None\n@login_required(login_url='user/login/')\ndef view_buy_point(request):\n    global point, _order_id, _amount, _order_desc, combo_point_id\n    return_code = request.GET.get('vnp_ResponseCode')\n    print(f'return_code: {return_code}')\n    if return_code == '00':\n        _profile = get_object_or_404(Profile, user=request.user)\n        _profile.point += point\n        _profile.save()",
         "detail": "MyApp.wallet.views",
         "documentation": {}
     },

@@ -57,6 +57,14 @@ class Card:
         if Rank.rank[self.rank] == Rank.rank[other.rank]:
             return Suit.suit[self.suit] > Suit.suit[other.suit]
         return Rank.rank[self.rank] > Rank.rank[other.rank]
+    
+    def __eq__(self, other):
+        if isinstance(other, Card):
+            return self.suit == other.suit and self.rank == other.rank
+        return False
+
+    def __hash__(self):
+        return hash((self.suit, self.rank))
 
 class Deck:
     def __init__(self):

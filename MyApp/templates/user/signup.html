@@ -19,14 +19,17 @@
             <div class="login__field">
               <i class="login__icon fa fa-user"></i>
               <input type="text" class="login__input" id="username" name="username" placeholder="User name" />
+              <p class="error">{{u_form.username.errors}}</p>
             </div>
             <div class="login__field">
               <i class="login__icon fa fa-lock"></i>
               <input type="password" class="login__input" name="password1" id="password1" placeholder="Password" />
+              <p class="error">{{u_form.password1.errors}}</p>
             </div>
             <div class="login__field">
               <i class="login__icon fa fa-lock"></i>
               <input type="password" class="login__input" name="password2" id="password2" placeholder="Comfirm Password" />
+              <p class="error">{{u_form.password2.errors}}</p>
             </div>
             <button class="button login__submit">
               <span class="button__text">Signup</span>
@@ -61,7 +64,7 @@
             success: function (response) {
                 // if not valid user, alert the user
                 if(!response["valid"]){
-                    alert("You cannot create a friend with same username");
+                    alert("Username already exist.");
                     var nickName = $("#username");
                     nickName.val("")
                     nickName.focus()

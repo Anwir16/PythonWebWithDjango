@@ -1,5 +1,6 @@
 $('#guess-buttons').show();
 $('#action-buttons').hide();
+$('#exit-buttons').hide();
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -12,20 +13,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 'csrfmiddlewaretoken': csrfToken
             },
             success: function (response) {
-                console.log(response.redirect);
-                if (response.redirect === '/') {
-                    alert('Game Over');
-                    window.location.href = '/';
-                }
-                else if (response.redirect === '//'){
-                    alert('Win');
-                    window.location.href = '/';
-                }
+                console.log(response.result);
+                console.log(response.player_card);
                 $('#player-card').attr('src', "/static/game/img/" + response.player_card + ".png");
                 $('#house-card').attr('src', "/static/game/img/" + response.house_card + ".png");
                 $('#profile-point').text(response.player_points);
                 $('.reward-point h4').first().text("Your reward point: " + response.reward_point);
-
                 // Update result
                 if (response.result) {
                     // Clear previous result
@@ -37,12 +30,19 @@ document.addEventListener('DOMContentLoaded', function () {
                     $('.reward-point .result').remove();
                 }
                 if (response.result) {
-                    console.log(response.result);
-                    $('#guess-buttons').hide();
-                    $('#action-buttons').show();
+                    if (response.result === 'Game over' || response.result === 'Win'){
+                        $('#exit-buttons').show();
+                        $('#guess-buttons').hide();
+                        $('#action-buttons').hide();
+                    } else{
+                        $('#exit-buttons').hide();
+                        $('#guess-buttons').hide();
+                        $('#action-buttons').show();
+                    }
                 } else {
                     $('#guess-buttons').show();
                     $('#action-buttons').hide();
+                    $('#exit-buttons').hide();
                 }
             },
             error: function (response) {
@@ -60,20 +60,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 'csrfmiddlewaretoken': csrfToken
             },
             success: function (response) {
-                console.log(response.redirect);
-                if (response.redirect) {
-                    alert('Game Over');
-                    window.location.href = '/';
-                }
-                else if (response.redirect === '//'){
-                    alert('Win');
-                    window.location.href = '/';
-                }
+                console.log(response.result);
+                console.log(response.player_card);
                 $('#player-card').attr('src', "/static/game/img/" + response.player_card + ".png");
                 $('#house-card').attr('src', "/static/game/img/" + response.house_card + ".png");
                 $('#profile-point').attr('span', response.player_point);
                 $('.reward-point h4').first().text("Your reward point: " + response.reward_point);
-
                 // Update result
                 if (response.result) {
                     // Clear previous result
@@ -85,17 +77,30 @@ document.addEventListener('DOMContentLoaded', function () {
                     $('.reward-point .result').remove();
                 }
                 if (response.result) {
-                    $('#guess-buttons').hide();
-                    $('#action-buttons').show();
+                    if (response.result === 'Game over' || response.result === 'Win'){
+                        $('#exit-buttons').show();
+                        $('#guess-buttons').hide();
+                        $('#action-buttons').hide();
+                    } else{
+                        $('#exit-buttons').hide();
+                        $('#guess-buttons').hide();
+                        $('#action-buttons').show();
+                    }
                 } else {
                     $('#guess-buttons').show();
                     $('#action-buttons').hide();
+                    $('#exit-buttons').hide();
                 }
             },
             error: function (response) {
                 console.log(response);
             }
         });
+    }
+
+    function handleExit() {
+        alert('Do you want to exit!')
+        window.location.href = '/'
     }
 
     $('#less').click(function () {
@@ -112,5 +117,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     $('#stop').click(function () {
         handleAction('Stop');
+    });
+
+    $('#exit').click(function () {
+        handleExit();
     });
 });
