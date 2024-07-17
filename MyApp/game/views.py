@@ -17,10 +17,10 @@ def start_game(request):
         _bet_point = int(request.POST.get('choice_bet_point'))
         _player = Player(name=user.username, point=profile.point, user=user)
         current_game = Game(bet_point=_bet_point, player=_player)
+        
         current_game.auto_create_card()
-        print(f's_current_game: {current_game}')
         player_card = current_game.player.card
-        print(f's_player_card: {player_card}')
+        
         context = {
         'player_card': player_card.__str__(),
         'house_card': 'back_card',
