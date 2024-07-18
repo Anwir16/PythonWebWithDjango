@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'PhucND.pythonanywhere.com']
 
 
 # Application definition
@@ -74,6 +74,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'allauth.account.middleware.AccountMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'MyApp.urls'
@@ -146,11 +147,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
-
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 # Default primary key field type
@@ -160,7 +162,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # set login url
 
-LOGIN_URL = 'user:login/'
+LOGIN_URL = 'user:login'
 # LOGIN GOOGLE CONFIG
 AUTHENTICATION_BACKENDS={
     "django.contrib.auth.backends.ModelBackend",
@@ -186,3 +188,5 @@ VNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get 
 VNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'
 VNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config
 VNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config
+
+handler404 = 'home.views.views_404'

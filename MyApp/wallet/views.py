@@ -10,7 +10,7 @@ from .vnpay import vnpay
 
 point = _order_id = _amount = _order_desc = combo_point_id = None
 
-@login_required(login_url='user/login/')
+@login_required(login_url='user:login')
 def view_buy_point(request):
     global point, _order_id, _amount, _order_desc, combo_point_id
     return_code = request.GET.get('vnp_ResponseCode')
@@ -31,7 +31,7 @@ def view_buy_point(request):
     combo_point = ComboPoint.objects.all()
     return render(request, 'wallet/buy_point.html', {'combo_point' : combo_point})
 
-@login_required(login_url='user/login/')
+@login_required(login_url='user:login')
 def payment(request):
     global point, _order_id, _amount, _order_desc, combo_point_id
     if request.method == 'POST':
@@ -93,12 +93,12 @@ def payment(request):
         combo_point = ComboPoint.objects.all()
         return render(request, 'wallet/buy_point.html', {'combo_point' : combo_point})
 
-@login_required(login_url='user/login/')
+@login_required(login_url='user:login')
 def payment_history(request):
     history = PaymentHistory.objects.filter(user=request.user)
     return render(request, 'wallet/history.html', {'history' : history})
 
-@login_required(login_url='user/login/')
+@login_required(login_url='user:login')
 def get_client_ip(request):
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
     if x_forwarded_for:

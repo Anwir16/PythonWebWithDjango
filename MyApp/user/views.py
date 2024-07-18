@@ -54,18 +54,18 @@ def loginViews(request):
         u_form = AuthenticationForm()
     return render(request, 'user/login.html', {'u_form': u_form})
 
-@login_required(login_url='user/login/')
+@login_required(login_url='user:login')
 def logoutViews(request):
     logout(request)
     return redirect('user:login')
 
-@login_required(login_url='user/login/')
+@login_required(login_url='user:login')
 def viewsProfile(request):
     if request.user.is_superuser:
         return redirect('/admin/')
     return render(request,'user/profile.html')
 
-@login_required(login_url='user/login/')
+@login_required(login_url='user:login')
 def updateProfile(request):
     user = request.user
     profile = get_object_or_404(Profile, user=user)
@@ -76,6 +76,16 @@ def updateProfile(request):
             u_form.save()
             p_form.save()
             return redirect('user:profile')
+        else:
+            u_form = UserUpdateForm(instance=user)
+            p_form = UpdateProfileForm(instance=profile)
+            context = {
+                'u_form': u_form,
+                'p_form': p_form,
+                'choices' : Profile.CHOICES
+            }
+            
+            return render(request, 'user/updateProfile.html',context)
     else:
         u_form = UserUpdateForm(instance=user)
         p_form = UpdateProfileForm(instance=profile)

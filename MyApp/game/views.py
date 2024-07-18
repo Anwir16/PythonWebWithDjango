@@ -1,4 +1,5 @@
 from django.shortcuts import redirect, render
+from django.contrib.auth.decorators import login_required
 from game.game import Game
 from game.player import Player
 from django.http import JsonResponse
@@ -8,6 +9,7 @@ import re
 current_game = player = None
 bet_point = 0
 
+@login_required(login_url='user:login')
 def start_game(request):
     global current_game, profile, _player, bet_point
     
@@ -30,6 +32,7 @@ def start_game(request):
         return render(request, 'game/easy.html', context)
     return render(request, 'home/dashboard.html')
 
+@login_required(login_url='user:login')
 def play_round(request):
     global current_game, bet_point
     result = ""
