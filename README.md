@@ -5,6 +5,7 @@ To run project must install:
 1. python -m pip install --upgrade pip
 2. pip install -r requirements.txt
 3. python.exe -m pip install --upgrade pip
+4. pip install --upgrade PyJWT
 
 To run a web site:
 1. Open folder you want to save your project on VSCode
