@@ -189,4 +189,3 @@ VNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'
 VNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config
 VNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config
 
-handler404 = 'home.views.views_404'

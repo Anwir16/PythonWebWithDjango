@@ -122,6 +122,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -491,7 +507,31 @@
         "documentation": {}
     },
     {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
         "label": "Deck",
+        "importPath": "game.card",
+        "description": "game.card",
+        "isExtraImport": true,
+        "detail": "game.card",
+        "documentation": {}
+    },
+    {
+        "label": "Card",
         "importPath": "game.card",
         "description": "game.card",
         "isExtraImport": true,
@@ -545,6 +585,22 @@
         "description": "django",
         "isExtraImport": true,
         "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "setup_test_environment",
+        "importPath": "django.test.utils",
+        "description": "django.test.utils",
+        "isExtraImport": true,
+        "detail": "django.test.utils",
+        "documentation": {}
+    },
+    {
+        "label": "teardown_test_environment",
+        "importPath": "django.test.utils",
+        "description": "django.test.utils",
+        "isExtraImport": true,
+        "detail": "django.test.utils",
         "documentation": {}
     },
     {
@@ -765,6 +821,22 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
         "label": "Profile",
         "importPath": "user.models",
         "description": "user.models",
@@ -879,6 +951,94 @@
         "documentation": {}
     },
     {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "re_path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -978,70 +1138,6 @@
         "documentation": {}
     },
     {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "include",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "reverse",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "reverse_lazy",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
         "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -1114,6 +1210,38 @@
         "documentation": {}
     },
     {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
         "label": "JsonResponse",
         "importPath": "django.http",
         "description": "django.http",
@@ -1127,30 +1255,6 @@
         "description": "django.http",
         "isExtraImport": true,
         "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "login_required",
-        "importPath": "django.contrib.auth.decorators",
-        "description": "django.contrib.auth.decorators",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.decorators",
-        "documentation": {}
-    },
-    {
-        "label": "login_required",
-        "importPath": "django.contrib.auth.decorators",
-        "description": "django.contrib.auth.decorators",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.decorators",
-        "documentation": {}
-    },
-    {
-        "label": "login_required",
-        "importPath": "django.contrib.auth.decorators",
-        "description": "django.contrib.auth.decorators",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.decorators",
         "documentation": {}
     },
     {
@@ -1175,6 +1279,14 @@
         "description": "django.conf.urls.static",
         "isExtraImport": true,
         "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "serve",
+        "importPath": "django.views.static",
+        "description": "django.views.static",
+        "isExtraImport": true,
+        "detail": "django.views.static",
         "documentation": {}
     },
     {
@@ -1216,6 +1328,22 @@
         "description": "django.contrib.auth.admin",
         "isExtraImport": true,
         "detail": "django.contrib.auth.admin",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdateForm",
+        "importPath": "user.forms",
+        "description": "user.forms",
+        "isExtraImport": true,
+        "detail": "user.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateProfileForm",
+        "importPath": "user.forms",
+        "description": "user.forms",
+        "isExtraImport": true,
+        "detail": "user.forms",
         "documentation": {}
     },
     {
@@ -1264,6 +1392,22 @@
         "description": "django.contrib.auth.forms",
         "isExtraImport": true,
         "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "ComboPoint",
+        "importPath": "wallet.models",
+        "description": "wallet.models",
+        "isExtraImport": true,
+        "detail": "wallet.models",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentHistory",
+        "importPath": "wallet.models",
+        "description": "wallet.models",
+        "isExtraImport": true,
+        "detail": "wallet.models",
         "documentation": {}
     },
     {
@@ -1329,6 +1473,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.game.migrations.0003_remove_history_level_history_point",
+        "description": "MyApp.game.migrations.0003_remove_history_level_history_point",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('game', '0002_alter_history_user'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='history',\n            name='level',\n        ),\n        migrations.AddField(",
+        "detail": "MyApp.game.migrations.0003_remove_history_level_history_point",
+        "documentation": {}
+    },
+    {
         "label": "TestCard",
         "kind": 6,
         "importPath": "MyApp.game.tests.test_card",
@@ -1387,7 +1540,7 @@
         "kind": 5,
         "importPath": "MyApp.game.tests.test_views",
         "description": "MyApp.game.tests.test_views",
-        "peekOfCode": "os.environ['DJANGO_SETTINGS_MODULE'] = 'MyApp.settings'\ndjango.setup()\nimport json\nfrom django.test import TestCase\nfrom django.contrib.auth.models import User\nfrom user.models import Profile\nfrom game.player import Player\nfrom game.game import Game\nimport uuid\nclass GameViewsTestCase(TestCase):",
+        "peekOfCode": "os.environ['DJANGO_SETTINGS_MODULE'] = 'MyApp.settings'\ndjango.setup()\nimport json\nfrom django.test import TestCase\nfrom django.contrib.auth.models import User\nfrom user.models import Profile\nfrom game.player import Player\nfrom game.game import Game\nimport uuid\nfrom django.urls import reverse",
         "detail": "MyApp.game.tests.test_views",
         "documentation": {}
     },
@@ -1522,7 +1675,7 @@
         "kind": 5,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "current_game = player = None\nbet_point = 0\ndef start_game(request):\n    global current_game, profile, _player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        _bet_point = int(request.POST.get('choice_bet_point'))\n        _player = Player(name=user.username, point=profile.point, user=user)\n        current_game = Game(bet_point=_bet_point, player=_player)",
+        "peekOfCode": "current_game = player = None\nbet_point = 0\n@login_required(login_url='user:login')\ndef start_game(request):\n    global current_game, profile, _player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        _bet_point = int(request.POST.get('choice_bet_point'))\n        _player = Player(name=user.username, point=profile.point, user=user)",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -1531,7 +1684,7 @@
         "kind": 5,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "bet_point = 0\ndef start_game(request):\n    global current_game, profile, _player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        _bet_point = int(request.POST.get('choice_bet_point'))\n        _player = Player(name=user.username, point=profile.point, user=user)\n        current_game = Game(bet_point=_bet_point, player=_player)\n        current_game.auto_create_card()",
+        "peekOfCode": "bet_point = 0\n@login_required(login_url='user:login')\ndef start_game(request):\n    global current_game, profile, _player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        _bet_point = int(request.POST.get('choice_bet_point'))\n        _player = Player(name=user.username, point=profile.point, user=user)\n        current_game = Game(bet_point=_bet_point, player=_player)",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -1567,7 +1720,16 @@
         "kind": 2,
         "importPath": "MyApp.home.views",
         "description": "MyApp.home.views",
-        "peekOfCode": "def dashboard(request):\n    return render(request,'home/dashboard.html')",
+        "peekOfCode": "def dashboard(request):\n    return render(request,'home/dashboard.html')\ndef view_404(requests, exception):\n    return render(requests, 'home/404.html', status=404)",
+        "detail": "MyApp.home.views",
+        "documentation": {}
+    },
+    {
+        "label": "view_404",
+        "kind": 2,
+        "importPath": "MyApp.home.views",
+        "description": "MyApp.home.views",
+        "peekOfCode": "def view_404(requests, exception):\n    return render(requests, 'home/404.html', status=404)",
         "detail": "MyApp.home.views",
         "documentation": {}
     },
@@ -1594,7 +1756,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nSITE_ID = 3",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['127.0.0.1', 'PhucND.pythonanywhere.com']\n# Application definition\nSITE_ID = 3",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1603,7 +1765,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['127.0.0.1', 'PhucND.pythonanywhere.com']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1612,7 +1774,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "peekOfCode": "DEBUG = False\nALLOWED_HOSTS = ['127.0.0.1', 'PhucND.pythonanywhere.com']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1621,7 +1783,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "ALLOWED_HOSTS = ['127.0.0.1', 'PhucND.pythonanywhere.com']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1657,7 +1819,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n    'allauth.account.middleware.AccountMiddleware',\n]",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n    'allauth.account.middleware.AccountMiddleware',\n    'whitenoise.middleware.WhiteNoiseMiddleware',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1711,7 +1873,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1720,7 +1882,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1729,7 +1891,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1738,7 +1900,16 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_ROOT = BASE_DIR / 'staticfiles'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "STATIC_ROOT = BASE_DIR / 'staticfiles'\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1756,7 +1927,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'",
+        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / \"static\",\n]\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1765,7 +1936,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\n# LOGIN GOOGLE CONFIG\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login'\n# LOGIN GOOGLE CONFIG\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1774,7 +1945,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "MEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\n# LOGIN GOOGLE CONFIG\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',",
+        "peekOfCode": "MEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login'\n# LOGIN GOOGLE CONFIG\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1783,7 +1954,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login/'\n# LOGIN GOOGLE CONFIG\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}\nLOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# set login url\nLOGIN_URL = 'user:login'\n# LOGIN GOOGLE CONFIG\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}\nLOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1792,7 +1963,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LOGIN_URL = 'user:login/'\n# LOGIN GOOGLE CONFIG\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}\nLOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True",
+        "peekOfCode": "LOGIN_URL = 'user:login'\n# LOGIN GOOGLE CONFIG\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}\nLOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1945,7 +2116,16 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.urls",
         "description": "MyApp.MyApp.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('user/',include('user.urls')),\n    path('',include('home.urls')),\n    path('accounts/',include('allauth.urls')),\n    path('wallet/',include('wallet.urls')),\n    path('play/',include('game.urls')),\n] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),\n    path('admin/', admin.site.urls),\n    path('user/',include('user.urls')),\n    path('',include('home.urls')),\n    path('accounts/',include('allauth.urls')),\n    path('wallet/',include('wallet.urls')),\n    path('play/',include('game.urls')),\n]\nhandler404 = 'home.views.view_404'",
+        "detail": "MyApp.MyApp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "handler404",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.urls",
+        "description": "MyApp.MyApp.urls",
+        "peekOfCode": "handler404 = 'home.views.view_404'\nif settings.DEBUG:\n    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
         "detail": "MyApp.MyApp.urls",
         "documentation": {}
     },
@@ -2134,7 +2314,7 @@
         "kind": 5,
         "importPath": "MyApp.user.tests",
         "description": "MyApp.user.tests",
-        "peekOfCode": "os.environ['DJANGO_SETTINGS_MODULE'] = 'MyApp.settings'\ndjango.setup()\nimport json\nfrom django.contrib.auth.models import User\nfrom user.models import Profile\nclass TestUser(TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()\n    @classmethod",
+        "peekOfCode": "os.environ['DJANGO_SETTINGS_MODULE'] = 'MyApp.settings'\ndjango.setup()\nimport json\nfrom django.contrib.auth.models import User\nfrom user.models import Profile\nfrom user.forms import UserUpdateForm, UpdateProfileForm\nclass TestUser(TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()",
         "detail": "MyApp.user.tests",
         "documentation": {}
     },
@@ -2188,7 +2368,7 @@
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def logoutViews(request):\n    logout(request)\n    return redirect('user:login')\n@login_required(login_url='user/login/')\ndef viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html')\n@login_required(login_url='user/login/')\ndef updateProfile(request):",
+        "peekOfCode": "def logoutViews(request):\n    logout(request)\n    return redirect('user:login')\n@login_required(login_url='user:login')\ndef viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html')\n@login_required(login_url='user:login')\ndef updateProfile(request):",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
@@ -2197,7 +2377,7 @@
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html')\n@login_required(login_url='user/login/')\ndef updateProfile(request):\n    user = request.user\n    profile = get_object_or_404(Profile, user=user)\n    if request.method == 'POST':\n        u_form = UserUpdateForm(request.POST, instance=user)",
+        "peekOfCode": "def viewsProfile(request):\n    if request.user.is_superuser:\n        return redirect('/admin/')\n    return render(request,'user/profile.html')\n@login_required(login_url='user:login')\ndef updateProfile(request):\n    user = request.user\n    profile = get_object_or_404(Profile, user=user)\n    if request.method == 'POST':\n        u_form = UserUpdateForm(request.POST, instance=user)",
         "detail": "MyApp.user.views",
         "documentation": {}
     },
@@ -2319,6 +2499,24 @@
         "documentation": {}
     },
     {
+        "label": "TestWallet",
+        "kind": 6,
+        "importPath": "MyApp.wallet.tests",
+        "description": "MyApp.wallet.tests",
+        "peekOfCode": "class TestWallet(TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()\n    @classmethod\n    def tearDownClass(cls):\n        teardown_test_environment()\n    def setUp(self):\n        self.user = User.objects.create_user(username=f'testuser_{uuid.uuid4().hex}', password='12345')\n        self.profile = Profile.objects.create(user=self.user, point=1000)",
+        "detail": "MyApp.wallet.tests",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ['DJANGO_SETTINGS_MODULE']",
+        "kind": 5,
+        "importPath": "MyApp.wallet.tests",
+        "description": "MyApp.wallet.tests",
+        "peekOfCode": "os.environ['DJANGO_SETTINGS_MODULE'] = 'MyApp.settings'\ndjango.setup()\nfrom django.contrib.auth.models import User\nfrom user.models import Profile\nfrom wallet.models import ComboPoint, PaymentHistory\nclass TestWallet(TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()\n    @classmethod",
+        "detail": "MyApp.wallet.tests",
+        "documentation": {}
+    },
+    {
         "label": "app_name",
         "kind": 5,
         "importPath": "MyApp.wallet.urls",
@@ -2337,20 +2535,11 @@
         "documentation": {}
     },
     {
-        "label": "view_buy_point",
-        "kind": 2,
-        "importPath": "MyApp.wallet.views",
-        "description": "MyApp.wallet.views",
-        "peekOfCode": "def view_buy_point(request):\n    global point, _order_id, _amount, _order_desc, combo_point_id\n    return_code = request.GET.get('vnp_ResponseCode')\n    print(f'return_code: {return_code}')\n    if return_code == '00':\n        _profile = get_object_or_404(Profile, user=request.user)\n        _profile.point += point\n        _profile.save()\n        _combo_point = get_object_or_404(ComboPoint, id=combo_point_id)\n        PaymentHistory.objects.create(",
-        "detail": "MyApp.wallet.views",
-        "documentation": {}
-    },
-    {
         "label": "payment",
         "kind": 2,
         "importPath": "MyApp.wallet.views",
         "description": "MyApp.wallet.views",
-        "peekOfCode": "def payment(request):\n    global point, _order_id, _amount, _order_desc, combo_point_id\n    if request.method == 'POST':\n        # Process input data and build url payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            _order_id = form.cleaned_data['order_id']\n            _amount = form.cleaned_data['amount']\n            _order_desc = form.cleaned_data['order_desc']\n            bank_code = \"\"",
+        "peekOfCode": "def payment(request):\n    if request.method == 'POST':\n        # Process input data and build URL payment\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            _order_id = form.cleaned_data['order_id']\n            _amount = form.cleaned_data['amount']\n            _order_desc = form.cleaned_data['order_desc']\n            bank_code = \"\"\n            language = form.cleaned_data['language']",
         "detail": "MyApp.wallet.views",
         "documentation": {}
     },
@@ -2359,7 +2548,7 @@
         "kind": 2,
         "importPath": "MyApp.wallet.views",
         "description": "MyApp.wallet.views",
-        "peekOfCode": "def payment_history(request):\n    history = PaymentHistory.objects.filter(user=request.user)\n    return render(request, 'wallet/history.html', {'history' : history})\n@login_required(login_url='user/login/')\ndef get_client_ip(request):\n    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')\n    if x_forwarded_for:\n        ip = x_forwarded_for.split(',')[0]\n    else:\n        ip = request.META.get('REMOTE_ADDR')",
+        "peekOfCode": "def payment_history(request):\n    history = PaymentHistory.objects.filter(user=request.user)\n    return render(request, 'wallet/history.html', {'history' : history})\n@login_required(login_url='user:login')\ndef get_client_ip(request):\n    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')\n    if x_forwarded_for:\n        ip = x_forwarded_for.split(',')[0]\n    else:\n        ip = request.META.get('REMOTE_ADDR')",
         "detail": "MyApp.wallet.views",
         "documentation": {}
     },
@@ -2369,15 +2558,6 @@
         "importPath": "MyApp.wallet.views",
         "description": "MyApp.wallet.views",
         "peekOfCode": "def get_client_ip(request):\n    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')\n    if x_forwarded_for:\n        ip = x_forwarded_for.split(',')[0]\n    else:\n        ip = request.META.get('REMOTE_ADDR')\n    return ip",
-        "detail": "MyApp.wallet.views",
-        "documentation": {}
-    },
-    {
-        "label": "point",
-        "kind": 5,
-        "importPath": "MyApp.wallet.views",
-        "description": "MyApp.wallet.views",
-        "peekOfCode": "point = _order_id = _amount = _order_desc = combo_point_id = None\n@login_required(login_url='user/login/')\ndef view_buy_point(request):\n    global point, _order_id, _amount, _order_desc, combo_point_id\n    return_code = request.GET.get('vnp_ResponseCode')\n    print(f'return_code: {return_code}')\n    if return_code == '00':\n        _profile = get_object_or_404(Profile, user=request.user)\n        _profile.point += point\n        _profile.save()",
         "detail": "MyApp.wallet.views",
         "documentation": {}
     },

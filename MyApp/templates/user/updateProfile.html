@@ -15,12 +15,12 @@
                     <div class="form-group">
                         <label for="id_username">Username:</label>
                         <input type="text" name="username" class="form-control" id="id_username" required readonly value="{{ user.username }}">
-                        <p class="error">{{u_form.username.error}}</p>
+                        <p class="error">{{u_form.username.errors}}</p>
                     </div>
                     <div class="form-group">
                         <label for="id_email">Email address:</label>
                         <input type="email" name="email" class="form-control" id="id_email" required value="{{ user.email }}">
-                        <p class="error">{{u_form.email.error}}</p>
+                        <p class="error">{{u_form.email.errors}}</p>
                     </div>
                     <div class="form-group">
                         <label for="id_first_name">First name:</label>

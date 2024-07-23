@@ -11,6 +11,7 @@ To run project must install:
 7. Install Xampp and then start apache and mysql on this
 8. pip install Pillow
 9. python.exe -m pip install --upgrade pip
+10. pip install whitenoise
 
 To run a web site:
 1. Open folder you want to save your project on VSCode
