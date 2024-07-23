@@ -1,7 +1,8 @@
 django
-allauth
+django-allauth
 jwt
 requests
 mysqlclient
 Pillow
 whitenoise
+
