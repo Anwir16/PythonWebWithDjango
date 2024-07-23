@@ -1,0 +1,8 @@
+django
+allauth
+jwt
+PyJWT --upgrade
+requests
+mysqlclient
+Pillow
+whitenoise
