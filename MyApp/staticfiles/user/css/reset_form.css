@@ -1,0 +1,10 @@
+.content-main{
+    width: 350px;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+}
+.reset, .back{
+    width: 49%;
+}

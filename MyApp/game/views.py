@@ -38,9 +38,10 @@ def play_round(request):
     result = ""
     house_card = "back_card"
     if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'POST':
-        guess = request.POST.get('guess', None)
-        action = request.POST.get('action', None)
+        guess = request.POST.get('guess', '')
         print(f'guess: {guess}')
+        action = request.POST.get('action', '')
+        print(f'action: {action}')
         user = request.user
         profile = Profile.objects.get(user=user)
         if re.match("^(greater|less)$", guess):

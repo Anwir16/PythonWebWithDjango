@@ -30,8 +30,6 @@ def signup(request):
             user = authenticate(username=username, password=password)
             login(request, user)
             return redirect('/')
-        else:
-            return render(request, 'user/signup.html', {'u_form': u_form})
     else:
         u_form = UserCreationForm()
         return render(request, 'user/signup.html', {'u_form': u_form})

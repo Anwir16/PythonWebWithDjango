@@ -25,7 +25,7 @@ class ComboPoint(models.Model):
 class PaymentHistory(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     combo_point= models.ForeignKey(ComboPoint, on_delete=models.CASCADE)  
-    order_id = models.CharField(max_length=8)
+    order_id = models.CharField(max_length=250)
     amount = models.IntegerField()
     order_desc = models.CharField(max_length=100)
     order_date = models.DateTimeField()

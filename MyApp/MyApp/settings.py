@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv, dotenv_values
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'PhucND.pythonanywhere.com']
 
@@ -50,7 +52,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'wallet',
     'game',
-    
+    'crispy_forms',
+    'crispy_bootstrap3',
 ]
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
@@ -97,7 +100,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'MyApp.wsgi.application'
-
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -180,7 +183,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "PhucNDCE171160@fpt.edu.vn"
-EMAIL_HOST_PASSWORD = "xzkkqgqlimkrblkz"
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+print(f'env {os.getenv('EMAIL_HOST_PASSWORD')}')
 
 # VNPAY CONFIG
 VNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config
