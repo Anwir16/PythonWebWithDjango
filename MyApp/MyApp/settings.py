@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
-from dotenv import load_dotenv, dotenv_values
+from dotenv import load_dotenv
 load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'PhucND.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -112,7 +112,6 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': '',
         'HOST':'localhost',
-        'PORT':'',
     }
 }
 

@@ -1282,14 +1282,6 @@
         "documentation": {}
     },
     {
-        "label": "dotenv_values",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
         "label": "static",
         "importPath": "django.conf.urls.static",
         "description": "django.conf.urls.static",
@@ -1772,7 +1764,7 @@
         "kind": 5,
         "importPath": "MyApp.settings",
         "description": "MyApp.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['127.0.0.1', 'PhucND.pythonanywhere.com']\n# Application definition\nSITE_ID = 3",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3",
         "detail": "MyApp.settings",
         "documentation": {}
     },
@@ -1781,7 +1773,7 @@
         "kind": 5,
         "importPath": "MyApp.settings",
         "description": "MyApp.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['127.0.0.1', 'PhucND.pythonanywhere.com']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "MyApp.settings",
         "documentation": {}
     },
@@ -1790,7 +1782,7 @@
         "kind": 5,
         "importPath": "MyApp.settings",
         "description": "MyApp.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['127.0.0.1', 'PhucND.pythonanywhere.com']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "MyApp.settings",
         "documentation": {}
     },
@@ -1799,7 +1791,7 @@
         "kind": 5,
         "importPath": "MyApp.settings",
         "description": "MyApp.settings",
-        "peekOfCode": "ALLOWED_HOSTS = ['127.0.0.1', 'PhucND.pythonanywhere.com']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
         "detail": "MyApp.settings",
         "documentation": {}
     },
@@ -1880,7 +1872,7 @@
         "kind": 5,
         "importPath": "MyApp.settings",
         "description": "MyApp.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'FinalGame',\n        'USER': 'root',\n        'PASSWORD': '',\n        'HOST':'localhost',\n        'PORT':'',\n    }\n}",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'FinalGame',\n        'USER': 'root',\n        'PASSWORD': '',\n        'HOST':'localhost',\n    }\n}\n# Password validation",
         "detail": "MyApp.settings",
         "documentation": {}
     },
