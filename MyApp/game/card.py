@@ -43,6 +43,14 @@ class Card:
     def rank(self):
         return self._rank
 
+    @staticmethod
+    def from_string(card_str):
+        if card_str in ("black_joker", "red_joker"):
+            return Card("", card_str)
+        
+        suit, rank = card_str.split('/')
+        return Card(suit, rank)
+
     def __str__(self):
         if self.rank in ("black_joker", "red_joker"):
             return f"{self.rank}"

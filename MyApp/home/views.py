@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 # Create your views here.
 
-@login_required(login_url='user/login/') #use decorator
+@login_required(login_url='user:login') #use decorator
 def dashboard(request):
     return render(request,'home/dashboard.html')
 

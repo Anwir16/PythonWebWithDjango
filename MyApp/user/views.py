@@ -6,6 +6,9 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from .models import Profile
 from django.http import JsonResponse
+from django.contrib.auth import views
+
+views.LoginView()
 
 # use ajax to check username
 def checkUsername(request):
@@ -18,8 +21,6 @@ def checkUsername(request):
     return JsonResponse({}, status = 400)
 
 def signup(request):
-    if request.user.is_authenticated:
-        return redirect('/')
     if request.method == 'POST':
         u_form = UserCreationForm(request.POST)
         if u_form.is_valid():
@@ -32,11 +33,9 @@ def signup(request):
             return redirect('/')
     else:
         u_form = UserCreationForm()
-        return render(request, 'user/signup.html', {'u_form': u_form})
+    return render(request, 'user/signup.html', {'u_form': u_form})
     
 def loginViews(request):
-    if request.user.is_authenticated:
-        return redirect('/')
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']

@@ -10,7 +10,7 @@
         <div class="reward-point">
             <h4>Your reward point: {{reward_point}}</h4>
             {% if result %}
-            <h4>{{result}}</h4>
+            <h4 class="result">{{result}}</h4>
             {% endif %}
         </div>
         <div class="house">
@@ -35,9 +35,6 @@
                     <button id="less" class="btn btn-success less-btn">Less</button>
                     <button id="greater" class="btn btn-secondary greater-btn">Greater</button>
                 </div>
-                <div id="exit-buttons">
-                    <button id="exit" class="btn btn-danger">Exit</button>
-                </div>
             </div>
         </div>
     </div>
@@ -45,6 +42,7 @@
 {% endblock main-content %}
 {% block js %}
 <script>
+    const result = "{{ result|default:'' }}";
     const playRoundUrl = "{% url 'game:play_round' %}";
     const csrfToken = "{{ csrf_token }}";
 </script>

@@ -563,6 +563,14 @@
         "documentation": {}
     },
     {
+        "label": "Card",
+        "importPath": "game.card",
+        "description": "game.card",
+        "isExtraImport": true,
+        "detail": "game.card",
+        "documentation": {}
+    },
+    {
         "label": "django",
         "kind": 6,
         "isExtraImport": true,
@@ -1162,6 +1170,14 @@
         "documentation": {}
     },
     {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -1380,6 +1396,14 @@
     },
     {
         "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "views",
         "importPath": "django.contrib.auth",
         "description": "django.contrib.auth",
         "isExtraImport": true,
@@ -1665,7 +1689,7 @@
         "kind": 2,
         "importPath": "game.views",
         "description": "game.views",
-        "peekOfCode": "def start_game(request):\n    global current_game, profile, _player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        _bet_point = int(request.POST.get('choice_bet_point'))\n        _player = Player(name=user.username, point=profile.point, user=user)\n        current_game = Game(bet_point=_bet_point, player=_player)\n        current_game.auto_create_card()\n        player_card = current_game.player.card",
+        "peekOfCode": "def start_game(request):\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        _bet_point = int(request.POST.get('choice_bet_point'))\n        _player = Player(name=user.username, point=profile.point, user=user)\n        current_game = Game(bet_point=_bet_point, player=_player)\n        current_game.auto_create_card()\n        player_card = current_game.player.card\n        request.session['_bet_point'] = _bet_point",
         "detail": "game.views",
         "documentation": {}
     },
@@ -1674,25 +1698,7 @@
         "kind": 2,
         "importPath": "game.views",
         "description": "game.views",
-        "peekOfCode": "def play_round(request):\n    global current_game, bet_point\n    result = \"\"\n    house_card = \"back_card\"\n    if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'POST':\n        guess = request.POST.get('guess', '')\n        print(f'guess: {guess}')\n        action = request.POST.get('action', '')\n        print(f'action: {action}')\n        user = request.user",
-        "detail": "game.views",
-        "documentation": {}
-    },
-    {
-        "label": "current_game",
-        "kind": 5,
-        "importPath": "game.views",
-        "description": "game.views",
-        "peekOfCode": "current_game = player = None\nbet_point = 0\n@login_required(login_url='user:login')\ndef start_game(request):\n    global current_game, profile, _player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        _bet_point = int(request.POST.get('choice_bet_point'))\n        _player = Player(name=user.username, point=profile.point, user=user)",
-        "detail": "game.views",
-        "documentation": {}
-    },
-    {
-        "label": "bet_point",
-        "kind": 5,
-        "importPath": "game.views",
-        "description": "game.views",
-        "peekOfCode": "bet_point = 0\n@login_required(login_url='user:login')\ndef start_game(request):\n    global current_game, profile, _player, bet_point\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        _bet_point = int(request.POST.get('choice_bet_point'))\n        _player = Player(name=user.username, point=profile.point, user=user)\n        current_game = Game(bet_point=_bet_point, player=_player)",
+        "peekOfCode": "def play_round(request):\n    result = \"\"\n    house_card = \"back_card\"\n    current_reward_ = request.session.get('current_reward')\n    print(f'current_reward: {current_reward_}')\n    if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'POST':\n        guess = request.POST.get('guess', '')\n        print(f'guess: {guess}')\n        action = request.POST.get('action', '')\n        print(f'action: {action}')",
         "detail": "game.views",
         "documentation": {}
     },
@@ -2291,6 +2297,15 @@
         "documentation": {}
     },
     {
+        "label": "redirect_if_authenticated",
+        "kind": 2,
+        "importPath": "user.decorators",
+        "description": "user.decorators",
+        "peekOfCode": "def redirect_if_authenticated(view_func):\n    def _wrapped_view_func(request, *args, **kwargs):\n        if request.user.is_authenticated:\n            return redirect('/')\n        return view_func(request, *args, **kwargs)\n    return _wrapped_view_func",
+        "detail": "user.decorators",
+        "documentation": {}
+    },
+    {
         "label": "UserUpdateForm",
         "kind": 6,
         "importPath": "user.forms",
@@ -2340,7 +2355,7 @@
         "kind": 5,
         "importPath": "user.urls",
         "description": "user.urls",
-        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('validation/username/',views.checkUsername, name='validate_username'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('updateProfile/', views.updateProfile, name='updateProfile'),\n    #change password\n    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='user/changePassword.html',success_url = reverse_lazy(\"user:password_change_done\")), name='password_change'),",
+        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',redirect_if_authenticated(views.loginViews), name='login'),\n    path('register/',redirect_if_authenticated(views.signup), name='register'),\n    path('validation/username/',views.checkUsername, name='validate_username'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('updateProfile/', views.updateProfile, name='updateProfile'),\n    #change password\n    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='user/changePassword.html',success_url = reverse_lazy(\"user:password_change_done\")), name='password_change'),",
         "detail": "user.urls",
         "documentation": {}
     },
@@ -2349,7 +2364,7 @@
         "kind": 5,
         "importPath": "user.urls",
         "description": "user.urls",
-        "peekOfCode": "urlpatterns = [\n    path('login/',views.loginViews, name='login'),\n    path('register/',views.signup, name='register'),\n    path('validation/username/',views.checkUsername, name='validate_username'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('updateProfile/', views.updateProfile, name='updateProfile'),\n    #change password\n    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='user/changePassword.html',success_url = reverse_lazy(\"user:password_change_done\")), name='password_change'),\n    path('password_change_done/', auth_views.PasswordChangeDoneView.as_view(template_name='user/passwordChangeDone.html'), name='password_change_done'),",
+        "peekOfCode": "urlpatterns = [\n    path('login/',redirect_if_authenticated(views.loginViews), name='login'),\n    path('register/',redirect_if_authenticated(views.signup), name='register'),\n    path('validation/username/',views.checkUsername, name='validate_username'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('updateProfile/', views.updateProfile, name='updateProfile'),\n    #change password\n    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='user/changePassword.html',success_url = reverse_lazy(\"user:password_change_done\")), name='password_change'),\n    path('password_change_done/', auth_views.PasswordChangeDoneView.as_view(template_name='user/passwordChangeDone.html'), name='password_change_done'),",
         "detail": "user.urls",
         "documentation": {}
     },
@@ -2358,7 +2373,7 @@
         "kind": 2,
         "importPath": "user.views",
         "description": "user.views",
-        "peekOfCode": "def checkUsername(request):\n    if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'GET':\n        username = request.GET.get('username', None)\n        if User.objects.filter(username = username).exists():\n            return JsonResponse({'valid' : False}, status = 200)\n        else:\n            return JsonResponse({'valid' : True}, status = 200)\n    return JsonResponse({}, status = 400)\ndef signup(request):\n    if request.user.is_authenticated:",
+        "peekOfCode": "def checkUsername(request):\n    if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'GET':\n        username = request.GET.get('username', None)\n        if User.objects.filter(username = username).exists():\n            return JsonResponse({'valid' : False}, status = 200)\n        else:\n            return JsonResponse({'valid' : True}, status = 200)\n    return JsonResponse({}, status = 400)\ndef signup(request):\n    if request.method == 'POST':",
         "detail": "user.views",
         "documentation": {}
     },
@@ -2367,7 +2382,7 @@
         "kind": 2,
         "importPath": "user.views",
         "description": "user.views",
-        "peekOfCode": "def signup(request):\n    if request.user.is_authenticated:\n        return redirect('/')\n    if request.method == 'POST':\n        u_form = UserCreationForm(request.POST)\n        if u_form.is_valid():\n            user = u_form.save()\n            Profile.objects.create(user=user)\n            username = u_form.cleaned_data.get('username')\n            password = u_form.cleaned_data.get('password1')",
+        "peekOfCode": "def signup(request):\n    if request.method == 'POST':\n        u_form = UserCreationForm(request.POST)\n        if u_form.is_valid():\n            user = u_form.save()\n            Profile.objects.create(user=user)\n            username = u_form.cleaned_data.get('username')\n            password = u_form.cleaned_data.get('password1')\n            user = authenticate(username=username, password=password)\n            login(request, user)",
         "detail": "user.views",
         "documentation": {}
     },
@@ -2376,7 +2391,7 @@
         "kind": 2,
         "importPath": "user.views",
         "description": "user.views",
-        "peekOfCode": "def loginViews(request):\n    if request.user.is_authenticated:\n        return redirect('/')\n    if request.method == 'POST':\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(username=username, password=password)\n        if user is not None:\n            login(request, user)\n            return redirect('/')",
+        "peekOfCode": "def loginViews(request):\n    if request.method == 'POST':\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(username=username, password=password)\n        if user is not None:\n            login(request, user)\n            return redirect('/')\n        else:\n            error = 'Invalid username or password'",
         "detail": "user.views",
         "documentation": {}
     },

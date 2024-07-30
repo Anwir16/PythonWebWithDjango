@@ -14,7 +14,7 @@
                 {% csrf_token %}
                 <div class="form-group">
                     <label for="bet_point">Bet Points</label>
-                    <input type="number" name="choice_bet_point" id="choice_bet_point" placeholder="min value 25" value="25" min="25" max={{profile.point}} class="form-control">
+                    <input type="number" name="choice_bet_point" id="choice_bet_point" value="25" min="25" max={{profile.point}} class="form-control">
                 </div>
                 <button type="submit" class="btn btn-success">Start</button>
             </form>

@@ -99,8 +99,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function handleExit() {
-        alert('Do you want to exit!')
-        window.location.href = '/'
+        if (confirm('Do you want to exit?')) {
+            window.location.href = '/';
+        }
     }
 
     $('#less').click(function () {

@@ -17,11 +17,13 @@
             <p class="error">{{error}}</p>
           <div class="login__field">
             <i class="login__icon fa fa-user"></i>
-            <input type="text" class="login__input" id="username" name="username" placeholder="User name" />
+            <input type="text" class="login__input" id="username" required name="username" placeholder="User name" />
+            <p class="error">{{u_form.username.errors}}</p>
           </div>
           <div class="login__field">
             <i class="login__icon fa fa-lock"></i>
-            <input type="password" class="login__input" name="password" id="password" placeholder="Password" />
+            <input type="password" class="login__input" name="password" required id="password" placeholder="Password" />
+            <p class="error">{{u_form.password.errors}}</p>
           </div>
           <div>
             <a name="remember" id="remember" href="{% url 'user:password_reset' %}"> Forgot password</a>
