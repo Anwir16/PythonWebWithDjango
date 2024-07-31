@@ -1,7 +1,3 @@
-$('#guess-buttons').show();
-$('#action-buttons').hide();
-$('#exit-buttons').hide();
-
 
 document.addEventListener('DOMContentLoaded', function () {
     function handleGuess(guess) {
@@ -25,24 +21,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     $('.reward-point .result').remove();
                     // Append new result
                     $('.reward-point').append("<h4 class='result'>" + response.result + "</h4>");
+                    $('#guess-buttons').hide();
+                    $('#action-buttons').show();
                 } else {
                     // Remove the result if it's not provided in the response
                     $('.reward-point .result').remove();
-                }
-                if (response.result) {
-                    if (response.result === 'Game over' || response.result === 'Win'){
-                        $('#exit-buttons').show();
-                        $('#guess-buttons').hide();
-                        $('#action-buttons').hide();
-                    } else{
-                        $('#exit-buttons').hide();
-                        $('#guess-buttons').hide();
-                        $('#action-buttons').show();
-                    }
-                } else {
                     $('#guess-buttons').show();
                     $('#action-buttons').hide();
-                    $('#exit-buttons').hide();
                 }
             },
             error: function (response) {
@@ -72,36 +57,19 @@ document.addEventListener('DOMContentLoaded', function () {
                     $('.reward-point .result').remove();
                     // Append new result
                     $('.reward-point').append("<h4 class='result'>" + response.result + "</h4>");
+                    $('#guess-buttons').hide();
+                    $('#action-buttons').show();
                 } else {
                     // Remove the result if it's not provided in the response
                     $('.reward-point .result').remove();
-                }
-                if (response.result) {
-                    if (response.result === 'Game over' || response.result === 'Win'){
-                        $('#exit-buttons').show();
-                        $('#guess-buttons').hide();
-                        $('#action-buttons').hide();
-                    } else{
-                        $('#exit-buttons').hide();
-                        $('#guess-buttons').hide();
-                        $('#action-buttons').show();
-                    }
-                } else {
                     $('#guess-buttons').show();
                     $('#action-buttons').hide();
-                    $('#exit-buttons').hide();
                 }
             },
             error: function (response) {
                 console.log(response);
             }
         });
-    }
-
-    function handleExit() {
-        if (confirm('Do you want to exit?')) {
-            window.location.href = '/';
-        }
     }
 
     $('#less').click(function () {
@@ -117,10 +85,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     $('#stop').click(function () {
-        handleAction('Stop');
+        if (confirm('Do you want to exit?')) {
+            handleAction('Stop');
+            window.location.href = '/';
+        }
     });
 
-    $('#exit').click(function () {
-        handleExit();
-    });
+
+    console.log("result: ", result)
+    if (result) {
+        $('.result').remove();
+        // Append new result
+        $('.reward-point').append("<h4 class='result'>" + result + "</h4>");
+        $('#guess-buttons').hide();
+        $('#action-buttons').show();
+    } else {
+        $('#guess-buttons').show();
+        $('#action-buttons').hide();
+    }
 });
