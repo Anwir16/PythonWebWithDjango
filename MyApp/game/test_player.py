@@ -42,7 +42,7 @@ class TestPlayer(unittest.TestCase):
         self.profile.delete()  # Delete the profile to trigger the exception
         with patch('builtins.print') as mock_print:
             self.player.update_points(50)
-            mock_print.assert_called_once_with(f"Profile for username testuser_{self.id()} does not exist.")
+            mock_print.assert_called_once_with(f"Profile for username {self.user.username} does not exist.")
 
         
     def test_make_guess_correct(self):

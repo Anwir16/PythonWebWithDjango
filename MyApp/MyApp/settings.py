@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'game',
     'crispy_forms',
     'crispy_bootstrap3',
+    'htmlcov',
 ]
 SOCIALACCOUNT_PROVIDERS = {
     'google': {

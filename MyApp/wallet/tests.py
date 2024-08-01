@@ -105,3 +105,9 @@ class TestWallet(TestCase):
         self.view_payment_url = reverse('wallet:payment_history')
         response = self.client.get(self.view_payment_url)
         self.assertRedirects(response, f'{reverse("user:login")}?next={self.view_payment_url}')
+    
+    def test_view_payment_history(self):
+        self.client.login(username=self.user.username, password='12345')
+        response = self.client.get(reverse('wallet:payment_history'))
+        self.assertTemplateUsed(response, 'wallet/history.html')
+        self.assertIn('history', response.context)
