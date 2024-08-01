@@ -81,22 +81,6 @@
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
         "label": "django.db",
         "kind": 6,
         "isExtraImport": true,
@@ -490,586 +474,6 @@
         "documentation": {}
     },
     {
-        "label": "unittest",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "unittest",
-        "description": "unittest",
-        "detail": "unittest",
-        "documentation": {}
-    },
-    {
-        "label": "patch",
-        "importPath": "unittest.mock",
-        "description": "unittest.mock",
-        "isExtraImport": true,
-        "detail": "unittest.mock",
-        "documentation": {}
-    },
-    {
-        "label": "patch",
-        "importPath": "unittest.mock",
-        "description": "unittest.mock",
-        "isExtraImport": true,
-        "detail": "unittest.mock",
-        "documentation": {}
-    },
-    {
-        "label": "patch",
-        "importPath": "unittest.mock",
-        "description": "unittest.mock",
-        "isExtraImport": true,
-        "detail": "unittest.mock",
-        "documentation": {}
-    },
-    {
-        "label": "patch",
-        "importPath": "unittest.mock",
-        "description": "unittest.mock",
-        "isExtraImport": true,
-        "detail": "unittest.mock",
-        "documentation": {}
-    },
-    {
-        "label": "patch",
-        "importPath": "unittest.mock",
-        "description": "unittest.mock",
-        "isExtraImport": true,
-        "detail": "unittest.mock",
-        "documentation": {}
-    },
-    {
-        "label": "patch",
-        "importPath": "unittest.mock",
-        "description": "unittest.mock",
-        "isExtraImport": true,
-        "detail": "unittest.mock",
-        "documentation": {}
-    },
-    {
-        "label": "patch",
-        "importPath": "unittest.mock",
-        "description": "unittest.mock",
-        "isExtraImport": true,
-        "detail": "unittest.mock",
-        "documentation": {}
-    },
-    {
-        "label": "patch",
-        "importPath": "unittest.mock",
-        "description": "unittest.mock",
-        "isExtraImport": true,
-        "detail": "unittest.mock",
-        "documentation": {}
-    },
-    {
-        "label": "Deck",
-        "importPath": "game.card",
-        "description": "game.card",
-        "isExtraImport": true,
-        "detail": "game.card",
-        "documentation": {}
-    },
-    {
-        "label": "Card",
-        "importPath": "game.card",
-        "description": "game.card",
-        "isExtraImport": true,
-        "detail": "game.card",
-        "documentation": {}
-    },
-    {
-        "label": "Card",
-        "importPath": "game.card",
-        "description": "game.card",
-        "isExtraImport": true,
-        "detail": "game.card",
-        "documentation": {}
-    },
-    {
-        "label": "Deck",
-        "importPath": "game.card",
-        "description": "game.card",
-        "isExtraImport": true,
-        "detail": "game.card",
-        "documentation": {}
-    },
-    {
-        "label": "Card",
-        "importPath": "game.card",
-        "description": "game.card",
-        "isExtraImport": true,
-        "detail": "game.card",
-        "documentation": {}
-    },
-    {
-        "label": "Deck",
-        "importPath": "game.card",
-        "description": "game.card",
-        "isExtraImport": true,
-        "detail": "game.card",
-        "documentation": {}
-    },
-    {
-        "label": "Card",
-        "importPath": "game.card",
-        "description": "game.card",
-        "isExtraImport": true,
-        "detail": "game.card",
-        "documentation": {}
-    },
-    {
-        "label": "Card",
-        "importPath": "game.card",
-        "description": "game.card",
-        "isExtraImport": true,
-        "detail": "game.card",
-        "documentation": {}
-    },
-    {
-        "label": "Card",
-        "importPath": "game.card",
-        "description": "game.card",
-        "isExtraImport": true,
-        "detail": "game.card",
-        "documentation": {}
-    },
-    {
-        "label": "django",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django",
-        "description": "django",
-        "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "setup_test_environment",
-        "importPath": "django.test.utils",
-        "description": "django.test.utils",
-        "isExtraImport": true,
-        "detail": "django.test.utils",
-        "documentation": {}
-    },
-    {
-        "label": "teardown_test_environment",
-        "importPath": "django.test.utils",
-        "description": "django.test.utils",
-        "isExtraImport": true,
-        "detail": "django.test.utils",
-        "documentation": {}
-    },
-    {
-        "label": "setup_test_environment",
-        "importPath": "django.test.utils",
-        "description": "django.test.utils",
-        "isExtraImport": true,
-        "detail": "django.test.utils",
-        "documentation": {}
-    },
-    {
-        "label": "teardown_test_environment",
-        "importPath": "django.test.utils",
-        "description": "django.test.utils",
-        "isExtraImport": true,
-        "detail": "django.test.utils",
-        "documentation": {}
-    },
-    {
-        "label": "setup_test_environment",
-        "importPath": "django.test.utils",
-        "description": "django.test.utils",
-        "isExtraImport": true,
-        "detail": "django.test.utils",
-        "documentation": {}
-    },
-    {
-        "label": "teardown_test_environment",
-        "importPath": "django.test.utils",
-        "description": "django.test.utils",
-        "isExtraImport": true,
-        "detail": "django.test.utils",
-        "documentation": {}
-    },
-    {
-        "label": "setup_test_environment",
-        "importPath": "django.test.utils",
-        "description": "django.test.utils",
-        "isExtraImport": true,
-        "detail": "django.test.utils",
-        "documentation": {}
-    },
-    {
-        "label": "teardown_test_environment",
-        "importPath": "django.test.utils",
-        "description": "django.test.utils",
-        "isExtraImport": true,
-        "detail": "django.test.utils",
-        "documentation": {}
-    },
-    {
-        "label": "setup_test_environment",
-        "importPath": "django.test.utils",
-        "description": "django.test.utils",
-        "isExtraImport": true,
-        "detail": "django.test.utils",
-        "documentation": {}
-    },
-    {
-        "label": "teardown_test_environment",
-        "importPath": "django.test.utils",
-        "description": "django.test.utils",
-        "isExtraImport": true,
-        "detail": "django.test.utils",
-        "documentation": {}
-    },
-    {
-        "label": "setup_test_environment",
-        "importPath": "django.test.utils",
-        "description": "django.test.utils",
-        "isExtraImport": true,
-        "detail": "django.test.utils",
-        "documentation": {}
-    },
-    {
-        "label": "teardown_test_environment",
-        "importPath": "django.test.utils",
-        "description": "django.test.utils",
-        "isExtraImport": true,
-        "detail": "django.test.utils",
-        "documentation": {}
-    },
-    {
-        "label": "setup_test_environment",
-        "importPath": "django.test.utils",
-        "description": "django.test.utils",
-        "isExtraImport": true,
-        "detail": "django.test.utils",
-        "documentation": {}
-    },
-    {
-        "label": "teardown_test_environment",
-        "importPath": "django.test.utils",
-        "description": "django.test.utils",
-        "isExtraImport": true,
-        "detail": "django.test.utils",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "Player",
-        "importPath": "game.player",
-        "description": "game.player",
-        "isExtraImport": true,
-        "detail": "game.player",
-        "documentation": {}
-    },
-    {
-        "label": "Player",
-        "importPath": "game.player",
-        "description": "game.player",
-        "isExtraImport": true,
-        "detail": "game.player",
-        "documentation": {}
-    },
-    {
-        "label": "House",
-        "importPath": "game.player",
-        "description": "game.player",
-        "isExtraImport": true,
-        "detail": "game.player",
-        "documentation": {}
-    },
-    {
-        "label": "Player",
-        "importPath": "game.player",
-        "description": "game.player",
-        "isExtraImport": true,
-        "detail": "game.player",
-        "documentation": {}
-    },
-    {
-        "label": "Player",
-        "importPath": "game.player",
-        "description": "game.player",
-        "isExtraImport": true,
-        "detail": "game.player",
-        "documentation": {}
-    },
-    {
-        "label": "Player",
-        "importPath": "game.player",
-        "description": "game.player",
-        "isExtraImport": true,
-        "detail": "game.player",
-        "documentation": {}
-    },
-    {
-        "label": "Player",
-        "importPath": "game.player",
-        "description": "game.player",
-        "isExtraImport": true,
-        "detail": "game.player",
-        "documentation": {}
-    },
-    {
-        "label": "Game",
-        "importPath": "game.game",
-        "description": "game.game",
-        "isExtraImport": true,
-        "detail": "game.game",
-        "documentation": {}
-    },
-    {
-        "label": "Game",
-        "importPath": "game.game",
-        "description": "game.game",
-        "isExtraImport": true,
-        "detail": "game.game",
-        "documentation": {}
-    },
-    {
-        "label": "Game",
-        "importPath": "game.game",
-        "description": "game.game",
-        "isExtraImport": true,
-        "detail": "game.game",
-        "documentation": {}
-    },
-    {
-        "label": "Game",
-        "importPath": "game.game",
-        "description": "game.game",
-        "isExtraImport": true,
-        "detail": "game.game",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "uuid",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "uuid",
-        "description": "uuid",
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -1169,6 +573,408 @@
         "documentation": {}
     },
     {
+        "label": "Deck",
+        "importPath": "game.card",
+        "description": "game.card",
+        "isExtraImport": true,
+        "detail": "game.card",
+        "documentation": {}
+    },
+    {
+        "label": "Card",
+        "importPath": "game.card",
+        "description": "game.card",
+        "isExtraImport": true,
+        "detail": "game.card",
+        "documentation": {}
+    },
+    {
+        "label": "Deck",
+        "importPath": "game.card",
+        "description": "game.card",
+        "isExtraImport": true,
+        "detail": "game.card",
+        "documentation": {}
+    },
+    {
+        "label": "Card",
+        "importPath": "game.card",
+        "description": "game.card",
+        "isExtraImport": true,
+        "detail": "game.card",
+        "documentation": {}
+    },
+    {
+        "label": "Card",
+        "importPath": "game.card",
+        "description": "game.card",
+        "isExtraImport": true,
+        "detail": "game.card",
+        "documentation": {}
+    },
+    {
+        "label": "Card",
+        "importPath": "game.card",
+        "description": "game.card",
+        "isExtraImport": true,
+        "detail": "game.card",
+        "documentation": {}
+    },
+    {
+        "label": "House",
+        "importPath": "game.player",
+        "description": "game.player",
+        "isExtraImport": true,
+        "detail": "game.player",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "importPath": "game.player",
+        "description": "game.player",
+        "isExtraImport": true,
+        "detail": "game.player",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "importPath": "game.player",
+        "description": "game.player",
+        "isExtraImport": true,
+        "detail": "game.player",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "importPath": "game.player",
+        "description": "game.player",
+        "isExtraImport": true,
+        "detail": "game.player",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "importPath": "game.player",
+        "description": "game.player",
+        "isExtraImport": true,
+        "detail": "game.player",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "setup_test_environment",
+        "importPath": "django.test.utils",
+        "description": "django.test.utils",
+        "isExtraImport": true,
+        "detail": "django.test.utils",
+        "documentation": {}
+    },
+    {
+        "label": "teardown_test_environment",
+        "importPath": "django.test.utils",
+        "description": "django.test.utils",
+        "isExtraImport": true,
+        "detail": "django.test.utils",
+        "documentation": {}
+    },
+    {
+        "label": "setup_test_environment",
+        "importPath": "django.test.utils",
+        "description": "django.test.utils",
+        "isExtraImport": true,
+        "detail": "django.test.utils",
+        "documentation": {}
+    },
+    {
+        "label": "teardown_test_environment",
+        "importPath": "django.test.utils",
+        "description": "django.test.utils",
+        "isExtraImport": true,
+        "detail": "django.test.utils",
+        "documentation": {}
+    },
+    {
+        "label": "setup_test_environment",
+        "importPath": "django.test.utils",
+        "description": "django.test.utils",
+        "isExtraImport": true,
+        "detail": "django.test.utils",
+        "documentation": {}
+    },
+    {
+        "label": "teardown_test_environment",
+        "importPath": "django.test.utils",
+        "description": "django.test.utils",
+        "isExtraImport": true,
+        "detail": "django.test.utils",
+        "documentation": {}
+    },
+    {
+        "label": "setup_test_environment",
+        "importPath": "django.test.utils",
+        "description": "django.test.utils",
+        "isExtraImport": true,
+        "detail": "django.test.utils",
+        "documentation": {}
+    },
+    {
+        "label": "teardown_test_environment",
+        "importPath": "django.test.utils",
+        "description": "django.test.utils",
+        "isExtraImport": true,
+        "detail": "django.test.utils",
+        "documentation": {}
+    },
+    {
+        "label": "setup_test_environment",
+        "importPath": "django.test.utils",
+        "description": "django.test.utils",
+        "isExtraImport": true,
+        "detail": "django.test.utils",
+        "documentation": {}
+    },
+    {
+        "label": "teardown_test_environment",
+        "importPath": "django.test.utils",
+        "description": "django.test.utils",
+        "isExtraImport": true,
+        "detail": "django.test.utils",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "django",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django",
+        "description": "django",
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
         "label": "json",
         "kind": 6,
         "isExtraImport": true,
@@ -1207,6 +1013,39 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "game.game",
+        "description": "game.game",
+        "isExtraImport": true,
+        "detail": "game.game",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "game.game",
+        "description": "game.game",
+        "isExtraImport": true,
+        "detail": "game.game",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "game.game",
+        "description": "game.game",
+        "isExtraImport": true,
+        "detail": "game.game",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
         "documentation": {}
     },
     {
@@ -1295,6 +1134,15 @@
         "description": "django.urls",
         "isExtraImport": true,
         "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
         "documentation": {}
     },
     {
@@ -1663,51 +1511,6 @@
         "description": "MyApp.game.migrations.0003_remove_history_level_history_point",
         "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('game', '0002_alter_history_user'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='history',\n            name='level',\n        ),\n        migrations.AddField(",
         "detail": "MyApp.game.migrations.0003_remove_history_level_history_point",
-        "documentation": {}
-    },
-    {
-        "label": "TestCard",
-        "kind": 6,
-        "importPath": "MyApp.game.tests.test_card",
-        "description": "MyApp.game.tests.test_card",
-        "peekOfCode": "class TestCard(unittest.TestCase):\n    def setUp(self):\n        self.deck = Deck()\n    def test_deck_initialization(self):\n        # Check that the deck contains 54 cards (52 + 2 jokers)\n        self.assertEqual(len(self.deck.cards), 54)\n        # Check the presence of black and red jokers\n        black_joker = Card(\"\", \"black_joker\")\n        red_joker = Card(\"\", \"red_joker\")\n        self.assertIn(black_joker, self.deck.cards)",
-        "detail": "MyApp.game.tests.test_card",
-        "documentation": {}
-    },
-    {
-        "label": "TestGame",
-        "kind": 6,
-        "importPath": "MyApp.game.tests.test_game",
-        "description": "MyApp.game.tests.test_game",
-        "peekOfCode": "class TestGame(unittest.TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()\n    @classmethod\n    def tearDownClass(cls):\n        teardown_test_environment()\n    def setUp(self):\n        self.user = User.objects.create_user(username=f'testuser_{uuid.uuid4().hex}', password='12345')\n        self.profile = Profile.objects.create(user=self.user, point=1000)",
-        "detail": "MyApp.game.tests.test_game",
-        "documentation": {}
-    },
-    {
-        "label": "os.environ['DJANGO_SETTINGS_MODULE']",
-        "kind": 5,
-        "importPath": "MyApp.game.tests.test_game",
-        "description": "MyApp.game.tests.test_game",
-        "peekOfCode": "os.environ['DJANGO_SETTINGS_MODULE'] = 'MyApp.settings'  \n# Initialize Django\ndjango.setup()\nfrom game.player import Player\nfrom game.game import Game\nfrom game.card import Card\nfrom django.contrib.auth.models import User\nfrom user.models import Profile\nimport uuid\nclass TestGame(unittest.TestCase):",
-        "detail": "MyApp.game.tests.test_game",
-        "documentation": {}
-    },
-    {
-        "label": "TestPlayer",
-        "kind": 6,
-        "importPath": "MyApp.game.tests.test_player",
-        "description": "MyApp.game.tests.test_player",
-        "peekOfCode": "class TestPlayer(unittest.TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()\n    @classmethod\n    def tearDownClass(cls):\n        teardown_test_environment()\n    def setUp(self):\n        self.user = User.objects.create_user(username=f'testuser_{uuid.uuid4().hex}', password='12345')\n        self.profile = Profile.objects.create(user=self.user, point=1000)",
-        "detail": "MyApp.game.tests.test_player",
-        "documentation": {}
-    },
-    {
-        "label": "os.environ['DJANGO_SETTINGS_MODULE']",
-        "kind": 5,
-        "importPath": "MyApp.game.tests.test_player",
-        "description": "MyApp.game.tests.test_player",
-        "peekOfCode": "os.environ['DJANGO_SETTINGS_MODULE'] = 'MyApp.settings'\ndjango.setup()\nfrom django.contrib.auth.models import User\nfrom user.models import Profile\nfrom game.player import Player\nimport uuid\nclass TestPlayer(unittest.TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()",
-        "detail": "MyApp.game.tests.test_player",
         "documentation": {}
     },
     {

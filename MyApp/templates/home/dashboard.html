@@ -14,7 +14,8 @@
                 {% csrf_token %}
                 <div class="form-group">
                     <label for="bet_point">Bet Points</label>
-                    <input type="number" name="choice_bet_point" id="choice_bet_point" value="25" min="25" max={{profile.point}} class="form-control">
+                    <input type="number" name="choice_bet_point" id="choice_bet_point" value="25" min="25" max="{{ profile.point }}" class="form-control">
+                    <p id="message" class="message"></p>
                 </div>
                 <button type="submit" class="btn btn-success">Start</button>
             </form>
@@ -23,4 +24,14 @@
 </div>
 {% endblock main-content %}
 {% block js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var profilePoint = {{ profile.point }};
+        var messageElement = document.getElementById('message');
+        if (profilePoint < 25) {
+            messageElement.textContent = 'Your points are insufficient. Please top up to continue the experience.';
+            messageElement.style.color = 'black'; 
+        }
+    });
+</script>
 {% endblock js %}

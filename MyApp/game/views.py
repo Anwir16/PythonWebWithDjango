@@ -45,6 +45,7 @@ def start_game(request):
             request.session['house_card'] = current_game.house.card.__str__()
             request.session['show_house_card'] = show_house_card
             request.session['current_reward'] = current_game.current_reward
+            request.session['result'] = ''
         
         print(f'final result: {result}')
         context = {

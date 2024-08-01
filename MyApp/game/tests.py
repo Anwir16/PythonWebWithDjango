@@ -34,14 +34,8 @@ class GameViewsTestCase(TestCase):
         self.game = Game(bet_point=100, player=self.player)
         
     def tearDown(self):
-        self.user.delete() 
+        self.user.delete()
         self.profile.delete()
-        
-
-    # def test_start_game_redirect_if_not_logged_in(self):
-    #     self.start_game_url = reverse('/play/start/')
-    #     response = self.client.get(self.start_game_url)
-    #     self.assertRedirects(response, f'{reverse("user:login")}?next={self.start_game_url}')
     
     def test_start_game_post(self):
         response = self.client.post('/play/start/', {'choice_bet_point': 100})
@@ -60,10 +54,27 @@ class GameViewsTestCase(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'home/dashboard.html')
         
-    # def test_play_round_redirect_if_not_logged_in(self):
-    #     self.play_round_url = reverse('/play/round/')
-    #     response = self.client.get(self.play_round_url)
-    #     self.assertRedirects(response, f'{reverse("user:login")}?next={self.play_round_url}')
+    def test_start_game_session_restoration(self):
+        # Set initial session data
+        session = self.client.session
+        session['_bet_point'] = 100
+        session['player_card'] = 'spade/5'
+        session['house_card'] = 'heart/3'
+        session['show_house_card'] = 'back_card'
+        session['current_reward'] = 150
+        session['result'] = 'win'
+        session.save()
+
+        response = self.client.post('/play/start/')
+        
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'game/easy.html')
+        
+        context = response.context
+        self.assertEqual(context['player_card'], 'spade/5')
+        self.assertEqual(context['house_card'], 'back_card')
+        self.assertEqual(context['reward_point'], 150)
+        self.assertEqual(context['result'], 'win')
         
     def test_play_round_get(self):
         self.client.post('/play/start/', {'choice_bet_point': 100})
@@ -73,7 +84,6 @@ class GameViewsTestCase(TestCase):
         self.assertEqual(response.status_code, 400)
         json_response = json.loads(response.content)
         self.assertEqual(json_response['error'], 'Invalid request')
-
 
     def test_play_round_post_correct_guess(self):
         # Start a game first
@@ -92,30 +102,12 @@ class GameViewsTestCase(TestCase):
         self.assertIn('reward_point', json_response)
         self.assertIn('result', json_response)
 
-    @patch('game.player.Player.make_guess')
-    def test_play_round_game_over_action(self, mock_make_gues):
-        mock_make_gues.return_value = False
-        self.client.post('/play/start/', {'choice_bet_point': 1000})
-        
-        response = self.client.post('/play/round/', {
-            'guess': 'greater',
-            'action': 'Stop',
-        }, HTTP_X_REQUESTED_WITH='XMLHttpRequest')
-        self.assertEqual(response.status_code, 200)
-        json_response = json.loads(response.content)
-        self.assertEqual(json_response['result'], 'Game over')
-        
-    def mocked_auto_create_card(self):
-        # Manually set the house and player cards in the mock
-        self.game.house.receive_card(Card('spade', '3'))
-        self.game.player.card = Card('spade', '5')
-
     def test_play_round_continue_action(self):
         # Start a game first
         self.client.post('/play/start/', {'choice_bet_point': 100})
 
         response = self.client.post('/play/round/', {
-            'guess': 'greater',
+            'guess': '',
             'action': 'Continue',
         }, HTTP_X_REQUESTED_WITH='XMLHttpRequest')
         
@@ -125,3 +117,28 @@ class GameViewsTestCase(TestCase):
         self.assertIn('house_card', json_response)
         self.assertIn('player_points', json_response)
         self.assertIn('reward_point', json_response)
+        self.assertIn('_bet_point', self.client.session)
+        self.assertIn('player_card', self.client.session)
+        self.assertIn('house_card', self.client.session)
+        self.assertIn('current_reward', self.client.session)
+        self.assertIn('show_house_card', self.client.session)
+        self.assertIn('result', self.client.session)
+
+    @patch('game.player.Player.make_guess')
+    def test_play_round_game_over_action(self, mock_make_guess):
+        mock_make_guess.return_value = False
+        self.client.post('/play/start/', {'choice_bet_point': 1000})
+        
+        response = self.client.post('/play/round/', {
+            'guess': '',
+            'action': 'Stop',
+        }, HTTP_X_REQUESTED_WITH='XMLHttpRequest')
+        self.assertEqual(response.status_code, 200)
+        json_response = json.loads(response.content)
+        self.assertEqual(json_response['result'], 'Game over')
+        self.assertNotIn('_bet_point', self.client.session)
+        self.assertNotIn('player_card', self.client.session)
+        self.assertNotIn('house_card', self.client.session)
+        self.assertNotIn('current_reward', self.client.session)
+        self.assertNotIn('show_house_card', self.client.session)
+        self.assertNotIn('result', self.client.session)

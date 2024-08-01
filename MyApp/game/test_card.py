@@ -28,6 +28,3 @@ class TestCard(unittest.TestCase):
         self.assertIsInstance(dealt_card, Card)
         # Check that the length of the deck is reduced by one
         self.assertEqual(len(self.deck.cards), initial_length - 1)
-
-if __name__ == '__main__':
-    unittest.main()

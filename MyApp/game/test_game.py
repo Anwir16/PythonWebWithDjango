@@ -41,6 +41,12 @@ class TestGame(unittest.TestCase):
         self.game.auto_create_card()
         self.assertIsNotNone(self.game.player.card)
         self.assertIsNotNone(self.game.house.card)
+    
+    def test_auto_create_card_back_card(self):
+        self.player.update_points(-950)
+        self.game.auto_create_card()
+        self.assertEqual(self.game.player.card, 'back_card')
+        self.assertEqual(self.game.house.card, 'back_card')
         
     @patch('random.shuffle')
     def test_shuffle(self, mock_shuffle):
@@ -82,6 +88,4 @@ class TestGame(unittest.TestCase):
         self.assertEqual(result, 'Win')
         self.assertEqual(self.game.player.points, 2060.0)
         
-if __name__ == '__main__':
-    unittest.main()
     

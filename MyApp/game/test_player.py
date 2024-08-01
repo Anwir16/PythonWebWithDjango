@@ -63,5 +63,3 @@ class TestPlayer(unittest.TestCase):
         result = self.player.make_guess(house_card, "greater")
         self.assertFalse(result)
     
-if __name__ == '__main__':
-    unittest.main()
