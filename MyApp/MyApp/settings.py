@@ -110,7 +110,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'FinalGame',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'admin123',
         'HOST':'localhost',
     }
 }
@@ -183,8 +183,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "PhucNDCE171160@fpt.edu.vn"
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
-print(f'env {os.getenv('EMAIL_HOST_PASSWORD')}')
+EMAIL_HOST_PASSWORD = 'xlzcylgznasjisje'
 
 # VNPAY CONFIG
 VNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config
