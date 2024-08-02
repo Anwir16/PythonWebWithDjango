@@ -10,7 +10,7 @@ To run project must install:
 
 To run a web site:
 1. Open Xampp, then run Apache and Mysql
-![image](https://github.com/user-attachments/assets/f63e8e3b-f5d3-4fcc-b104-11e1e529fa48)
+![config_Xampp](https://github.com/user-attachments/assets/f63e8e3b-f5d3-4fcc-b104-11e1e529fa48)
 2. Open folder you want to save your project on VSCode
 3. Run terminal and enter code: cd MyApp
 4. And then Enter python manage.py migrate

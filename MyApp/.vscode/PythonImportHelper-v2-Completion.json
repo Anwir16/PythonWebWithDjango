@@ -474,52 +474,118 @@
         "documentation": {}
     },
     {
-        "label": "unittest",
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "random",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "unittest",
-        "description": "unittest",
-        "detail": "unittest",
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
         "documentation": {}
     },
     {
-        "label": "patch",
-        "importPath": "unittest.mock",
-        "description": "unittest.mock",
+        "label": "logging",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "unittest.mock",
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
         "documentation": {}
     },
     {
-        "label": "patch",
-        "importPath": "unittest.mock",
-        "description": "unittest.mock",
+        "label": "re",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "unittest.mock",
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
         "documentation": {}
     },
     {
-        "label": "patch",
-        "importPath": "unittest.mock",
-        "description": "unittest.mock",
+        "label": "Deck",
+        "importPath": "game.card",
+        "description": "game.card",
         "isExtraImport": true,
-        "detail": "unittest.mock",
+        "detail": "game.card",
         "documentation": {}
     },
     {
-        "label": "patch",
-        "importPath": "unittest.mock",
-        "description": "unittest.mock",
+        "label": "Card",
+        "importPath": "game.card",
+        "description": "game.card",
         "isExtraImport": true,
-        "detail": "unittest.mock",
-        "documentation": {}
-    },
-    {
-        "label": "patch",
-        "importPath": "unittest.mock",
-        "description": "unittest.mock",
-        "isExtraImport": true,
-        "detail": "unittest.mock",
+        "detail": "game.card",
         "documentation": {}
     },
     {
@@ -555,44 +621,243 @@
         "documentation": {}
     },
     {
-        "label": "Deck",
-        "importPath": "game.card",
-        "description": "game.card",
+        "label": "House",
+        "importPath": "game.player",
+        "description": "game.player",
         "isExtraImport": true,
-        "detail": "game.card",
+        "detail": "game.player",
         "documentation": {}
     },
     {
-        "label": "Card",
-        "importPath": "game.card",
-        "description": "game.card",
+        "label": "Player",
+        "importPath": "game.player",
+        "description": "game.player",
         "isExtraImport": true,
-        "detail": "game.card",
+        "detail": "game.player",
         "documentation": {}
     },
     {
-        "label": "django",
-        "kind": 6,
+        "label": "Player",
+        "importPath": "game.player",
+        "description": "game.player",
         "isExtraImport": true,
-        "importPath": "django",
-        "description": "django",
-        "detail": "django",
+        "detail": "game.player",
         "documentation": {}
     },
     {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
+        "label": "Player",
+        "importPath": "game.player",
+        "description": "game.player",
         "isExtraImport": true,
-        "detail": "django",
+        "detail": "game.player",
         "documentation": {}
     },
     {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
+        "label": "Player",
+        "importPath": "game.player",
+        "description": "game.player",
         "isExtraImport": true,
-        "detail": "django",
+        "detail": "game.player",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
         "documentation": {}
     },
     {
@@ -685,227 +950,28 @@
         "documentation": {}
     },
     {
-        "label": "Player",
-        "importPath": "game.player",
-        "description": "game.player",
+        "label": "django",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "game.player",
+        "importPath": "django",
+        "description": "django",
+        "detail": "django",
         "documentation": {}
     },
     {
-        "label": "Player",
-        "importPath": "game.player",
-        "description": "game.player",
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
         "isExtraImport": true,
-        "detail": "game.player",
+        "detail": "django",
         "documentation": {}
     },
     {
-        "label": "Player",
-        "importPath": "game.player",
-        "description": "game.player",
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
         "isExtraImport": true,
-        "detail": "game.player",
-        "documentation": {}
-    },
-    {
-        "label": "House",
-        "importPath": "game.player",
-        "description": "game.player",
-        "isExtraImport": true,
-        "detail": "game.player",
-        "documentation": {}
-    },
-    {
-        "label": "Player",
-        "importPath": "game.player",
-        "description": "game.player",
-        "isExtraImport": true,
-        "detail": "game.player",
-        "documentation": {}
-    },
-    {
-        "label": "Game",
-        "importPath": "game.game",
-        "description": "game.game",
-        "isExtraImport": true,
-        "detail": "game.game",
-        "documentation": {}
-    },
-    {
-        "label": "Game",
-        "importPath": "game.game",
-        "description": "game.game",
-        "isExtraImport": true,
-        "detail": "game.game",
-        "documentation": {}
-    },
-    {
-        "label": "Game",
-        "importPath": "game.game",
-        "description": "game.game",
-        "isExtraImport": true,
-        "detail": "game.game",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "user.models",
-        "description": "user.models",
-        "isExtraImport": true,
-        "detail": "user.models",
+        "detail": "django",
         "documentation": {}
     },
     {
@@ -947,6 +1013,30 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "game.game",
+        "description": "game.game",
+        "isExtraImport": true,
+        "detail": "game.game",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "game.game",
+        "description": "game.game",
+        "isExtraImport": true,
+        "detail": "game.game",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "importPath": "game.game",
+        "description": "game.game",
+        "isExtraImport": true,
+        "detail": "game.game",
         "documentation": {}
     },
     {
@@ -1047,102 +1137,12 @@
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "random",
+        "label": "unittest",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "random",
-        "description": "random",
-        "detail": "random",
-        "documentation": {}
-    },
-    {
-        "label": "logging",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "logging",
-        "description": "logging",
-        "detail": "logging",
-        "documentation": {}
-    },
-    {
-        "label": "re",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "re",
-        "description": "re",
-        "detail": "re",
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
         "documentation": {}
     },
     {
@@ -1514,69 +1514,6 @@
         "documentation": {}
     },
     {
-        "label": "TestCard",
-        "kind": 6,
-        "importPath": "game.tests.test_card",
-        "description": "game.tests.test_card",
-        "peekOfCode": "class TestCard(unittest.TestCase):\n    def setUp(self):\n        self.deck = Deck()\n    def test_deck_initialization(self):\n        # Check that the deck contains 54 cards (52 + 2 jokers)\n        self.assertEqual(len(self.deck.cards), 54)\n        # Check the presence of black and red jokers\n        black_joker = Card(\"\", \"black_joker\")\n        red_joker = Card(\"\", \"red_joker\")\n        self.assertIn(black_joker, self.deck.cards)",
-        "detail": "game.tests.test_card",
-        "documentation": {}
-    },
-    {
-        "label": "TestGame",
-        "kind": 6,
-        "importPath": "game.tests.test_game",
-        "description": "game.tests.test_game",
-        "peekOfCode": "class TestGame(unittest.TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()\n    @classmethod\n    def tearDownClass(cls):\n        teardown_test_environment()\n    def setUp(self):\n        self.user = User.objects.create_user(username=f'testuser_{self.id()}', password='12345')\n        self.profile = Profile.objects.create(user=self.user, point=1000)",
-        "detail": "game.tests.test_game",
-        "documentation": {}
-    },
-    {
-        "label": "os.environ['DJANGO_SETTINGS_MODULE']",
-        "kind": 5,
-        "importPath": "game.tests.test_game",
-        "description": "game.tests.test_game",
-        "peekOfCode": "os.environ['DJANGO_SETTINGS_MODULE'] = 'MyApp.settings'  \n# Initialize Django\ndjango.setup()\nfrom game.player import Player\nfrom game.game import Game\nfrom game.card import Card\nfrom django.contrib.auth.models import User\nfrom user.models import Profile\nclass TestGame(unittest.TestCase):\n    @classmethod",
-        "detail": "game.tests.test_game",
-        "documentation": {}
-    },
-    {
-        "label": "TestPlayer",
-        "kind": 6,
-        "importPath": "game.tests.test_player",
-        "description": "game.tests.test_player",
-        "peekOfCode": "class TestPlayer(unittest.TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()\n    @classmethod\n    def tearDownClass(cls):\n        teardown_test_environment()\n    def setUp(self):\n        self.user = User.objects.create_user(username=f'testuser_{self.id()}', password='12345')\n        self.profile = Profile.objects.create(user=self.user, point=1000)",
-        "detail": "game.tests.test_player",
-        "documentation": {}
-    },
-    {
-        "label": "os.environ['DJANGO_SETTINGS_MODULE']",
-        "kind": 5,
-        "importPath": "game.tests.test_player",
-        "description": "game.tests.test_player",
-        "peekOfCode": "os.environ['DJANGO_SETTINGS_MODULE'] = 'MyApp.settings'\ndjango.setup()\nfrom django.contrib.auth.models import User\nfrom user.models import Profile\nfrom game.player import Player\nclass TestPlayer(unittest.TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()\n    @classmethod",
-        "detail": "game.tests.test_player",
-        "documentation": {}
-    },
-    {
-        "label": "GameViewsTestCase",
-        "kind": 6,
-        "importPath": "game.tests.test_views",
-        "description": "game.tests.test_views",
-        "peekOfCode": "class GameViewsTestCase(TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()\n    @classmethod\n    def tearDownClass(cls):\n        teardown_test_environment()\n    def setUp(self):\n        self.user = User.objects.create_user(username=f'testuser_{uuid.uuid4().hex}', password='12345')\n        self.client.login(username=self.user.username, password='12345')",
-        "detail": "game.tests.test_views",
-        "documentation": {}
-    },
-    {
-        "label": "os.environ['DJANGO_SETTINGS_MODULE']",
-        "kind": 5,
-        "importPath": "game.tests.test_views",
-        "description": "game.tests.test_views",
-        "peekOfCode": "os.environ['DJANGO_SETTINGS_MODULE'] = 'MyApp.settings'\ndjango.setup()\nimport json\nfrom django.test import TestCase\nfrom django.contrib.auth.models import User\nfrom user.models import Profile\nfrom game.player import Player\nfrom game.game import Game\nimport uuid\nfrom django.urls import reverse",
-        "detail": "game.tests.test_views",
-        "documentation": {}
-    },
-    {
         "label": "GameConfig",
         "kind": 6,
         "importPath": "game.apps",
@@ -1667,6 +1604,69 @@
         "documentation": {}
     },
     {
+        "label": "GameViewsTestCase",
+        "kind": 6,
+        "importPath": "game.tests",
+        "description": "game.tests",
+        "peekOfCode": "class GameViewsTestCase(TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()\n    @classmethod\n    def tearDownClass(cls):\n        teardown_test_environment()\n    def setUp(self):\n        self.user = User.objects.create_user(username=f'testuser_{uuid.uuid4().hex}', password='12345')\n        self.client.login(username=self.user.username, password='12345')",
+        "detail": "game.tests",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ['DJANGO_SETTINGS_MODULE']",
+        "kind": 5,
+        "importPath": "game.tests",
+        "description": "game.tests",
+        "peekOfCode": "os.environ['DJANGO_SETTINGS_MODULE'] = 'MyApp.settings'\ndjango.setup()\nimport json\nfrom django.test import TestCase\nfrom django.contrib.auth.models import User\nfrom user.models import Profile\nfrom game.player import Player\nfrom game.game import Game\nimport uuid\nfrom django.urls import reverse",
+        "detail": "game.tests",
+        "documentation": {}
+    },
+    {
+        "label": "TestCard",
+        "kind": 6,
+        "importPath": "game.test_card",
+        "description": "game.test_card",
+        "peekOfCode": "class TestCard(unittest.TestCase):\n    def setUp(self):\n        self.deck = Deck()\n    def test_deck_initialization(self):\n        # Check that the deck contains 54 cards (52 + 2 jokers)\n        self.assertEqual(len(self.deck.cards), 54)\n        # Check the presence of black and red jokers\n        black_joker = Card(\"\", \"black_joker\")\n        red_joker = Card(\"\", \"red_joker\")\n        self.assertIn(black_joker, self.deck.cards)",
+        "detail": "game.test_card",
+        "documentation": {}
+    },
+    {
+        "label": "TestGame",
+        "kind": 6,
+        "importPath": "game.test_game",
+        "description": "game.test_game",
+        "peekOfCode": "class TestGame(unittest.TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()\n    @classmethod\n    def tearDownClass(cls):\n        teardown_test_environment()\n    def setUp(self):\n        self.user = User.objects.create_user(username=f'testuser_{uuid.uuid4().hex}', password='12345')\n        self.profile = Profile.objects.create(user=self.user, point=1000)",
+        "detail": "game.test_game",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ['DJANGO_SETTINGS_MODULE']",
+        "kind": 5,
+        "importPath": "game.test_game",
+        "description": "game.test_game",
+        "peekOfCode": "os.environ['DJANGO_SETTINGS_MODULE'] = 'MyApp.settings'  \n# Initialize Django\ndjango.setup()\nfrom game.player import Player\nfrom game.game import Game\nfrom game.card import Card\nfrom django.contrib.auth.models import User\nfrom user.models import Profile\nimport uuid\nclass TestGame(unittest.TestCase):",
+        "detail": "game.test_game",
+        "documentation": {}
+    },
+    {
+        "label": "TestPlayer",
+        "kind": 6,
+        "importPath": "game.test_player",
+        "description": "game.test_player",
+        "peekOfCode": "class TestPlayer(unittest.TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()\n    @classmethod\n    def tearDownClass(cls):\n        teardown_test_environment()\n    def setUp(self):\n        self.user = User.objects.create_user(username=f'testuser_{uuid.uuid4().hex}', password='12345')\n        self.profile = Profile.objects.create(user=self.user, point=1000)",
+        "detail": "game.test_player",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ['DJANGO_SETTINGS_MODULE']",
+        "kind": 5,
+        "importPath": "game.test_player",
+        "description": "game.test_player",
+        "peekOfCode": "os.environ['DJANGO_SETTINGS_MODULE'] = 'MyApp.settings'\ndjango.setup()\nfrom django.contrib.auth.models import User\nfrom user.models import Profile\nfrom game.player import Player\nimport uuid\nclass TestPlayer(unittest.TestCase):\n    @classmethod\n    def setUpClass(cls):\n        setup_test_environment()",
+        "detail": "game.test_player",
+        "documentation": {}
+    },
+    {
         "label": "app_name",
         "kind": 5,
         "importPath": "game.urls",
@@ -1689,7 +1689,7 @@
         "kind": 2,
         "importPath": "game.views",
         "description": "game.views",
-        "peekOfCode": "def start_game(request):\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        _bet_point = int(request.POST.get('choice_bet_point'))\n        _player = Player(name=user.username, point=profile.point, user=user)\n        current_game = Game(bet_point=_bet_point, player=_player)\n        current_game.auto_create_card()\n        player_card = current_game.player.card\n        request.session['_bet_point'] = _bet_point",
+        "peekOfCode": "def start_game(request):\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        result = \"\"\n        show_house_card = 'back_card'\n        if 'current_reward' in request.session:\n            # If game state already exists in session, restore the game\n            _bet_point = request.session.get('_bet_point')\n            _player_card = request.session.get('player_card')",
         "detail": "game.views",
         "documentation": {}
     },
@@ -1734,7 +1734,7 @@
         "kind": 2,
         "importPath": "home.views",
         "description": "home.views",
-        "peekOfCode": "def dashboard(request):\n    return render(request,'home/dashboard.html')\ndef view_404(requests, exception):\n    return render(requests, 'home/404.html', status=404)",
+        "peekOfCode": "def dashboard(request):\n    return render(request,'home/dashboard.html')\ndef view_404(requests, exception):\n    return render(requests, 'home/404.html', status=404)\ndef view_403(requests, exception):\n    return render(requests, 'home/403.html', status=403)\ndef view_500(requests):\n    return render(requests, 'home/500.html', status=500)",
         "detail": "home.views",
         "documentation": {}
     },
@@ -1743,7 +1743,25 @@
         "kind": 2,
         "importPath": "home.views",
         "description": "home.views",
-        "peekOfCode": "def view_404(requests, exception):\n    return render(requests, 'home/404.html', status=404)",
+        "peekOfCode": "def view_404(requests, exception):\n    return render(requests, 'home/404.html', status=404)\ndef view_403(requests, exception):\n    return render(requests, 'home/403.html', status=403)\ndef view_500(requests):\n    return render(requests, 'home/500.html', status=500)",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "view_403",
+        "kind": 2,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "def view_403(requests, exception):\n    return render(requests, 'home/403.html', status=403)\ndef view_500(requests):\n    return render(requests, 'home/500.html', status=500)",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "view_500",
+        "kind": 2,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "def view_500(requests):\n    return render(requests, 'home/500.html', status=500)",
         "detail": "home.views",
         "documentation": {}
     },
@@ -1770,7 +1788,7 @@
         "kind": 5,
         "importPath": "MyApp.settings",
         "description": "MyApp.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3",
         "detail": "MyApp.settings",
         "documentation": {}
     },
@@ -1779,7 +1797,7 @@
         "kind": 5,
         "importPath": "MyApp.settings",
         "description": "MyApp.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "MyApp.settings",
         "documentation": {}
     },
@@ -1788,7 +1806,7 @@
         "kind": 5,
         "importPath": "MyApp.settings",
         "description": "MyApp.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "peekOfCode": "DEBUG = False\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "MyApp.settings",
         "documentation": {}
     },
@@ -2148,7 +2166,25 @@
         "kind": 5,
         "importPath": "MyApp.urls",
         "description": "MyApp.urls",
-        "peekOfCode": "handler404 = 'home.views.view_404'\nif settings.DEBUG:\n    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "peekOfCode": "handler404 = 'home.views.view_404'\nhandler403 = 'home.views.view_403'\nhandler500 = 'home.views.view_500'\nif settings.DEBUG:\n    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "MyApp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "handler403",
+        "kind": 5,
+        "importPath": "MyApp.urls",
+        "description": "MyApp.urls",
+        "peekOfCode": "handler403 = 'home.views.view_403'\nhandler500 = 'home.views.view_500'\nif settings.DEBUG:\n    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "MyApp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "handler500",
+        "kind": 5,
+        "importPath": "MyApp.urls",
+        "description": "MyApp.urls",
+        "peekOfCode": "handler500 = 'home.views.view_500'\nif settings.DEBUG:\n    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
         "detail": "MyApp.urls",
         "documentation": {}
     },
