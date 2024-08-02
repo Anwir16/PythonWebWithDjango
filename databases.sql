@@ -21,12 +21,15 @@ SET time_zone = "+00:00";
 -- Database: `finalgame`
 --
 
+
+CREATE DATABASE IF NOT EXISTS finalgame;
+
+USE finalgame;
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `account_emailaddress`
 --
-
 CREATE TABLE `account_emailaddress` (
   `id` int(11) NOT NULL,
   `email` varchar(254) NOT NULL,
