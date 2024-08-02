@@ -1734,7 +1734,7 @@
         "kind": 2,
         "importPath": "home.views",
         "description": "home.views",
-        "peekOfCode": "def dashboard(request):\n    return render(request,'home/dashboard.html')\ndef view_404(requests, exception):\n    return render(requests, 'home/404.html', status=404)\ndef view_403(requests, exception):\n    return render(requests, 'home/403.html', status=403)\ndef view_500(requests):\n    return render(requests, 'home/500.html', status=500)",
+        "peekOfCode": "def dashboard(request):\n    return render(request,'home/dashboard.html')\ndef view_404(requests, exception):\n    return render(requests, 'home/404.html', status=404)\ndef view_403(requests, exception):\n    return render(requests, 'home/403.html', status=403)\ndef view_500(requests):\n    return render(requests, 'home/500.html', status=500)\ndef csrf_failure(request, reason=\"\"):\n    return render(request, 'home/403.html', status=403)",
         "detail": "home.views",
         "documentation": {}
     },
@@ -1743,7 +1743,7 @@
         "kind": 2,
         "importPath": "home.views",
         "description": "home.views",
-        "peekOfCode": "def view_404(requests, exception):\n    return render(requests, 'home/404.html', status=404)\ndef view_403(requests, exception):\n    return render(requests, 'home/403.html', status=403)\ndef view_500(requests):\n    return render(requests, 'home/500.html', status=500)",
+        "peekOfCode": "def view_404(requests, exception):\n    return render(requests, 'home/404.html', status=404)\ndef view_403(requests, exception):\n    return render(requests, 'home/403.html', status=403)\ndef view_500(requests):\n    return render(requests, 'home/500.html', status=500)\ndef csrf_failure(request, reason=\"\"):\n    return render(request, 'home/403.html', status=403)",
         "detail": "home.views",
         "documentation": {}
     },
@@ -1752,7 +1752,7 @@
         "kind": 2,
         "importPath": "home.views",
         "description": "home.views",
-        "peekOfCode": "def view_403(requests, exception):\n    return render(requests, 'home/403.html', status=403)\ndef view_500(requests):\n    return render(requests, 'home/500.html', status=500)",
+        "peekOfCode": "def view_403(requests, exception):\n    return render(requests, 'home/403.html', status=403)\ndef view_500(requests):\n    return render(requests, 'home/500.html', status=500)\ndef csrf_failure(request, reason=\"\"):\n    return render(request, 'home/403.html', status=403)",
         "detail": "home.views",
         "documentation": {}
     },
@@ -1761,7 +1761,16 @@
         "kind": 2,
         "importPath": "home.views",
         "description": "home.views",
-        "peekOfCode": "def view_500(requests):\n    return render(requests, 'home/500.html', status=500)",
+        "peekOfCode": "def view_500(requests):\n    return render(requests, 'home/500.html', status=500)\ndef csrf_failure(request, reason=\"\"):\n    return render(request, 'home/403.html', status=403)",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_failure",
+        "kind": 2,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "def csrf_failure(request, reason=\"\"):\n    return render(request, 'home/403.html', status=403)",
         "detail": "home.views",
         "documentation": {}
     },
@@ -2004,7 +2013,7 @@
         "kind": 5,
         "importPath": "MyApp.settings",
         "description": "MyApp.settings",
-        "peekOfCode": "LOGIN_URL = 'user:login'\n# LOGIN GOOGLE CONFIG\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}\nLOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True",
+        "peekOfCode": "LOGIN_URL = 'user:login'\n# LOGIN GOOGLE CONFIG\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}\nLOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nCSRF_FAILURE_VIEW = 'home.views.csrf_failure'\nACCOUNT_EMAIL_VERIFICATION = 'none'",
         "detail": "MyApp.settings",
         "documentation": {}
     },
@@ -2013,7 +2022,7 @@
         "kind": 5,
         "importPath": "MyApp.settings",
         "description": "MyApp.settings",
-        "peekOfCode": "LOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587",
+        "peekOfCode": "LOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nCSRF_FAILURE_VIEW = 'home.views.csrf_failure'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True",
         "detail": "MyApp.settings",
         "documentation": {}
     },
@@ -2022,7 +2031,16 @@
         "kind": 5,
         "importPath": "MyApp.settings",
         "description": "MyApp.settings",
-        "peekOfCode": "LOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"",
+        "peekOfCode": "LOGOUT_REDIRECT_URL = '/'\nCSRF_FAILURE_VIEW = 'home.views.csrf_failure'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587",
+        "detail": "MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CSRF_FAILURE_VIEW",
+        "kind": 5,
+        "importPath": "MyApp.settings",
+        "description": "MyApp.settings",
+        "peekOfCode": "CSRF_FAILURE_VIEW = 'home.views.csrf_failure'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"",
         "detail": "MyApp.settings",
         "documentation": {}
     },

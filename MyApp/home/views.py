@@ -14,3 +14,6 @@ def view_403(requests, exception):
 
 def view_500(requests):
     return render(requests, 'home/500.html', status=500)
+
+def csrf_failure(request, reason=""):
+    return render(request, 'home/403.html', status=403)
