@@ -110,7 +110,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'FinalGame',
         'USER': 'root',
-        'PASSWORD': 'admin123',
+        'PASSWORD': '',
         'HOST':'localhost',
     }
 }
