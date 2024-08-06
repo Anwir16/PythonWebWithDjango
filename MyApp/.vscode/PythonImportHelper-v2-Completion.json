@@ -1689,7 +1689,7 @@
         "kind": 2,
         "importPath": "game.views",
         "description": "game.views",
-        "peekOfCode": "def start_game(request):\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        result = \"\"\n        show_house_card = 'back_card'\n        if 'current_reward' in request.session:\n            # If game state already exists in session, restore the game\n            _bet_point = request.session.get('_bet_point')\n            _player_card = request.session.get('player_card')",
+        "peekOfCode": "def start_game(request):\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        result = \"\"\n        show_house_card = 'back_card'\n        if 'current_reward' in request.session:\n            # If game state already exists in session, restore the game\n            _bet_point = request.session.get('bet_point')\n            _player_card = request.session.get('player_card')",
         "detail": "game.views",
         "documentation": {}
     },

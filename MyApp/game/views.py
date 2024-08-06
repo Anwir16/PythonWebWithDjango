@@ -17,7 +17,7 @@ def start_game(request):
 
         if 'current_reward' in request.session:
             # If game state already exists in session, restore the game
-            _bet_point = request.session.get('_bet_point')
+            _bet_point = request.session.get('bet_point')
             _player_card = request.session.get('player_card')
             _house_card = request.session.get('house_card')
             show_house_card = request.session.get('show_house_card')
@@ -40,7 +40,7 @@ def start_game(request):
             current_game = Game(bet_point=_bet_point, player=_player)
             current_game.auto_create_card()
 
-            request.session['_bet_point'] = _bet_point
+            request.session['bet_point'] = _bet_point
             request.session['player_card'] = current_game.player.card.__str__()
             request.session['house_card'] = current_game.house.card.__str__()
             request.session['show_house_card'] = show_house_card
@@ -70,7 +70,7 @@ def play_round(request):
         action = request.POST.get('action', '')
         print(f'action: {action}')
         
-        _bet_point = request.session.get('_bet_point')
+        _bet_point = request.session.get('bet_point')
         _player_card = request.session.get('player_card')
         _house_card = request.session.get('house_card')
         _current_reward = request.session.get('current_reward')
@@ -93,7 +93,7 @@ def play_round(request):
             request.session['result'] = result
         elif action == 'Continue':
             current_game.auto_create_card()
-            request.session['_bet_point'] = _bet_point
+            request.session['bet_point'] = _bet_point
             request.session['player_card'] = current_game.player.card.__str__()
             request.session['house_card'] = current_game.house.card.__str__()
             request.session['show_house_card'] = 'back_card'
@@ -102,7 +102,7 @@ def play_round(request):
             profile.point += current_game.current_reward
             profile.save()
             result = 'Game over'
-            del request.session['_bet_point']
+            del request.session['bet_point']
             del request.session['player_card']
             del request.session['house_card']
             del request.session['current_reward']

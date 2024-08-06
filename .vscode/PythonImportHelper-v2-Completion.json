@@ -466,6 +466,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -1689,7 +1705,7 @@
         "kind": 2,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "def start_game(request):\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        result = \"\"\n        show_house_card = 'back_card'\n        if 'current_reward' in request.session:\n            # If game state already exists in session, restore the game\n            _bet_point = request.session.get('_bet_point')\n            _player_card = request.session.get('player_card')",
+        "peekOfCode": "def start_game(request):\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        result = \"\"\n        show_house_card = 'back_card'\n        if 'current_reward' in request.session:\n            # If game state already exists in session, restore the game\n            _bet_point = request.session.get('bet_point')\n            _player_card = request.session.get('player_card')",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -1734,7 +1750,7 @@
         "kind": 2,
         "importPath": "MyApp.home.views",
         "description": "MyApp.home.views",
-        "peekOfCode": "def dashboard(request):\n    return render(request,'home/dashboard.html')\ndef view_404(requests, exception):\n    return render(requests, 'home/404.html', status=404)",
+        "peekOfCode": "def dashboard(request):\n    return render(request,'home/dashboard.html')\ndef view_404(requests, exception):\n    return render(requests, 'home/404.html', status=404)\ndef view_403(requests, exception):\n    return render(requests, 'home/403.html', status=403)\ndef view_500(requests):\n    return render(requests, 'home/500.html', status=500)\ndef csrf_failure(request, reason=\"\"):\n    return render(request, 'home/403.html', status=403)",
         "detail": "MyApp.home.views",
         "documentation": {}
     },
@@ -1743,7 +1759,34 @@
         "kind": 2,
         "importPath": "MyApp.home.views",
         "description": "MyApp.home.views",
-        "peekOfCode": "def view_404(requests, exception):\n    return render(requests, 'home/404.html', status=404)",
+        "peekOfCode": "def view_404(requests, exception):\n    return render(requests, 'home/404.html', status=404)\ndef view_403(requests, exception):\n    return render(requests, 'home/403.html', status=403)\ndef view_500(requests):\n    return render(requests, 'home/500.html', status=500)\ndef csrf_failure(request, reason=\"\"):\n    return render(request, 'home/403.html', status=403)",
+        "detail": "MyApp.home.views",
+        "documentation": {}
+    },
+    {
+        "label": "view_403",
+        "kind": 2,
+        "importPath": "MyApp.home.views",
+        "description": "MyApp.home.views",
+        "peekOfCode": "def view_403(requests, exception):\n    return render(requests, 'home/403.html', status=403)\ndef view_500(requests):\n    return render(requests, 'home/500.html', status=500)\ndef csrf_failure(request, reason=\"\"):\n    return render(request, 'home/403.html', status=403)",
+        "detail": "MyApp.home.views",
+        "documentation": {}
+    },
+    {
+        "label": "view_500",
+        "kind": 2,
+        "importPath": "MyApp.home.views",
+        "description": "MyApp.home.views",
+        "peekOfCode": "def view_500(requests):\n    return render(requests, 'home/500.html', status=500)\ndef csrf_failure(request, reason=\"\"):\n    return render(request, 'home/403.html', status=403)",
+        "detail": "MyApp.home.views",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_failure",
+        "kind": 2,
+        "importPath": "MyApp.home.views",
+        "description": "MyApp.home.views",
+        "peekOfCode": "def csrf_failure(request, reason=\"\"):\n    return render(request, 'home/403.html', status=403)",
         "detail": "MyApp.home.views",
         "documentation": {}
     },
@@ -1770,7 +1813,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1779,7 +1822,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1788,7 +1831,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "peekOfCode": "DEBUG = False\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1986,7 +2029,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LOGIN_URL = 'user:login'\n# LOGIN GOOGLE CONFIG\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}\nLOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True",
+        "peekOfCode": "LOGIN_URL = 'user:login'\n# LOGIN GOOGLE CONFIG\nAUTHENTICATION_BACKENDS={\n    \"django.contrib.auth.backends.ModelBackend\",\n    'allauth.account.auth_backends.AuthenticationBackend',\n}\nLOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nCSRF_FAILURE_VIEW = 'home.views.csrf_failure'\nACCOUNT_EMAIL_VERIFICATION = 'none'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1995,7 +2038,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587",
+        "peekOfCode": "LOGIN_REDIRECT_URL = '/'\nLOGOUT_REDIRECT_URL = '/'\nCSRF_FAILURE_VIEW = 'home.views.csrf_failure'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -2004,7 +2047,16 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "LOGOUT_REDIRECT_URL = '/'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"",
+        "peekOfCode": "LOGOUT_REDIRECT_URL = '/'\nCSRF_FAILURE_VIEW = 'home.views.csrf_failure'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587",
+        "detail": "MyApp.MyApp.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CSRF_FAILURE_VIEW",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.settings",
+        "description": "MyApp.MyApp.settings",
+        "peekOfCode": "CSRF_FAILURE_VIEW = 'home.views.csrf_failure'\nACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -2148,7 +2200,25 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.urls",
         "description": "MyApp.MyApp.urls",
-        "peekOfCode": "handler404 = 'home.views.view_404'\nif settings.DEBUG:\n    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "peekOfCode": "handler404 = 'home.views.view_404'\nhandler403 = 'home.views.view_403'\nhandler500 = 'home.views.view_500'\nif settings.DEBUG:\n    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "MyApp.MyApp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "handler403",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.urls",
+        "description": "MyApp.MyApp.urls",
+        "peekOfCode": "handler403 = 'home.views.view_403'\nhandler500 = 'home.views.view_500'\nif settings.DEBUG:\n    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "MyApp.MyApp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "handler500",
+        "kind": 5,
+        "importPath": "MyApp.MyApp.urls",
+        "description": "MyApp.MyApp.urls",
+        "peekOfCode": "handler500 = 'home.views.view_500'\nif settings.DEBUG:\n    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
         "detail": "MyApp.MyApp.urls",
         "documentation": {}
     },
@@ -2492,6 +2562,24 @@
         "description": "MyApp.wallet.migrations.0008_alter_combopoint_options",
         "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('wallet', '0007_alter_paymenthistory_combo_point_and_more'),\n    ]\n    operations = [\n        migrations.AlterModelOptions(\n            name='combopoint',\n            options={'verbose_name_plural': 'Combo Points'},\n        ),\n    ]",
         "detail": "MyApp.wallet.migrations.0008_alter_combopoint_options",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "MyApp.wallet.migrations.0009_alter_paymenthistory_order_id",
+        "description": "MyApp.wallet.migrations.0009_alter_paymenthistory_order_id",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('wallet', '0008_alter_combopoint_options'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='paymenthistory',\n            name='order_id',\n            field=models.CharField(max_length=250),\n        ),",
+        "detail": "MyApp.wallet.migrations.0009_alter_paymenthistory_order_id",
+        "documentation": {}
+    },
+    {
+        "label": "MyModelAdmin",
+        "kind": 6,
+        "importPath": "MyApp.wallet.admin",
+        "description": "MyApp.wallet.admin",
+        "peekOfCode": "class MyModelAdmin(admin.ModelAdmin):\n    list_display = ('name', 'desc', 'image', 'price', 'point')",
+        "detail": "MyApp.wallet.admin",
         "documentation": {}
     },
     {
