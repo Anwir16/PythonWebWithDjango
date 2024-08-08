@@ -28,11 +28,10 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         $('#top_up').hide()
-        var bet_point = parseInt(document.getElementById('choice_bet_point').value, 0);
-        var profilePoint = {{ profile.point }};
         var messageElement = document.getElementById('message');
-        if (profilePoint < bet_point) {
-            messageElement.textContent = 'Your points are insufficient. Please top up to continue the experience.';
+        var profilePoint = {{ profile.point }};
+        if (profilePoint === 0) {
+            messageElement.textContent = 'Please top up to continue.';
             messageElement.style.color = 'black';
             $('#start').hide()
             $('#top_up').show()

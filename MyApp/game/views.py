@@ -30,6 +30,12 @@ def start_game(request):
             print(f'player_point: {player.points}')
             print(f'bet_point: {bet_point}')
             if player.points < bet_point:
+                del request.session['bet_point']
+                del request.session['player_card']
+                del request.session['house_card']
+                del request.session['current_reward']
+                del request.session['show_house_card']
+                del request.session['result']
                 error = f"Please enter bet point less {player.points}!"
                 return render(request, 'home/dashboard.html', {'error' : error})
             current_game = Game(bet_point=bet_point, player=player)
@@ -42,13 +48,16 @@ def start_game(request):
             player = Player(name=user.username, point=profile.point, user=user)
             bet_point = request.POST.get('choice_bet_point')
             if not bet_point:
-                error = "Please top up to continue!"
+                error = "Please enter bet point to continue!"
                 return render(request, 'home/dashboard.html', {'error' : error})
             elif not bet_point.isdigit():
                 error = "Bet point must be an integer!"
                 return render(request, 'home/dashboard.html', {'error' : error})
             elif player.points < int(bet_point):
                 error = f"Please enter bet point less {player.points}!"
+                return render(request, 'home/dashboard.html', {'error' : error})
+            elif player.points == 0:
+                error = "Please top up to continue!"
                 return render(request, 'home/dashboard.html', {'error' : error})
             current_game = Game(bet_point=bet_point, player=player)
             current_game.auto_create_card()
@@ -86,7 +95,6 @@ def play_round(request):
         bet_point = request.session.get('bet_point')
         player_card = request.session.get('player_card')
         house_card = request.session.get('house_card')
-        show_house_card = request.session.get('show_house_card')
         current_reward = request.session.get('current_reward')
         print(f'current_reward: {current_reward}')
         
@@ -123,6 +131,7 @@ def play_round(request):
             del request.session['show_house_card']
             del request.session['result']
         
+        show_house_card = request.session.get('show_house_card')
         context = {
             'player_card': current_game.player.card.__str__(),
             'house_card': show_house_card,
