@@ -17,12 +17,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 $('.reward-point h4').first().text("Your reward point: " + response.reward_point);
                 // Update result
                 if (response.result) {
-                    // Clear previous result
+                    if (response.result === 'Game over'){
+                        // Clear previous result
                     $('.reward-point .result').remove();
                     // Append new result
                     $('.reward-point').append("<h4 class='result'>" + response.result + "</h4>");
                     $('#guess-buttons').hide();
                     $('#action-buttons').show();
+                    $('#continue').hide();
+                    } else{
+                        // Clear previous result
+                    $('.reward-point .result').remove();
+                    // Append new result
+                    $('.reward-point').append("<h4 class='result'>" + response.result + "</h4>");
+                    $('#guess-buttons').hide();
+                    $('#action-buttons').show();
+                    }
                 } else {
                     // Remove the result if it's not provided in the response
                     $('.reward-point .result').remove();

@@ -47,6 +47,21 @@ class GameViewsTestCase(TestCase):
         self.assertIn('player_card', context)
         self.assertIn('house_card', context)
         self.assertIn('reward_point', context)
+    def test_start_game_post_without_choice_bet_point(self):
+        response = self.client.post('/play/start/', {'choice_bet_point': ''})
+        
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'home/dashboard.html')
+        context = response.context
+        self.assertEqual(context['error'], 'Please enter bet point!')
+    
+    def test_start_game_post_with_choice_bet_point_is_str(self):
+        response = self.client.post('/play/start/', {'choice_bet_point': '123hs123'})
+        
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'home/dashboard.html')
+        context = response.context
+        self.assertEqual(context['error'], 'Bet point must be an integer!')
     
     def test_start_game_get(self):
         response = self.client.get('/play/start/')
@@ -57,7 +72,7 @@ class GameViewsTestCase(TestCase):
     def test_start_game_session_restoration(self):
         # Set initial session data
         session = self.client.session
-        session['_bet_point'] = 100
+        session['bet_point'] = 100
         session['player_card'] = 'spade/5'
         session['house_card'] = 'heart/3'
         session['show_house_card'] = 'back_card'
@@ -117,7 +132,7 @@ class GameViewsTestCase(TestCase):
         self.assertIn('house_card', json_response)
         self.assertIn('player_points', json_response)
         self.assertIn('reward_point', json_response)
-        self.assertIn('_bet_point', self.client.session)
+        self.assertIn('bet_point', self.client.session)
         self.assertIn('player_card', self.client.session)
         self.assertIn('house_card', self.client.session)
         self.assertIn('current_reward', self.client.session)
@@ -136,7 +151,7 @@ class GameViewsTestCase(TestCase):
         self.assertEqual(response.status_code, 200)
         json_response = json.loads(response.content)
         self.assertEqual(json_response['result'], 'Game over')
-        self.assertNotIn('_bet_point', self.client.session)
+        self.assertNotIn('bet_point', self.client.session)
         self.assertNotIn('player_card', self.client.session)
         self.assertNotIn('house_card', self.client.session)
         self.assertNotIn('current_reward', self.client.session)

@@ -23,7 +23,7 @@ class Game:
         self.player = player
         self.house = House()
         self.current_reward = 0
-        self.bet_point = bet_point
+        self.bet_point = int(bet_point)
 
     @log_method_call
     def auto_create_card(self):
@@ -33,9 +33,6 @@ class Game:
 
             self.player.card = self.deck.deal()
             logging.info(f"Player card: {self.player.card}")
-        else:
-            self.house.receive_card("back_card")
-            self.player.card = "back_card"
 
     # Play a round of the game
     @log_method_call

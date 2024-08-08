@@ -1579,7 +1579,7 @@
         "kind": 6,
         "importPath": "MyApp.game.game",
         "description": "MyApp.game.game",
-        "peekOfCode": "class Game:\n    def __init__(self, bet_point, player):\n        self.deck = Deck()\n        self.player = player\n        self.house = House()\n        self.current_reward = 0\n        self.bet_point = bet_point\n    @log_method_call\n    def auto_create_card(self):\n        if self.player.points >= self.bet_point:",
+        "peekOfCode": "class Game:\n    def __init__(self, bet_point, player):\n        self.deck = Deck()\n        self.player = player\n        self.house = House()\n        self.current_reward = 0\n        self.bet_point = int(bet_point)\n    @log_method_call\n    def auto_create_card(self):\n        if self.player.points >= self.bet_point:",
         "detail": "MyApp.game.game",
         "documentation": {}
     },
@@ -1705,7 +1705,7 @@
         "kind": 2,
         "importPath": "MyApp.game.views",
         "description": "MyApp.game.views",
-        "peekOfCode": "def start_game(request):\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        result = \"\"\n        show_house_card = 'back_card'\n        if 'current_reward' in request.session:\n            # If game state already exists in session, restore the game\n            _bet_point = request.session.get('bet_point')\n            _player_card = request.session.get('player_card')",
+        "peekOfCode": "def start_game(request):\n    if request.method == 'POST':\n        user = request.user\n        profile = Profile.objects.get(user=user)\n        result = \"\"\n        show_house_card = 'back_card'\n        if 'current_reward' in request.session:\n            # If game state already exists in session, restore the game\n            bet_point = int(request.session.get('bet_point'))\n            player_card = request.session.get('player_card')",
         "detail": "MyApp.game.views",
         "documentation": {}
     },
@@ -2065,7 +2065,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')",
+        "peekOfCode": "ACCOUNT_EMAIL_VERIFICATION = 'none'\nACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = 'xlzcylgznasjisje'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -2074,7 +2074,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')\nprint(f'env {os.getenv('EMAIL_HOST_PASSWORD')}')",
+        "peekOfCode": "ACCOUNT_EMAIL_REQUIRED = True\nACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = 'xlzcylgznasjisje'\n# VNPAY CONFIG",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -2083,7 +2083,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "ACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')\nprint(f'env {os.getenv('EMAIL_HOST_PASSWORD')}')\n# VNPAY CONFIG",
+        "peekOfCode": "ACCOUNT_AUTHENTICATION_METHOD = 'email'\n# SENT EMAIL CONFIG\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = 'xlzcylgznasjisje'\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -2092,7 +2092,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')\nprint(f'env {os.getenv('EMAIL_HOST_PASSWORD')}')\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = 'xlzcylgznasjisje'\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -2101,7 +2101,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')\nprint(f'env {os.getenv('EMAIL_HOST_PASSWORD')}')\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'",
+        "peekOfCode": "EMAIL_HOST = 'smtp.gmail.com'\nEMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = 'xlzcylgznasjisje'\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -2110,7 +2110,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')\nprint(f'env {os.getenv('EMAIL_HOST_PASSWORD')}')\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = 'xlzcylgznasjisje'\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -2119,7 +2119,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')\nprint(f'env {os.getenv('EMAIL_HOST_PASSWORD')}')\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
+        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = 'xlzcylgznasjisje'\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -2128,7 +2128,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')\nprint(f'env {os.getenv('EMAIL_HOST_PASSWORD')}')\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
+        "peekOfCode": "EMAIL_HOST_USER = \"PhucNDCE171160@fpt.edu.vn\"\nEMAIL_HOST_PASSWORD = 'xlzcylgznasjisje'\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -2137,7 +2137,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')\nprint(f'env {os.getenv('EMAIL_HOST_PASSWORD')}')\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = 'xlzcylgznasjisje'\n# VNPAY CONFIG\nVNPAY_RETURN_URL = 'http://127.0.0.1:8000/wallet/buy'  # get from config\nVNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  # get from config\nVNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'\nVNPAY_TMN_CODE = 'RJZONIBB'  # Website ID in VNPAY System, get from config\nVNPAY_HASH_SECRET_KEY = 'TD2734M9B2Y9JK5LM5CDVEO33CGM4MAP'  # Secret key for create checksum,get from config",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },

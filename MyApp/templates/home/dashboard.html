@@ -14,15 +14,11 @@
                 {% csrf_token %}
                 <div class="form-group">
                     <label for="bet_point">Bet Points</label>
-                    
-                    {% if request.session.bet_point %}
-                    <input type="number" readonly name="_bet_point" id="_bet_point" value="{{request.session.bet_point}}" class="form-control">
-                    {% else %}
-                    <input type="number" name="choice_bet_point" id="choice_bet_point" value="25" min="25" max="{{ profile.point }}" class="form-control">
-                    {% endif %}
-                    <p id="message" class="message"></p>
+                    <input type="number" name="choice_bet_point" id="choice_bet_point" value="25" class="form-control">
+                    <p id="message" class="message">{{error}}</p>
                 </div>
-                <button type="submit" class="btn btn-success">Start</button>
+                <button type="submit" id="start" class="btn btn-success">Start</button>
+                <a href="{% url 'wallet:buy_point' %}" id="top_up" class="btn btn-success">Top up here</a>
             </form>
         </div>
     </div>
@@ -31,11 +27,15 @@
 {% block js %}
 <script>
     document.addEventListener('DOMContentLoaded', function() {
+        $('#top_up').hide()
+        var bet_point = parseInt(document.getElementById('choice_bet_point').value, 0);
         var profilePoint = {{ profile.point }};
         var messageElement = document.getElementById('message');
-        if (profilePoint < 25) {
+        if (profilePoint < bet_point) {
             messageElement.textContent = 'Your points are insufficient. Please top up to continue the experience.';
-            messageElement.style.color = 'black'; 
+            messageElement.style.color = 'black';
+            $('#start').hide()
+            $('#top_up').show()
         }
     });
 </script>
