@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon"  href="{% static 'favicon.ico'%}">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="{% static 'user/js/signup.js' %}"></script>
   </head>
   <body>
     <div class="container">
@@ -52,29 +53,7 @@
       </div>
     </div>
     <script>
-      $("#username").focusout(function (e) {
-        e.preventDefault();
-        // get the nickname
-        var username = $(this).val();
-        // GET AJAX request
-        $.ajax({
-            type: 'GET',
-            url: "{% url 'user:validate_username' %}",
-            data: {"username": username},
-            success: function (response) {
-                // if not valid user, alert the user
-                if(!response["valid"]){
-                    alert("Username already exist.");
-                    var nickName = $("#username");
-                    nickName.val("")
-                    nickName.focus()
-                }
-            },
-            error: function (response) {
-                console.log(response)
-            }
-        })
-    })
+      var validateUsernameUrl = "{% url 'user:validate_username' %}";
     </script>
   </body>
 </html>

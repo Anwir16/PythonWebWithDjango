@@ -1813,7 +1813,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1822,7 +1822,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-$4+me+t6ygf*$9gvl(ye-7q+q1lcfq)k-rvcq#uf2a727k*dw&'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -1831,7 +1831,7 @@
         "kind": 5,
         "importPath": "MyApp.MyApp.settings",
         "description": "MyApp.MyApp.settings",
-        "peekOfCode": "DEBUG = False\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nSITE_ID = 3\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "MyApp.MyApp.settings",
         "documentation": {}
     },
@@ -2425,7 +2425,7 @@
         "kind": 5,
         "importPath": "MyApp.user.urls",
         "description": "MyApp.user.urls",
-        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',redirect_if_authenticated(views.loginViews), name='login'),\n    path('register/',redirect_if_authenticated(views.signup), name='register'),\n    path('validation/username/',views.checkUsername, name='validate_username'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('updateProfile/', views.updateProfile, name='updateProfile'),\n    #change password\n    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='user/changePassword.html',success_url = reverse_lazy(\"user:password_change_done\")), name='password_change'),",
+        "peekOfCode": "app_name = 'user'\nurlpatterns = [\n    path('login/',redirect_if_authenticated(views.loginViews), name='login'),\n    path('register/',redirect_if_authenticated(views.signup), name='register'),\n    path('validation/username/',lambda request: views.check_unique(request, 'username'), name='validate_username'),\n    path('validation/email/',lambda request: views.check_unique(request, 'email'), name='validate_email'),\n    path('validation/first_name/',lambda request: views.check_unique(request, 'first_name'), name='validate_first_name'),\n    path('validation/last_name/',lambda request: views.check_unique(request, 'last_name'), name='validate_last_name'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),",
         "detail": "MyApp.user.urls",
         "documentation": {}
     },
@@ -2434,16 +2434,34 @@
         "kind": 5,
         "importPath": "MyApp.user.urls",
         "description": "MyApp.user.urls",
-        "peekOfCode": "urlpatterns = [\n    path('login/',redirect_if_authenticated(views.loginViews), name='login'),\n    path('register/',redirect_if_authenticated(views.signup), name='register'),\n    path('validation/username/',views.checkUsername, name='validate_username'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('updateProfile/', views.updateProfile, name='updateProfile'),\n    #change password\n    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='user/changePassword.html',success_url = reverse_lazy(\"user:password_change_done\")), name='password_change'),\n    path('password_change_done/', auth_views.PasswordChangeDoneView.as_view(template_name='user/passwordChangeDone.html'), name='password_change_done'),",
+        "peekOfCode": "urlpatterns = [\n    path('login/',redirect_if_authenticated(views.loginViews), name='login'),\n    path('register/',redirect_if_authenticated(views.signup), name='register'),\n    path('validation/username/',lambda request: views.check_unique(request, 'username'), name='validate_username'),\n    path('validation/email/',lambda request: views.check_unique(request, 'email'), name='validate_email'),\n    path('validation/first_name/',lambda request: views.check_unique(request, 'first_name'), name='validate_first_name'),\n    path('validation/last_name/',lambda request: views.check_unique(request, 'last_name'), name='validate_last_name'),\n    path('signout/',views.logoutViews, name='signout'),\n    path('profile/',views.viewsProfile, name='profile'),\n    path('updateProfile/', views.updateProfile, name='updateProfile'),",
         "detail": "MyApp.user.urls",
         "documentation": {}
     },
     {
-        "label": "checkUsername",
+        "label": "check_unique",
         "kind": 2,
         "importPath": "MyApp.user.views",
         "description": "MyApp.user.views",
-        "peekOfCode": "def checkUsername(request):\n    if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'GET':\n        username = request.GET.get('username', None)\n        if User.objects.filter(username = username).exists():\n            return JsonResponse({'valid' : False}, status = 200)\n        else:\n            return JsonResponse({'valid' : True}, status = 200)\n    return JsonResponse({}, status = 400)\ndef signup(request):\n    if request.method == 'POST':",
+        "peekOfCode": "def check_unique(request, field_name):\n    if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'GET':\n        value = request.GET.get(field_name, None)\n        if value:\n            filter_kwargs = {f\"{field_name}__exact\": value}\n            is_exists = User.objects.filter(**filter_kwargs).exists()\n            return JsonResponse({'valid': not is_exists}, status=200)\n    return JsonResponse({}, status=400)\ndef is_valid_name(name):\n    \"\"\"",
+        "detail": "MyApp.user.views",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_name",
+        "kind": 2,
+        "importPath": "MyApp.user.views",
+        "description": "MyApp.user.views",
+        "peekOfCode": "def is_valid_name(name):\n    \"\"\"\n    Validates that the name:\n    - Does not contain special characters or numbers.\n    - Contains at least one alphabetical character.\n    - Does not start or end with whitespace.\n    \"\"\"\n    if not name or not isinstance(name, str):\n        return False\n    if name[0].isspace() or name[-1].isspace():",
+        "detail": "MyApp.user.views",
+        "documentation": {}
+    },
+    {
+        "label": "check_name",
+        "kind": 2,
+        "importPath": "MyApp.user.views",
+        "description": "MyApp.user.views",
+        "peekOfCode": "def check_name(request, field_name):\n    \"\"\"\n    Checks if the provided field (first name or last name) is valid and unique.\n    \"\"\"\n    if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'GET':\n        value = request.GET.get(field_name, None)\n        if value:\n            if is_valid_name(value):\n                return JsonResponse({'valid': False}, status=200)\n        is_exists = False",
         "detail": "MyApp.user.views",
         "documentation": {}
     },

@@ -7,18 +7,50 @@ from django.contrib.auth.models import User
 from .models import Profile
 from django.http import JsonResponse
 from django.contrib.auth import views
+import re
 
 views.LoginView()
 
 # use ajax to check username
-def checkUsername(request):
+def check_unique(request, field_name):
     if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'GET':
-        username = request.GET.get('username', None)
-        if User.objects.filter(username = username).exists():
-            return JsonResponse({'valid' : False}, status = 200)
-        else:
-            return JsonResponse({'valid' : True}, status = 200)
-    return JsonResponse({}, status = 400)
+        value = request.GET.get(field_name, None)
+        if value:
+            filter_kwargs = {f"{field_name}__exact": value}
+            is_exists = User.objects.filter(**filter_kwargs).exists()
+            return JsonResponse({'valid': not is_exists}, status=200)
+    return JsonResponse({}, status=400)
+
+def is_valid_name(name):
+    """
+    Validates that the name:
+    - Does not contain special characters or numbers.
+    - Contains at least one alphabetical character.
+    - Does not start or end with whitespace.
+    """
+    if not name or not isinstance(name, str):
+        return False
+    if name[0].isspace() or name[-1].isspace():
+        print('mm')
+        return False
+    if not re.match("^[A-Za-z ]*$", name):
+        return False
+    if not any(c.isalpha() for c in name):
+        return False
+    return True
+
+def check_name(request, field_name):
+    """
+    Checks if the provided field (first name or last name) is valid and unique.
+    """
+    if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'GET':
+        value = request.GET.get(field_name, None)
+        if value:
+            if is_valid_name(value):
+                return JsonResponse({'valid': False}, status=200)
+        is_exists = False
+        return JsonResponse({'valid': not is_exists}, status=200)
+    return JsonResponse({}, status=400)
 
 def signup(request):
     if request.method == 'POST':

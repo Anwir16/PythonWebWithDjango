@@ -3,6 +3,7 @@
     {% block css %}
     <title>Update</title>
     <link rel="stylesheet" href="{% static 'user/css/updateProfile.css' %}">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     {% endblock css %}
     {% block main-content %}
     
@@ -61,3 +62,11 @@
         </div>
     </div>
     {% endblock main-content %}
+    {% block js %}
+    <script src="{% static 'user/js/updateProfile.js' %}"></script>
+    <script>
+        var validateEmailUrl = "{% url 'user:validate_email' %}";
+        var validateFirstNameUrl = "{% url 'user:validate_first_name' %}";
+        var validateLastNameUrl = "{% url 'user:validate_last_name' %}";
+    </script>
+    {% endblock js %}
